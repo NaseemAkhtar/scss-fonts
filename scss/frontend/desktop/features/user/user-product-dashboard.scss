@@ -1,0 +1,431 @@
+@import "../../include/variables";
+@import "../../include/mixins";
+@import "../../include/buttons";
+@import "../../partial/popup";
+@import "../../partial/pipeUl";
+@import "../../partial/bannerBlk";  
+@import "../../partial/cardBlk"; 
+section.app-block.text-center.sectionLayout, section.sec-testimonials.sectionLayout,.footer-section .top-footer,.middle-footer{
+    display: none;
+}
+.headingBanner.collegeFormHeader { 
+    min-height: 178px;
+   }
+ .subheading{
+     font-weight: normal;
+ }
+.headingBanner.blueBGBTn {
+	 
+	 .bg-header{
+	 	     position: absolute;
+		    right: 0;
+		    bottom: 0; 
+	 }
+	 
+	 .bannerHeading{
+		font-weight: 500!important;
+	 }
+} 
+ 
+.full-menu-landing-page{ 
+ 
+  &.app-block{
+		.innerContent {
+			margin: 40px 0 0;
+			display: inline-block;
+			text-align: center;
+			width: 100%;
+			float: none;
+			.container-860 {
+				box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.01);
+				background: #fff!important;
+				display: inline-block;
+				border-radius: 8px;
+				box-shadow: 0px 3px 7px 0 rgba(0, 0, 0, 0.1); 
+			    border-radius: 8px;
+				box-shadow: 0px 3px 7px 0 rgba(0, 0, 0, 0.0013); 
+			}
+		}
+  } 
+  .userInfo{
+  	margin:20px 0;
+  	position: relative;
+  	font-size:16px; 
+ 		color:#333;
+  	span{
+ 		font-size:18px;
+  	}
+  	span.careers-s-arrow-right {
+	    position: absolute;
+	    right: 0;
+	    top: 15px;
+	    color: #dfe2ee;
+	}
+  }
+
+			.menu {
+			    width: 100%;
+			    height: 75px; 
+			    -webkit-transition: all 0.4s ease;
+			    -moz-transition: all 0.4s ease;
+			    -o-transition: all 0.4s ease;
+			    transition: all 0.4s ease;
+			    #menu-center { 
+				    height: 75px;
+				    margin: 0 auto;
+				     ul {
+					    margin: 0 0 0 0;
+					    padding:0;
+					        text-align: center;
+					    li{
+					     list-style: none;
+					     width:256px;
+					    margin:0 10px ;
+					   display: inline-block;
+ 					   vertical-align: top;
+					    	a{ 
+						  height: 51px;
+						  text-align: left;
+						  width:100%;
+						  display: inline-block;
+						    line-height: normal;
+						    padding: 0;
+							    position: relative;
+						   border-radius: 4px; 
+						   border: solid 1px #e5e5e5;
+					    	&:hover{ 
+							    color: #fff;
+							    text-decoration: none; 
+								background-color: rgba(0, 0, 0, 0.12); 
+					    	}
+					    		img{
+						    		width: 31px;
+	   								 margin: 13px;
+						    	}
+						    	span{
+						    	    vertical-align: top;
+								    display: inline-block;
+								    font-size: 18px;
+								    font-weight: 600;
+								    padding:13px 5px;
+									&.icoMenu {
+										margin: 0; 
+										    padding: 12px 3px 0 10px;
+										img {
+											margin: 0;
+											padding: 0;
+										}
+									}
+						    	}
+								&:hover{
+									background:#fff;
+								}
+								
+					    	}
+					    	&:last-child{
+					    	 margin-right:0;
+					    	}
+							
+							&:first-child{
+					    	 margin-left:0; 
+					    	}
+					    	.green {
+							    color: #666666;
+							    &:hover,&.active{
+								border: solid 1px #41b955;
+							    color:#333333;
+									 &::before{
+								    	content: '';
+									    background: #41b955;
+									    height: 3px;
+									    width: 100%;
+									    position: absolute;
+									    bottom: -25px;
+									    left: 0;
+								    }
+							    }
+
+							}
+							.blue {
+							    color: #666666;
+							     &:hover,&.active{
+							     	border: solid 1px #23b7f3;
+									color:#333333;
+									  &::before{
+								    	content: '';
+									    background: #23b7f3;
+									    height: 3px;
+									    width: 100%;
+									    position: absolute;
+									    bottom: -25px;
+									    left: 0;
+								    }
+							    }
+							}
+							.orange{
+								color:#666666;
+								 &:hover,&.active{
+								 border: solid 1px #f6a742; 
+								 color:#333333;
+							    	  &::before{
+								    	content: '';
+									    background: #f6a742;
+									    height: 3px;
+									    width: 100%;
+									    position: absolute;
+									    bottom: -25px;
+									    left: 0;
+								    }
+							    }
+							}
+							span.careers-shape-colleges:before {
+							    color: inherit;
+							}
+					    }
+					}
+				}
+			}
+			 
+			 
+}
+
+
+.block-section{
+	    margin: 25px 0;
+	h2{
+	    	position: relative;
+	 		&:before{
+	 			height: 5px;
+	 			width:100%;
+	 			content: "";
+	 			display: inline-block;
+			    position: absolute;
+			    bottom: -10px;
+	 			background: #dbd137;
+    			background: linear-gradient(90deg, #dbd137 0%, #ebe9ca 100%);
+	 		}
+		 span {
+			    display: inline-block;
+				padding: 0 10px;
+				margin: 0 0 0 10px;
+			img {
+				width: 33px;
+				position: relative;
+				top: 5px;
+			}
+		}
+	 } 
+	display: inline-block;
+    width: 100%;
+	.box-section{
+	  width: 390px;
+	  height: 225px;
+	  border-radius: 4px;
+	  padding:38px;
+	  float: left;
+	  margin:20px;
+	  box-shadow: 0px 5px 25px 0 rgba(0, 0, 0, 0.05);
+	  background-color: #ffffff;
+	  .top-info{
+	  		height:118px;
+	  		overflow:hidden;
+		  	h3{
+			  font-size: 22px;
+			  font-weight: 600; 
+			      margin: -4px 0 0 0;
+			   color: #333333;
+			   max-height: 51px;
+ 			   overflow: hidden;
+   			   line-height: 25px;
+		  	}
+		  	p{
+		  		font-size:16px;
+		  		color: #666666;
+		  		line-height:26px;
+		  		padding: 15px 0 0 0;
+  				  margin: 0;
+  				height: 87px;
+    			overflow: hidden;
+		  	}
+		  }
+		.bottomInfo{
+			.button{ 
+  				height: 35px; 
+  				 font-size: 16px;
+  				 line-height: 32px;
+			}
+			.price{
+				font-size: 18px;
+  				font-weight: 600;
+  				color: #212121;
+  				padding-top: 5px;
+				span{
+				 padding:0 5px 0 10px;
+				 display:inline-block;
+				 font-size: 14px;
+				     font-weight: normal;
+				 span{
+				 	font-size: 11px;
+				 }
+				}
+				
+				span.saveprice {
+				    color: #26a763;
+					padding: 0;
+				}
+				span.oldPrice{
+					color:rgba(33, 33, 33, 0.4);
+				}
+				.careers-indian-rupee{
+				 	padding:0;
+				 }
+			}
+
+		}
+
+	}
+}
+
+.container-860{
+	width:860px;
+	margin:0 auto;
+}
+.view-more {
+    margin: 0 0 20px 0;
+    span{
+        font-size: 12px;
+    }
+}
+.app-block {
+    background-color: #f2f2f2!important;
+}
+.box-view.more-content .box-view-height {
+      height: 520px;
+    overflow: hidden;
+}
+.box-view.more-content.showContent .box-view-height {
+    height: auto;
+}
+.row.productListing.block-section {
+    padding: 20px 0 50px;
+}
+
+.productListing{
+	.college-data{border-bottom:1px solid $gray-lightest;width: 100%;
+		.left-block{width: calc(100% - 95px); 
+			span{width:50px;height:50px;@include border-radius(2px); border: solid 1px $gray-lighter;display:inline-block;vertical-align:top;}
+			p{margin:-5px 0 0 15px;display:inline-block; vertical-align:top;width:75%; color:$gray-darker;}
+		}
+		.right-block{vertical-align:top; 
+			.button{min-width:80px;}
+		}
+	}
+	.view{text-transform:uppercase; 
+		span {
+		    font-size: 14px;
+		    position: relative;
+		    top: -2px;
+		    margin: 0 5px;
+		}
+	}
+	.green {
+	    position: relative;
+	    margin: 20px 0 40px;
+	}
+} 
+
+
+
+.green{
+	h2{
+	    	position: relative;
+	 		&:before{
+	 			height: 5px;
+	 			width:100%;
+	 			content: "";
+	 			display: inline-block;
+			    position: absolute;
+			    bottom: -10px;
+				background: #93d462;
+				background: linear-gradient(90deg, #93d462 0%, #f0ffe4 100%);
+		 	}
+	    } 
+}
+.blue{
+	h2{
+	    	position: relative;
+	 		&:before{
+	 			height: 5px;
+	 			width:100%;
+	 			content: "";
+	 			display: inline-block;
+			    position: absolute;
+			    bottom: -10px; 
+				background: rgb(144,216,245);
+				background: linear-gradient(90deg, rgba(144,216,245,1) 0%, rgba(219,244,254,1) 100%);
+	 		}
+	    } 
+}
+.orange{
+	h2{
+	    	position: relative;
+	 		&:before{
+	 			height: 5px;
+	 			width:100%;
+	 			content: "";
+	 			display: inline-block;
+			    position: absolute;
+			    bottom: -10px;
+				background: #f2cc5a;
+				background: linear-gradient(90deg, #f2cc5a 0%, #faedc5 100%);
+	 		}
+	    } 
+}
+
+body.middleMenu{
+    position: relative;
+    top: 90px;
+} 
+
+body .cardBlk { 
+    padding: 0;
+}
+.applications.block-section h2 span img {
+    width: 24px;
+    position: relative;
+    top: 3px;
+}
+
+
+.full-page-view .full-page-section:nth-child(odd) {
+    background: #f2f2f2;
+}
+.full-page-view .full-page-section:nth-child(even) {
+    background: #fff;
+}
+
+.full-page-view .full-page-section .cardBlk{ background-color: transparent;}
+
+.full-page-view .full-page-section .block-section > p {
+    padding: 0 20px;
+}
+.bottomInfo {
+    position: relative;
+}
+.block-section .box-section .bottomInfo .price.smPrice {
+font-size: 12px;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: -14px;
+}
+.block-section .box-section .bottomInfo .price.smPrice span.oldPrice {
+    font-size: 12px;
+}
+.block-section .box-section .bottomInfo .price.smPrice .careers-indian-rupee { 
+   font-size: 10px;
+}
+.bottomInfo .btn {
+    padding: 0 10px;
+}

@@ -1,0 +1,259 @@
+@import "../../include/variables";
+@import "../../include/mixins";
+@import "../../partial/BannerBlk";
+@import "../../partial/tags";
+
+
+
+
+p{
+	font-size: 14px;
+	line-height: 21px;
+	margin-top: 0;
+	color: $gray-dark;
+}
+
+
+.app-block {
+    background-color: #e5e5e5;
+}
+.commonFooter .sectionLayout {
+    padding: 70px 0;
+    .google-icon {
+        margin-top: 30px;
+    }
+    #testimonials .owl-nav {display: none;}
+}
+
+.headingBanner{
+    padding: 35px 50px 30px;
+    
+    h1 {
+        margin-bottom: 8px;
+        font-size: 32px;
+    }
+    .bannerHeading {
+        font-size: 24px;
+        line-height: 31px;
+        margin-bottom: 5px;
+        text-align: left;
+        font-weight: normal;
+    }
+    p {
+        color: #ffffff;
+        line-height: 21px;
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+   
+}
+
+.ebookListingPage {
+    padding: 40px 0;
+}
+
+
+.ebookBlock {
+    width: 860px;
+    margin: 0 auto;
+    .cardBlk {
+        padding: 15px 20px;
+        @include border-radius(4px);
+    }  
+}
+
+.tags {
+    margin-bottom: 17px;
+    a{
+        min-width: 80px;
+        font-size: 12px;
+        text-align: center;
+        color: $gray-dark;
+        @include border-radius(20px);
+        
+        &.current {
+            background: #fff;
+        }
+    }
+}
+
+.showResultCounter{
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: $gray;
+}
+
+.ebookList{
+    overflow: hidden;
+    > div {
+        overflow: hidden;
+        background: #fff;
+        padding: 15px;
+        margin-bottom: 20px;
+        @include border-radius(4px);
+    }
+	.thumb{
+		float: left;
+		width: 130px;
+		margin-right: 15px;
+        img{
+            display: block;
+        }
+	}
+	.ebookInfo {
+        width: calc(100% - 302px);
+        float: left;
+		h5 {
+			font-size: 16px;
+			color: #333333;
+			line-height: 28px;
+			margin: -6px 0 10px;
+		}
+		
+		.breif{
+			font-size: 14px;
+			color: $gray-darker;
+            line-height: 21px;
+            margin: 0;
+		}
+	}
+    .dowloads{
+        width: 137px;
+        margin-left: 20px;
+        float: left;
+        font-size: 13px;
+        color: #666666;
+        text-align: center;
+        a{
+            min-width: 137px;
+        }
+    }
+}
+
+.pagination {
+    width: 227px;
+    margin: 20px auto 0;
+    background-color: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid $gray-lighter;
+    a {
+        float: left;
+        width: 75px;
+        height: 36px;
+        padding: 8px 5px;
+        color:  #e56c5b;
+        &.prev{
+            &:before{
+                content: "";
+                width: 7px;
+                height: 7px;
+                position: relative;
+                top: -1px;
+                margin-right: 4px;
+                border-top: 1px solid #e56c5b;
+                border-right: 1px solid #e56c5b;
+                display: inline-block;
+                transform: rotate(-135deg);
+            }
+        }
+         &.next{
+            &:after{
+                content: "";
+                width: 7px;
+                height: 7px;
+                margin-left: 4px;
+                position: relative;
+                top: -1px;
+                border-top: 1px solid #e56c5b;
+                border-right: 1px solid #e56c5b;
+                display: inline-block;
+                transform: rotate(45deg);
+            }
+        }
+        &.disabled{
+            color: $gray-light;
+            cursor: auto;
+            &:before, &:after{
+                border-color: $gray-light;
+            }
+        }
+    }
+    span {
+        width: 73px;
+        height: 35px;
+        padding-top: 10px;
+        float: left;
+        font-size: 12px;
+        border-left: 1px solid $gray-lightest;
+        border-right: 1px solid $gray-lightest;
+        color: $gray-darker;
+    }
+}
+
+
+.gotoHomePopup {
+    position: fixed;
+    width: 750px;
+    margin-top: -60px;
+    background: #fff;
+    z-index: 99999;
+    > div {
+        position: relative;
+        z-index: 11;
+        background: #ffffff;
+        padding: 20px;
+        @include border-radius(4px);
+        h5{
+            margin: 0;
+            margin-bottom: 10px;
+            font-size: 13px;
+            font-weight: 400;
+            color: #333;
+            line-height: 21px;
+        }
+    }
+    &:before{
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: #000;
+        opacity: 0.85;
+    }
+}
+.boxWithBorder.toolBox {
+  background: #ebedf4;
+  border-color: #dcdfea;
+  padding: 20px;
+  margin-top: 20px;
+  background: #fefaed;
+  border: 1px solid #f6e7b8;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px; }
+  .boxWithBorder.toolBox h3 {
+    font-size: 16px;
+    color: #333333;
+    font-weight: 600;
+    line-height: 15px;
+    margin-bottom: 7px; }
+  .boxWithBorder.toolBox p {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 10px; }
+  .boxWithBorder.toolBox .button {
+    margin-top: 30px; }
+	.tools-adBlock .toolBox strong {
+    display: block;
+    font-size: 1.6rem;
+    color: #333;
+}
+.toolBox .darkHeading{
+    font-weight:700;
+}

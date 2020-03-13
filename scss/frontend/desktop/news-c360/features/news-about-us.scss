@@ -1,0 +1,49 @@
+@import "../include/variables";
+@import "../include/mixins";  
+@import "../partial/cardBlk"; 
+@import "../partial/pipeUl";    
+@import "../partial/cardList"; 
+@import "../partial/breadcrumb";
+@import "../partial/sidebarListBlk";  
+ 
+
+.caption{
+	&:before{
+		content:'';
+		    height: 100%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.65) 99%);
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.65) 99%);
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.65) 99%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+	}
+} 
+.aboutUs-news{
+	.margin-btm{margin-bottom:65px;}	
+	.marginRight{margin-top:11px;}
+	.breadCrumb { padding-top:3px;
+		li,a {
+			color: $gray-dark;
+			font-size: 11px;
+		} 
+	 }
+	.breadCrumb li:before, .breadCrumb li:after{border-top: 1px solid  $gray-dark;
+    border-right: 1px solid  $gray-dark;}
+	
+	.heading-listing{font-size:$font-size-h2;font-weight:$font-stack-semibold;color:$gray-dark;margin-bottom:20px; margin-top:3px;}
+	p{ font-size:$font-size-h4;color:$gray-darker;  line-height: 2;}
+ 
+  
+
+}
+
+
+ 
+  
+
+ 
+
+

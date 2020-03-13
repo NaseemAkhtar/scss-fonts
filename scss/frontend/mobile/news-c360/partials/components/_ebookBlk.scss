@@ -1,0 +1,83 @@
+////Carousel with thumbnails////
+.cardBlk {
+    overflow: hidden;
+}
+.eBookDetail { 
+    display: inline-block; 
+    width: 100%;
+    padding:  0;
+    background-color: #ffffff;
+	height:139px;
+    border-bottom: 1px solid #e5e5e5;
+    /*margin: 3px 0 3px 1px;*/
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+    margin: 0 0 10px 0;
+    float: left;
+    &:last-child{
+	   border-bottom:none;
+	   margin-bottom:0;
+	 }	
+	.thumb{
+		float: left;
+		width: 100px;
+		overflow: hidden;
+		margin-right: 10px;
+		border: solid 1px #ccc;
+		height: 138px;
+-webkit-border-top-left-radius: 5px;
+-webkit-border-bottom-left-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-bottomleft: 5px;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+		img { 
+		    height: 136px;
+		    width: 98px;
+		}
+	}
+	.ebookInfo {
+		width: calc(100% - 110px);
+		float: left;
+		  h5 {
+		    font-size: 14px;
+		    color: #333333;
+		    font-weight: 600;
+		    line-height: 21px;
+		    margin-bottom: 8px;
+		    overflow: hidden;
+		    line-height: 21px;
+		    margin-top: -5px;
+		    padding: 14px 10px 0px 0px;
+		    height: 54px;
+		}
+		.countbottomReview {
+				font-size: 11px;
+				color: #999999;
+				margin-bottom: 20px;
+				height: 18px;
+				i{
+				    margin: 0 5px 0 0;
+				}
+		   	.c360-thumb-up{
+		   		 &:before{
+			     color: #ccc;
+				 font-size:15px;
+			    }
+		   	}
+		}
+	}
+	&:last{
+	    border: none;
+	}
+}
+.totalDownload {
+    padding: 0px;
+    font-size: 11px;
+    color: #999
+}
+
+.cardBlkInn.noneBG {
+    background: transparent;
+}

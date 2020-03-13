@@ -1,0 +1,35 @@
+.subNav, .notFixedNav {
+	@include transition (all ease .5s);
+	background-color: #fff;
+	ul{
+		margin:0;padding:0;
+		li {
+			display:inline-block;
+			margin-right: 25px;
+			list-style: none;
+			&:before, &:after{ 
+				content: " ";
+				display: table;
+				clear: both;
+			}
+			
+			a{
+				color:#333333;
+				padding: 15px 0;
+				display: block;position:relative;
+				&:after{width:100%; height:0;background-color:$brand-primary;@include transition(width ease .1s);position:absolute;bottom:0;left:0;content:"";}
+				&:hover{
+					color:$brand-primary;
+					&:after{height:2px;}
+				}
+			}
+		&.active{
+			a{
+				color:$brand-primary;
+					&:after{height:2px;}
+			}
+		}
+		}
+	}
+	&.fixedNav{position:fixed;width:100%;top:0;left:0;z-index:100;@include box-shadow(0px 4px 6px 0 rgba(0, 0, 0, 0.1));}
+}

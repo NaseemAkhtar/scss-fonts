@@ -1,0 +1,17 @@
+.circleBlk{width: 215px; margin: 0 auto;
+	&:not(:first-child){border-top:1px solid #e5e5e5;padding-top:20px;margin-top:20px;}
+	p{font-weight:300;color:#999;
+		a{color:#999;}
+	}
+	.note{font-size:1.1rem;}
+}
+.cirCle{border:1px solid $gray-lighter;width:100px;height:100px;@include border-radius(50%);margin-bottom:10px;
+	line-height:100px;display:inline-block;
+	strong{font-size:1.8rem;}
+	span{display:block;font-size:1.2rem;}
+	.cirInn{
+		line-height: 20px;
+		vertical-align: middle;
+		display: inline-block; 
+	}
+}

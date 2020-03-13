@@ -1,0 +1,24 @@
+.contentPart{
+	.cardList{
+		.cardBlk{
+			.heading4{font-weight:400;margin:0;}
+			@include border-radius(4px);min-height:70px;padding:15px;
+			min-height:108px;width:100%;float:left;
+			.cardBlkInn{width:80%;}
+			
+			.listHeading{
+				.microTxt{color:#999;}
+			}
+		}
+	
+		.baseUl{margin-top:10px;
+			li{color:#333;width:200px;
+				span{
+					&:first-child{color:#999;}
+					&:nth-child(2){color:#3A4D95;}
+				}
+			}
+		}
+		.courseBtn{width:20%;}
+	}
+}

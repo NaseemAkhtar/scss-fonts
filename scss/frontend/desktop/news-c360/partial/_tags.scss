@@ -1,0 +1,7 @@
+.tags{margin-bottom:-10px;
+	.tag{margin-bottom:10px;border: solid 1px $gray-lighter;min-height:30px;line-height:28px;padding:0 10px; display:inline-block;color:#333;
+	   &:not(:last-child){margin-right:6px;}
+		&:hover, &:focus, &.current{background-color:#f2f2f2;color:#3A4D95;} 
+		span{color:$gray;} 
+	}
+}

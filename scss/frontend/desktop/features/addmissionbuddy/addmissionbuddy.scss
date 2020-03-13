@@ -1,0 +1,548 @@
+@import "../../vendor/scrollbar";
+
+.div-center {margin: 0 auto; float:none;}
+.divider{height:1px; background:#ccc; margin:20px 0;}
+
+ul{padding-left:0;}
+
+a:hover{text-decoration: none;}
+.bulletPoints{padding:0; margin-bottom:0;}
+.bulletPoints ul {
+	margin-top:15px;
+} 
+.bulletPoints:before, .bulletPoints:after{content:''; display:table; clear:both;}
+.bulletPoints li {position:relative; margin-bottom:15px;list-style:none;color:#333; font-size:14px;
+padding-left: 20px;}
+.bulletPoints li:last-child{
+	margin-bottom:0;
+    
+}
+.bulletPoints li:before {
+	content:'';
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	left:0;
+	top:6px;
+    transform: rotate(45deg);
+	border-top:2px solid #444;
+	border-right:2px solid #444;
+}
+
+#loading {
+    text-align: center;
+}
+
+/******Fancy Scroll BAr******/
+.admissionOPenSection .filter-block-inner{
+    max-height: 260px;
+}
+
+.admissionOPenSection .filter-state {
+    max-height: 200px;
+}
+
+
+
+
+/********FILTER POPUP CSS END HERE*****/
+.admissionBuddyPopup {
+    margin: 0;
+    padding: 0px;
+    padding-right: 0;
+}
+
+.admissionBuddyPopup > div {
+    padding: 20px 15px;
+}
+
+.control {
+	position: relative;
+	display: block;
+	font-size:14px;
+	color:#333;
+	margin-bottom: 15px;
+	padding-left: 30px;
+	cursor: pointer;
+}
+
+.control input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.controlIndicator{
+	position: absolute;
+	top: 1px;
+	left: 0;
+	width: 17px;
+	height: 17px;
+	background: transparent;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.control--radio .controlIndicator {
+	border-radius: 50%;
+}
+/* Hover and focus states */
+.control:hover input ~ .controlIndicator,
+.control input:focus ~ .controlIndicator {
+	background: transparent;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+/* Checked state */
+.control input:checked ~ .controlIndicator {
+	background: #02a569;
+	border: 1px solid #02a569;
+}
+
+/* Hover state whilst checked */
+.control:hover input:not([disabled]):checked ~ .controlIndicator,
+.control input:checked:focus ~ .controlIndicator {
+	    background: #02a569;
+    border: 1px solid #02a569;
+}
+
+/* Disabled state */
+.control input:disabled ~ .controlIndicator {
+	pointer-events: none;
+	opacity: .6;
+	background: #e6e6e6;
+}
+
+/* Check mark */
+.controlIndicator:after {
+	position: absolute;
+	display: none;
+	content: '';
+}
+
+/* Show check mark */
+.control input:checked ~ .controlIndicator:after {
+	display: block;
+}
+
+
+/* Checkbox tick */
+.controlCheckbox .controlIndicator:after {
+	top: 2px;
+    left: 5px;
+    width: 5px;
+    height: 9px;
+    transform: rotate(45deg);
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+}
+
+/* Disabled tick colour */
+.controlCheckbox input:disabled ~ .controlIndicator:after {
+	border-color: #7b7b7b;
+}
+
+/* Radio button inner circle */
+.control--radio .controlIndicator:after {
+	top: 7px;
+	left: 7px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+/* Disabled circle colour */
+.control--radio input:disabled ~ .controlIndicator:after {
+	background: #7b7b7b;
+}
+
+header {
+	height:70px;
+}
+
+.admissionOPenHeader {
+	height:200px;
+	padding: 20px 0;
+	position: relative;
+    background: #1f2e67;
+    background: -moz-linear-gradient(left, #1f2e67 0%, #3a4d95 100%);
+    background: -webkit-linear-gradient(left, #1f2e67 0%, #3a4d95 100%);
+    background: linear-gradient(to right, #1f2e67 0%, #3a4d95 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2e67', endColorstr='#3a4d95',GradientType=1 );
+}
+
+.breadCrumb {
+	padding:0;
+	overflow:hidden;
+    margin-bottom: 60px;
+}
+.breadCrumb li {
+	float:left;
+	font-size:12px;
+	position:relative;
+	list-style:none;
+	color:#000;
+	padding-right: 13px;
+	margin-right: 8px;
+}
+.breadCrumb li:before, .breadCrumb li:after {
+	content:'';
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	border-top: 1px solid #000;
+	border-right: 1px solid #000;
+	transform: rotate(45deg);
+	right: 0;
+	top: 8px;
+}
+.breadCrumb li:last-child{
+	margin-right: 0;
+	padding-right:0;
+}
+.breadCrumb li:after{
+	right: 3px;
+}
+.breadCrumb li:last-child:before, .breadCrumb li:last-child:after{
+	display:none;
+}
+
+.breadCrumb li a{
+	color:#000;
+}
+.breadCrumb li a:hover{
+	color:#ddd;
+}
+
+.dropDownBox{
+    .controlIndicator{
+        display: none;
+    }
+}
+
+.admissionOPenHeader .title {
+    font-size: 33px;
+    margin-bottom: 8px;
+    /* font-weight: 600; */
+    margin-top: 25px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.admissionOPenHeader .caption {
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+.admissionOPenSection {
+    padding: 15px 0 50px;
+	background-color:#fff;
+}
+
+.admissionOPenSection .filters h4 {
+	font-size: 16px;
+	color:#333;
+}
+.admissionOPenSection .filters h4 span {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.admissionOPenSection .filters h5 {
+	font-size: 14px;
+	color:#333;
+	font-weight:600;
+	text-transform:uppercase;
+	margin-top:30px;
+	margin-bottom:15px;
+}
+
+.admissionOPenSection .filters form {
+	max-height: 270px;
+}
+
+.admissionOPenSection .collageList {
+	margin-bottom:60px;
+}
+
+
+
+.admissionOPenSection .collageList .titleBand {
+	background-color: #f2f2f2;
+	border: solid 1px #e5e5e5;
+	margin-bottom: 20px;
+	padding: 5px;
+	border-radius:4px;
+	overflow:hidden;
+}
+
+.admissionOPenSection .collageList .titleBand  .thumb {
+    float:left;
+    display: table;
+    min-height: 50px;
+}
+.admissionOPenSection .collageList .titleBand  .thumb span {
+    display: table-cell;
+    vertical-align: middle;
+}
+.admissionOPenSection .collageList .titleBand  .thumb img {
+	display:block;max-width:50px;max-height:50px;width:50px;height:50px;
+}
+
+.admissionOPenSection .collageList .titleBand .Collegedesignation {
+    float: left;
+    margin-left: 10px;
+	margin-top: 4px;
+}
+
+.admissionOPenSection .collageList .titleBand .courseName {
+    color: #a8a8a8;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.admissionOPenSection .collageList .titleBand  h5 {
+	font-size: 16px;
+	font-weight: 600 !important;
+	color: #333333;margin:0;
+}
+
+.admissionOPenSection .collageList .titleBand a {
+    float: right;
+    min-width: 100px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #e56c5b;
+    background-color: #e56c5b;
+    padding: 3px 20px 5px;
+    color: #fff;
+    margin-top: 10px;
+    margin-right: 15px;
+	transition: all ease-in-out 0.3s;
+    
+}
+.admissionOPenSection .collageList .titleBand a:hover {
+	background:#df4c38;
+}
+
+.admissionOPenSection .collageList .titleBand a.applied {
+    border: 1px solid #999;
+    color: #999;
+    background: #fff;
+    position: relative;
+}
+
+.admissionOPenSection .collageList .titleBand a.applied:before {
+    content: '';
+    width: 5px;
+    height: 10px;
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    transform: rotate(35deg);
+    margin-right: 6px;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+    transform: rotate(35deg);
+    -ms-transform:rotate(35deg);
+    -moz-transform:rotate(35deg);
+    -webkit-transform:rotate(35deg);
+    -o-transform:rotate(35deg);
+}
+
+
+.admissionOPenSection .collageList .showHideTxt {
+    height: 83px;
+	padding-left: 50px;
+    overflow: hidden;
+    position: relative;
+}
+.admissionOPenSection .collageList .showHideTxt.autoHeight {
+	height: auto !important;
+}
+.admissionOPenSection .collageList .showHideTxt .toggleTxt {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    float: right;
+    color: #47599c;
+    background: #fff;
+    display: inline-block;
+    padding: 0 4px 0 90px;
+	background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 1%, rgba(255,255,255,0) 2%, rgba(255,255,255,0) 6%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 80%);
+background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,0) 2%,rgba(255,255,255,0) 6%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 80%); 
+background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,0) 2%,rgba(255,255,255,0) 6%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 80%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); 
+}
+
+.admissionOPenSection .collageList .showHideTxt .toggleTxt:before {
+    content: '';
+    width: 69px;
+    height: 1px;
+    background: #47599c;
+    position: absolute;
+    bottom: 1px;
+    right: 5px;
+}
+
+.admissionOPenSection .collageList .showHideTxt.autoHeight .toggleTxt:before{
+	width:63px;
+}
+
+.admissionOPenSection .collageList .autoHeight .toggleTxt {
+    position: relative;
+}
+.admissionOPenSection .collageList ul li, .admissionOPenSection .collageList .showHideTxt > p {
+    position: relative;
+    padding-left: 13px;
+    list-style: none;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 2px;
+	
+}
+
+.admissionOPenSection .collageList ul li p, .admissionOPenSection .collageList ul li span {
+margin-bottom:0;}
+
+.admissionOPenSection .collageList * {
+    font-family: 'Open Sans', sans-serif !important;
+	font-style: normal;
+}
+
+.admissionOPenSection .collageList .showHideTxt * {
+    font-size: 14px !important;
+    color: #666;
+	font-style: normal !important;
+	font-weight:normal !important;
+}
+
+.admissionOPenSection .collageList ul li:before, .admissionOPenSection .collageList .showHideTxt > p:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #cccccc;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.pagination {
+	text-align:center;
+}
+
+.pagination li {
+	display:inline-block;
+	margin: 0 2px; vertical-align:middle;
+}
+
+.pagination li a, .pagination .disabled, .pagination li.active span {
+	background:transparent;
+	padding: 7px 11px;
+	border-radius: 3px;
+	color:#666;
+	font-size: 14px;
+	transition: all ease-in-out 0.3s;
+}
+
+.pagination .disabled{
+    border: 2px solid #e5e5e5;
+}
+
+.pagination li:first-child a, .pagination li:last-child a {
+	background:#fff;
+	padding: 6px 20px;
+	border:2px solid #e5e5e5;
+}
+.pagination .active a, .pagination li a:hover, .pagination li.active span {
+	background:#e5e5e5;
+}
+
+.listing-college-rSide.fixr-side {
+    margin-left: 25%;
+}
+
+.filters.stick {
+    position: fixed;
+    width: 290px;
+   margin-top:30px;
+}
+
+.admissionPopup.admissionBuddySignupPopup {
+    max-width: 600px;
+    width: 100%;
+    height: 522px;
+    border: 0;
+}
+
+.popupbox .popupLoader {
+	position: absolute;
+    height: 100%;
+    width: 100%;
+	top:0;
+    background: #fff url(/images/frontend/desktop/c360-loader.gif) no-repeat center;
+    z-index: 9999999;
+}
+
+.removeLoader .popupLoader {
+	display:none;
+	
+}
+
+.admissionPopup .closebtn:hover {
+    background: transparent;
+}
+
+.admissionPopup iframe {
+    border: 0;
+    overflow: inherit;
+}
+
+.admissionPopup.admissionBuddySignupPopup iframe {
+	height: 100%;
+	
+}
+
+.listing-college-rSide {
+    min-height: 600px;
+}
+
+.admissionOPenSection .sidebarPart.filters {
+    width: 290px;
+}
+
+
+#ui-datepicker-div.ui-datepicker th ,#ui-datepicker-div.ui-datepicker td{
+   min-width: auto !important;
+}
+
+#ui-datepicker-div.ui-widget-content {
+   padding: 5px;
+}
+#ui-datepicker-div table {
+   padding: 0;
+   margin: 0!important;
+}
+.ui-datepicker .ui-datepicker-title select {
+   font-size: 1em;
+   margin: 1px 0;
+   color: #000;
+}
+#ui-datepicker-div.ui-datepicker .ui-datepicker-next ,#ui-datepicker-div.ui-datepicker .ui-datepicker-prev{
+   display: none;
+}
+#ui-datepicker-div .ui-widget-header {
+   border: 1px solid #36488e;
+   background: #36488e url(images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x!important;
+}
+#ui-datepicker-div.ui-datepicker td span,#ui-datepicker-div.ui-datepicker td a {
+   text-align: center;
+}
+#ui-datepicker-div .ui-state-highlight,#ui-datepicker-div .ui-widget-content .ui-state-highlight,#ui-datepicker-div .ui-widget-header .ui-state-highlight {
+   border: 1px solid #34468b;
+   background: #37498f url(images/ui-bg_highlight-soft_75_ffe45c_1x100.png) 50% top repeat-x;
+   color: #ffffff;
+}

@@ -1,0 +1,66 @@
+@import "../../includes/mixins"; 
+@import "../../includes/variables";
+@import "../../partials/components/bannerSlider";
+@import "../../partials/components/checkboxRadio";
+@import "../../partials/components/cardBlk";
+@import "../../partials/components/popup";
+@import "../../partials/components/form";
+@import "../../partials/components/stickyBottom"; 
+@import "../../partials/components/cardList";
+@import "../../partials/components/pagination"; 
+@import "../../partials/components/filter";
+
+.bannerDetail{padding:20px 10px;}
+
+.cmparelist{position:relative;padding:0 15px ;
+	&:not(:last-child){border-bottom:1px solid #f2f2f2;margin-bottom:30px;padding-bottom:30px;}
+	.colgName{min-height:60px;padding-bottom:10px;padding-right:20px;}
+	.courseName{font-size:1.4rem;}
+	.button{margin-top:15px;}
+	.cross{position:absolute;right:15px;top:0;}
+}
+.broucherList{padding:0 15px;
+	&:not(:last-child){
+		border-bottom:1px solid #f2f2f2;
+		padding-bottom:15px;
+		margin-bottom:10px;
+	}
+}
+.popupbox{
+.pipeUl{margin:0;padding:0;font-size:1.1rem;color:#333;margin-top:10px;
+	li{
+		display: inline-block;
+    font-weight: 300;
+    position: relative;
+	
+	span{color:#ccc;}
+	
+	&:not(:last-child){
+		margin-right: 5px;
+		padding-right: 15px;
+	
+		&:after {
+		content: "|";
+		position: absolute;
+		right: 0;
+		top: 50%;
+		margin-top: -11px;
+		}
+	}
+	
+	}
+}
+}
+
+
+.cardListBlk {
+    .display-inlineBlock{min-width:104px;width: inherit;
+        &:first-child{margin-right:20px;}
+    }
+}
+.cardListBlk{
+	.btn-linePrimary, .btn-primary{float:right;margin-left:20px;padding:0 5px;}
+}
+.breadCrumb{
+	position:relative !important;
+}

@@ -1,0 +1,41 @@
+.compareBlk{position:fixed;bottom:0;left:0;width:100%;
+	.compareMain{background-color:#fff;@include box-shadow(0px -4px 6px 0 rgba(0, 0, 0, 0.1));display:none;
+		.display-table{
+			.display-cell{width:250px;text-align:center;padding:0 20px;height:93px;
+				&:not(:first-child){border-left:1px solid #ccc;}
+				.button{@include border-radius(2px);}
+				&:last-child{width:180px;}
+			}
+		}
+	}
+	
+	.compareClick{position:relative;height: 32px;line-height: 32px;overflow:hidden;width:120px;
+		span{background-color:#ccc;color:#333;height:100%;display:inline-block;padding: 0 50px 0 10px;@include transition(all ease .6s);}
+		&:before{position:absolute;right:0;top:0;width:40px;background-color:#4c4c4c;@include border-radius(0 4px 0 0);content:"";height:100%;}
+		&:after{position:absolute; right:0;top:0; width:40px;content:"\e90d";font-family: 'careers-fonts';color:#fff;text-align:center;@include transition(transform ease .5s);}
+	}
+	&.active{
+		.compareClick{
+			span{width: 0; @include transition(all ease .6s);
+				padding: 0;}
+			&:before{@include border-radius(4px 4px 0 0);}
+			&:after{@include transform(rotate(180deg));}
+		}
+	}
+}
+
+
+.seArch{
+	border:1px solid #ccc;@include border-radius(4px);height:40px;line-height:40px;padding:0 10px;position:relative;
+	input[type="text"]{
+		width:100%;border:none;
+	}
+	&:after{content:"\e900";font-family: 'careers-fonts';position:absolute;right:10px;top:50%;margin-top:-20px;color:#ccc;}
+}
+.clear{color:#ccc;font-size:1.2rem;}
+
+.colgSelected{position:relative;
+	.cross{position:absolute;top:10px;right:15px;color:#ccc;
+	  i{font-size:1.2rem;}
+		}
+}

@@ -1,0 +1,110 @@
+@import "../../includes/mixins"; 
+@import "../../includes/variables";
+@import "../../includes/button";
+@import "../../vendor/owlcarousel";
+@import "../../partials/components/listBlk";
+@import "../../partials/components/cardBlk";
+@import "../../partials/components/popup";
+@import "../../partials/components/tags";
+@import "../../partials/components/checkboxRadio";
+@import "../../partials/components/breadcrumb";
+@import "../../partials/components/pagination";
+
+
+.banner-content{
+	p{color:#fff;font-size:1.4rem;
+		a{color:#fff;text-decoration:underline;}
+	}
+}
+  
+  
+ .rankingMethodology{
+	.light-bg{background-color:#f9f9fc;}
+	.whiteBg {
+		background-color: #fff;
+	}
+	
+	.new-heading{ font-size: 22px; font-weight:$font-stack-light;color: #343533;margin: 7px 0 15px;}
+
+	.section-rankMeth{ padding-top:13px; padding-bottom:21px;
+		 p{font-size:$font-size-base; line-height:1.86;margin-bottom: 20px;}
+	}
+	.heading3{color:$gray-darker;}
+     .heading4{color:#333;}
+	.accord_rankingMath{ 
+		p{color:$gray-dark;}
+		ul{padding: 0 0px 0px 20px;margin:0;
+			li{ 
+				line-height: 21px;color:$gray-dark;
+				margin-bottom: 5px;
+			} 
+		}
+		.ui-accordion .ui-accordion-header .ui-accordion-header-icon{right: .5em;}
+		
+		.ui-accordion .ui-accordion-icons {padding-left: 1.2em;}       
+		
+		a{color:#343533;font-weight:$font-stack;position: relative;
+			@include border-radius(0);padding: 18px 18px 14px;display:block;font-size:$font-size-base;}
+			
+		.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+			background:transparent;border-bottom: 0px solid #e5e5e5;font-weight:400; 
+		}
+		
+		.ui-widget-content{border:0px solid #ccc;padding:0em 20px 0;}
+		
+		.tittle {
+			  border-top: 1px solid $gray-lighter; padding-bottom:10px;
+			  &:first-child{border-top:none;}
+			  &:last-child{border-bottom:1px solid $gray-lighter;}
+		}
+		.tittle.active + .tittle {border: none;} 
+		 .tittle.active{
+			@include border-radius(0);  border:none;
+			box-shadow:0 0 5px #f0f0f0; 
+		 } 
+		 .ui-state-default .ui-icon {
+			background: url(../../../images/frontend/mobile/new-ui-icons.png); 
+			background-position: -32px -48px;}
+		.ui-state-active .ui-icon{
+			background: url(../../../images/frontend/mobile/new-ui-icons.png);background-position:-64px -0px;}
+			.ui-icon {
+				width: 16px;
+				height:10px;
+			}
+		span.ui-accordion-header-icon.ui-icon.ui-icon-triangle-1-e{ 
+			right: 20px;
+			left: auto;
+			margin-top: -3px;
+			position: absolute;
+			top: 50%;
+		}   
+		.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br{border-bottom-right-radius: 0;}
+		.ui-widget-content{background: transparent;}
+		span.ui-accordion-header-icon.ui-icon.ui-icon-triangle-1-s {
+			right: 20px;
+			left: auto;
+			margin-top: -3px;
+			position: absolute;
+			top: 50%;
+		}		
+	}   
+		
+		
+	.table-block{ 
+        @include border-radius(4px);    border: 1px solid #e5e5e5;
+		thead tr{background-color:#f2f2f2;}
+		tbody {
+			tr:nth-child(odd){background-color:#fff;}
+			tr:nth-child(even){background-color:#f8f8f8;}
+		}
+		span{color:#02a569;font-size:22px;font-weight:600;line-height:1.31;}
+		 table tbody tr td{vertical-align: middle;border: none;border-top: none;padding:11px 10px 12px; text-align:center;}
+		 table thead tr th{vertical-align: middle;border: none;border-bottom: none;font-size: 12px;padding: 16px 10px 15px;text-align:center;}
+	}
+	.ranking-content{ 
+        &:not(:first-child){border-top:1px solid #e6e7f1; padding-top:15px;margin-top:15px;}
+		p{color:#333; line-height:24px;
+		&:first-child{font-size:16px;font-weight:$font-stack;line-height: 1.97;margin:0;}
+		}    
+	}
+ } 

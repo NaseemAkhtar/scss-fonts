@@ -1,0 +1,11 @@
+.searchFrm{
+	.microTxt{display:inline-block;margin-right:13px;}
+	.searchInput{padding-right:30px;height:40px;border:1px solid #ccc;display:inline-block;@include border-radius(4px);position:relative;color:#999;
+		&:after{
+			content: "\e900";    font-family: 'careers-fonts' !important;position:absolute;right:10px;top:50%;margin-top:-9px;
+		}
+		input[type="text"]{ 
+			height:100%;width:100%;border:none;padding:0 10px;background-color:transparent;
+		} 
+	}
+}

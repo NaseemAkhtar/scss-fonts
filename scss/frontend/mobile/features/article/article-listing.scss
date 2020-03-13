@@ -1,0 +1,74 @@
+@import "../../includes/mixins"; 
+@import "../../includes/variables";
+@import "../../partials/components/listBlk";
+@import "../../partials/components/cardBlk";
+@import "../../partials/components/stickySubNav";
+@import "../../partials/components/fixedScrollCard";
+@import "../../partials/components/cardList";
+@import "../../partials/components/tags";
+@import "../../partials/components/pagination";   
+@import "../../partials/components/breadcrumb";
+.breadCrumbOuter {
+    position: relative;
+}
+.tags {
+	margin: 0px 0;
+    clear: both;
+    width: 100%;
+    display: block;;
+		span {
+			font-size: 12px;
+			color: $gray-darker;
+			display: inline-block;
+			margin-right: 7px;
+			margin-bottom: 10px;
+			padding: 5px 10px;
+			@include border-radius(20px);
+			border: 1px solid $gray-lighter;
+		}
+	}
+
+.commonSection {padding:15px;}
+.artiListingCard {
+  &:not(:first-child){
+    margin-top: 28px;
+    padding-top: 23px;
+    }
+	  p{
+    font-size:  12px;
+    line-height:  19px;
+    color:  #333;
+     }
+	.blockHeading {
+    font-size:  14px;
+    margin: 0px 0px 6px 0px;
+    }
+}
+.article-Update{clear:both;}
+.action-btn {
+    margin: 20px 0px 0px 0px;
+    font-size: 14px;
+    font-weight: normal;
+    border-top: 1px solid $gray-lighter;
+    padding: 40px 0px;
+}
+.button-showMore{border: 1px solid #eee;
+    border-radius: 30px;
+    font-size: 12px;
+    color: #3a4d95;}
+
+.show-Count {
+    color: #999;
+    display: block;
+    margin: 12px 0px 20px 0px;
+}
+
+.article-Update{clear: both;color: #999;}
+.article-Update a{color: #999;}
+
+.main-ListingCard a.nxtpageLink {
+    display: block;
+    width: 100%;
+    text-align: right;
+    margin: 10px 0px;
+}

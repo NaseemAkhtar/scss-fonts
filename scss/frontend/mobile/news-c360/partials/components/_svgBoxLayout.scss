@@ -1,0 +1,50 @@
+.svgBoxLayout{
+	overflow: hidden;
+	.svgBox{
+		background-color: #ffffff;
+		text-align: center;
+		width: 33.2%;
+		border-right: 1px solid $gray-lighter;
+		border-bottom: 1px solid $gray-lighter;
+		padding: 20px 10px;
+		&:nth-child(3n+0){
+			border-right: 0;
+		}
+		&:nth-last-child(-n+3){
+			border-bottom: 0;
+		}
+		float: left;
+		a{
+			font-size: 12px;
+			color: $gray-darker;
+		}
+		span{
+			display: block;
+		}
+	}
+    &.svgBoxLayout1{
+        .svgBox{
+            width: 100%;
+        }
+    }
+    &.svgBoxLayout4, &.svgBoxLayout2, &.svgBoxLayout5{
+       .svgBox{
+            width: 50%;
+            border-right: 1px solid $gray-lighter;
+            border-bottom: 1px solid $gray-lighter;
+        } 
+    }
+    &.svgBoxLayout5{
+        .svgBox:last-child{
+            width: 100%;
+        }
+    }
+}
+
+.svgBox.quick-disabled{
+   a {
+	   opacity: 0.2;
+	   pointer-events: none;
+	}
+
+ }

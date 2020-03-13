@@ -1,0 +1,226 @@
+@import "../../include/variables";
+@import "../../include/mixins";
+@import "../../include/buttons";
+@import "../../partial/popup";
+@import "../../partial/pipeUl"; 
+@import "../../partial/bannerBlk";
+@import "../../partial/cardBlk";
+@import "../../partial/pagination"; 
+@import "../../partial/breadcrumb";
+@import "../../partial/tags"; 
+@import "../../partial/sidebarListBlk";    
+.breadcrumbOuter {
+    position: relative;
+    top: -15px;
+}
+.cardBlk {
+    padding: 20px 20px 30px;
+}
+.nxtpageLink:after {
+    font-family: 'careers-fonts' !important;
+    content: "\e933";
+    padding-left: 5px;
+    font-size: 9px;
+}
+
+
+.stickyBottom {
+	width: 100%;
+	position: fixed;
+	padding: 20px 0;
+	z-index: 999;
+	bottom: 0;
+	background-color: #ffffff;
+	@include box-shadow(0px -4px 6px 0 rgba(0, 0, 0, 0.08));
+	strong{
+		margin-top: 10px;
+		display: inline-block;
+	}
+	.btnGroup{
+		float: right;
+	}
+}
+.stickyBottom2 {
+	padding: 8px 0;
+}
+
+.push-right{
+    float: right !important;
+}
+
+.cardBlk{
+	overflow: hidden;
+	> .headingContainer {
+		margin-bottom: 14px;
+	}
+}
+.grayModal {
+    width: 730px;
+    .subHead {
+        padding: 17px;
+        text-align: center;
+        font-size: 16px;
+        color: $gray;
+        border-bottom: 0px solid $gray-lightest;
+        margin-bottom: 0px;
+    }
+    .closebtn {
+        z-index: 9;
+        top: 17px;
+    }
+}
+
+
+.pagination {
+    text-align: center;
+    li{
+        &:first-child{
+            margin-right: 0;
+        }
+        &:last-child{
+            margin-left: 0;
+        }
+    }
+}
+
+
+.scrollBar {
+	height: 182px;
+}
+.numberBox {
+	width: 50%;
+	float: left;
+	margin-bottom: 20px;
+	.city{
+		font-size: 16px;
+		color: $gray-darker;
+		line-height: 21px;
+		font-weight: 600;
+	}
+	.number{
+		font-size: 14px;
+		color: $gray-darker;
+		line-height: 21px;
+	}
+}
+
+.linkBox {
+	margin-bottom: 20px;
+	.website{
+		font-size: 16px;
+		color: $gray-darker;
+		line-height: 21px;
+		font-weight: 600;	
+	}
+	a{
+		font-size: 14px;
+		line-height: 21px;
+	}
+}
+
+/******Article Listing SCSS*******/
+
+.artiListing .tags .tag {
+    font-size: 1.2rem;
+    display: inline-block;
+    -webkit-border-radius: 14.5px;
+    -moz-border-radius: 14.5px;
+    -ms-border-radius: 14.5px;
+    -o-border-radius: 14.5px;
+    border-radius: 14.5px;
+}
+
+
+.hilightCard{
+	background-color: $gray-lightest;
+	padding: 10px 20px;
+	color: $gray-darker;
+	font-size: 14px;
+	line-height: 24px;
+	@include border-radius(4px);
+	strong{
+		font-size: 16px;
+	}
+}
+.artiLis-MainBlock{
+    p{color:$gray-darker}
+}
+
+.artiTitle {
+    font-size: 1.6rem;
+    color: #3a4d95;
+	line-height:28px;
+	margin-top:-5px;
+	margin-bottom:5px;
+}
+.artiLis-MainBlock {
+        .display-table{
+	      &:not(:first-child){
+		  margin-top:26px;
+		   padding-top:26px; 
+	}
+  }
+}
+.arti-Bottom {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    span{color:$gray}
+	}
+.col-img {
+    min-width: 180px;
+    margin-right: 20px;
+	max-height:123px;
+}
+.sidebarHeading{
+	text-align: center;
+}
+.totalNo {
+    padding: 15px 0px;
+    line-height: 21px;
+    font-size: 12px;
+    color: #999;
+}
+
+
+.stickyBottom .stickyBtn {
+    margin-top: 14px;
+}
+
+.stickyBottom .stickyTitle {
+    font-size: 14px;
+    color: #333333;
+    line-height: 28px;
+    width: 40%;
+    text-align: left !important;
+    margin-left: 10px;
+}
+.stickyBottom .stickyBtn {
+    margin-top: 14px;
+}
+
+.artiListing{
+ .display-cell.leftBlk{
+     width: 180px;
+	 }
+   }
+
+.newsCar{
+	.item{margin:2px;}
+	.newsDetail {
+		padding: 15px;
+		width:100%;
+		@include border-radius(4px);
+		@include box-shadow(0 0 6px 0 rgba(102, 102, 102, 0.08));
+		
+		p{font-size:1.2rem;margin:0;}
+	}
+	.newsTitle{font-size:1.6rem;}
+	.newsBottom{margin-top:25px;font-size:1.2rem;
+		span{color:#999;}
+		.morelink{font-weight:400;float:right;}
+	}
+}
+
+.divider{border-top:1px solid #e5e5e5;margin:40px 60px;}
+
+

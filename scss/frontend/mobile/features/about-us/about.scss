@@ -1,0 +1,170 @@
+@import "../../includes/mixins"; 
+@import "../../includes/variables"; 
+@import "../../partials/components/cardBlk";  
+@import "../../partials/components/svgBoxLayout";   
+@import "../../partials/components/cardList";
+@import "../../partials/components/tags"; 
+@import "../../vendor/360_viewer";
+
+
+.headingTwo{margin:0; font-size:$font-size-h3;font-weight:$font-stack-bold; color:$gray-darker;}
+
+.bg-new{background: url("../../../images/frontend/mobile/about-c360/pattern-bg.png")}
+.white-bg{background-color:#fff;}
+.aboutUs-page{ 
+	p{font-size: 16px;line-height: 1.75;color:$gray-darker; padding:10px 15px;}
+	.top-block{
+		img{display: block;}
+	}
+	.ab-blockOne{
+		.nav-tittle{white-space: nowrap;overflow-x: scroll;
+			a{display:inline-block; padding:18px 10px; color:$gray; font-size: 14px;font-weight:$font-stack-semibold;
+				&.active{color:$brand-primary; border-bottom:4px solid $brand-primary;margin: 0px 5px;}
+			}
+			&.fixed {
+				position: fixed; width:100%;background-color: #fff;left: 0;	top: 0
+			} 
+		}
+	}
+	.ab-blockTwo{padding-bottom:40px;padding-top:40px;}
+	.ab-blockThree{padding-bottom:40px;padding-top:40px;}
+	
+	.ab-blockFour{padding-bottom:40px;padding-top:40px;background-color:#f5f6fa; 
+		.team-block{
+			a{background-color:$gray-lighter; border:1px solid $gray-light; padding:6px 15px; font-size:$font-size-base; color:$gray-darker;margin:5px;}
+		}
+		.team-profile{padding:10px 15px;
+			.headingThree{color:#e56c5b;font-size:$font-size-h4;font-weight:$font-stack-semibold; margin:15px 0 15px; padding:0 0 0 10px; border-left:3px solid #e56c5b;}	
+			.inner-team{padding:15px; margin-bottom: 30px;box-shadow: 0.9px 1.8px 2px 0 rgba(0, 0, 0, 0.1);
+				.img-block{padding-bottom:15px;text-align:center;width: 155px;height: 155px;margin: auto;}
+				h4{font-weight:$font-stack-semibold;color:$gray-darker;line-height: 1.56;margin:0;}
+				.span-tag{ color:$gray;font-size:$font-size-h6;font-weight:$font-stack-semibold;line-height: 1.58;letter-spacing: 0.36px;text-transform:uppercase; display:block;width:100%; padding:3px 0 15px;}
+				.content{
+					.inner-block{color:$brand-primary;font-size:$font-size-base;text-transform: uppercase; display:inline-block; padding:11px 15px 10px 0; border-top:4px solid #ffc107;}
+					.inner-show{display:none;
+						p{padding-left:0; padding-right:0; padding-top:0;}
+					}
+				}
+			}
+			
+		}
+	} 
+}
+	.bg-blue{background-color:#1f2e67;}
+	.newfooter-1{padding:35px 0; 
+		.headingtwo{color:#fff;font-size: 24px; margin:0 0 5px;}
+		p{color:#e0e1e7;font-size: 16px; margin:10px 0;}
+	}	 
+	.appeared-Carousel{
+		.owl-stage{padding-left:0 !important;}
+		.owl-dots {
+			position: relative; width: 100%; text-align: center;
+				.owl-dot{
+					width: 25px;
+					height: 5px;
+					border-radius: 2.5px;
+					background-color: #4b5786;
+					display: inline-block;
+					margin:20px 5px 0;
+					&.active{background-color:#ffc107;   }
+				}   
+		}
+	}
+	.aboutNew-Carousel{padding:0 15px;
+        .about-profile{background-color:#f5f6fa; padding:20px; width:100%;margin-top:40px;  position: relative;height: 214px; border-radius: 10px; 
+			&:before{position:absolute; content:'';background: url("../../../../images/frontend/desktop/arrow-double.png") no-repeat; width:19px; height:16px; right:40px;top:40px;}
+            .pic-1{ margin-top: -54px;
+                span{width:65px; height:65px; display: inline-block;background-color:#f5f6fa;border-radius:50%;
+                    img{width:100%; height:100%;border-radius:50%;border: solid 5px #d3d5dd;background-color: #44654c;}
+                }
+            }
+            h3{color:$gray-darker; font-size: 16px;font-weight: $font-stack-semibold; margin:9px 0 5px;}
+                span{color:$gray-dark;font-weight:$font-stack; width:100%;}
+           
+            p{ margin:10px 0 0;font-size:$font-size-base;}              
+        }
+		.owl-dots {
+			position: relative;
+			width: 100%;
+			text-align: center;
+			.owl-dot{
+				width: 25px;
+				height: 5px;
+				border-radius: 2.5px;
+				background-color: #b1bce8;
+				display: inline-block;
+				margin:15px 5px 0;
+				&.active{background-color:#1f2e67;}
+			}	
+        }  
+    }
+     
+	.newfooter-2{ padding:32px 0 30px;
+		.heading3{color:$gray-darker; margin:0;}
+		p{margin:10px 0;font-size: 16px;line-height: 1.75;color:$gray-darker;}
+	}
+	.newfooter-3{background-color:#f5f6fa;padding:32px 0 0;
+		.heading3{color:$gray-darker; margin:0;padding: 0 19px;font-weight:bold;}
+		p{margin:10px 0;font-size: 16px;line-height: 1.75;color:$gray-darker; padding:0 15px 6px;}
+		img{display:block;}		
+	}
+	 .fixed{position: fixed;top: 0;left: 0;right: 0;background-color: #fff;z-index: 100000;width: 100%; border-bottom:1px solid #ddd;}
+	.fixeder{
+		position: fixed;left: 0; right:0;
+		top:0;
+		width: 100%;
+		background-color: #f5f6fa;
+		z-index: 9999;
+		padding:70px 0 5px;
+	}
+	.c360-header.fixed {
+		display:none;
+	}
+	.appBlk, .textiMonial{display:none;}
+	.newfooter-1, .newfooter-2, .newfooter-3, .appBlk, .textiMonial, .footer{ 
+		z-index: 999999;
+		position: relative;
+	}
+	.panorama {
+	width: 100%;
+	margin-top: -5px;
+	}
+	.pv-container {
+    overflow: inherit !important;
+	}
+ .pv-container .pv-overlay{
+   background:none !important;
+    }
+	.cycle {
+				background: url("../../../images/frontend/mobile/about-c360/c360group-new.jpg");
+				height: 400px;
+				cursor: move;
+				background-size: cover;
+			}
+			.c360-header,#page-content-wrapper .main-container{
+			 background:transparent;
+			}
+			#page-content-wrapper .main-container{
+			  padding-top:0px;
+			}
+			.c360-header .search-icon {
+              display: none;
+             }
+			 .overflowHidden .c360-header {
+				background: #150f0f;
+				opacity: 0.7;
+              }
+			  .team-block.fixeder a.team_focus {
+					background: #3a4d95;
+					color: #fff;
+              }
+			  section.newfooter-3 img {
+                margin: auto;
+				}
+			  #our-team .img-block img {
+					border: 5px solid #ddd;
+					padding: 2px;
+               }
+			   .footBrandLogo+.footTopList li:first-child {
+                  display: none;
+                }

@@ -1,0 +1,70 @@
+.topBannerSection{position:relative;}  
+.college-banner{margin-bottom:15px;
+	img{display:block;}
+	position:relative;min-height:146px;background-color:#f2f2f2; 
+	.owl-carousel{position:fixed; overflow: hidden;
+        img{display:block;}
+    }
+	.owl-nav{
+		div{  
+			background-color: rgba(0, 0, 0, 0.4) !important;
+			color: #fff;
+			font-size: 10px !important;
+			width: 30px;
+			height: 30px;
+			box-shadow: none !important;
+			border-radius: 50%;
+			line-height: 22px;
+			text-align: center;
+		}
+		.owl-prev{
+			left:20px !important;
+		}
+		.owl-next{
+			right:20px !important;
+		}
+	}
+	.colgLogo{position: absolute;bottom: 0;left: 15px;margin-bottom: -30px;z-index:3;@include transition(all ease .6s);@include transform(scale(1,1));overflow:hidden;}
+	&:after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,.5); 
+		top: 0;
+		lefT: 0;
+		}
+}
+
+.bannerDetail{padding: 25px 15px 20px;background-color: #fff;
+    z-index: 2;
+    position: relative;
+	.bannerHeading{margin-bottom:20px;
+		a.collegeName{font-size:1.4rem;line-height:21px;margin-top:15px;font-weight:400;display:block;} 
+	} 
+	h1{
+		font-size:1.8rem;
+		font-weight:600; margin:0;
+		color:#333;
+		line-height:$line-height-computed + 8
+	}
+	.knownAs{color:#333;}
+	.colgName{font-size:1.4rem;line-height:$line-height-computed + 4}
+	.btnBlk{
+		label.btn-lineGray{
+			input[type="checkbox"]{display:none;}
+		}
+		.btn-primary{margin-left:20px;}
+	}
+}
+
+.iconRow{color:#999;
+	 i{color:#666;font-size:1.1rem;margin-right:6px;}
+	 a{text-decoration:underline;color:#999;}
+ }
+
+.colgBnrDynamic {
+	.college-banner .owl-carousel, .singleBanner{position:relative;height:0;}
+	.colgLogo{@include transform(scale(0,0));}
+	
+}

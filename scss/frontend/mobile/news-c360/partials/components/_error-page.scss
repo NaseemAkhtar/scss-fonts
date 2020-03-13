@@ -1,0 +1,21 @@
+.error404Mob-page{
+	padding-top:39px;	
+	.error404Mob-logo{padding-bottom:20px;}
+	.error404Mob-content{ padding-top:10px; padding-bottom:20px;
+		h4{font-size:$font-size-large; font-weight:$font-stack-semibold;line-height: 1.5;color:$gray-darker;}
+		p{ color:$gray-darker; font-size:$font-size-base; line-height:21px;}
+	}	
+	.error404Mob-link{ padding-bottom:20px;
+		h3{color:$gray-darker;font-weight:$font-stack-semibold; font-size:$font-size-base; line-height: 21px;}
+		.link-errorPage{padding:8px 0;
+			a{height: 30px;line-height: 30px;color:$gray-dark; padding:0 10px; background-color:$gray-lightest; border:1px solid $gray-lighter; border-radius:15px;@include inline-block($valign: top); margin:5px;}			
+		}
+	}	
+}
+.error503Mob-page{
+	padding-top:39px;	
+	.error503Mob-content{ padding-bottom:20px; padding-top:15px;
+		h4{font-size: 18px; font-weight:$font-stack-semibold;color:$gray-darker;}
+		p{ color:$gray-darker; font-size:$font-size-base; line-height:21px;}
+	}	
+}

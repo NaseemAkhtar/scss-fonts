@@ -1,0 +1,344 @@
+@mixin button-bg($bg, $text, $border) {
+  background-color: $bg; 
+  color: $text;
+  border:1px solid $border;
+  &:hover {
+   @include transition(all 0.3s ease);
+  }
+}
+
+@mixin button-line($bg, $text) {
+  background-color: $bg; 
+  color: $text;
+  border:1px solid $text;
+  &:hover {
+    color:darken($text,8%);
+	border-color:darken($text,8%);
+    @include transition(color 0.3s ease);
+  }
+  &:active {
+    color:darken($text,25%);
+	border-color:darken($text,25%);
+  } 
+}
+
+@mixin buttonSize($height, $depth, $font-size){
+  height: $height;
+  padding: 0 5px;
+  min-width:150px;
+  @include border-radius($depth + 2);
+  font-size: $font-size;
+  line-height: $height - 2;
+
+  i {
+    line-height: $height - $depth;
+  }
+  &:active, &:active i {
+    line-height: $height - 2;
+  }
+}
+
+
+.button{
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  @include buttonSize(30px, 2px, 1.4rem);
+  @include transition(all 0.3s ease);
+	&.btn-primary {
+		@include button-bg($default-btnBG, $default-btnTXT, $default-btnBG);
+		&:hover{
+			background:darken($default-btnBG,8%); 
+		}
+	}
+  
+	&.btn-lineGray{
+		@include button-bg($gray-lightest, $gray-dark, $gray-lighter);
+		&:hover{
+			border-color:$gray-light;
+		}
+	}
+	
+	&.btn-gray {
+		@include button-bg($gray, $default-btnTXT, $gray);
+		&:hover, &:active {
+			background-color:$gray-dark;
+			border-color:$gray-dark;
+		}
+	}
+	&.btn-blue {
+		@include button-bg($brand-primary, $default-btnTXT, $brand-primary);
+		&.b2l{
+			&:hover {
+				background-color:$default-btnTXT;
+				color:$brand-primary;
+				border-color:darken($brand-primary,8%);
+				@include transition(all 0.3s ease);
+			  }
+			&:active {
+				background-color:$default-btnTXT;
+				color:darken($brand-primary,25%);
+				border-color:darken($brand-primary,25%);
+			} 
+		}
+		&:hover{
+			background:darken($brand-primary,8%); 
+		}
+	  }
+	&.btn-lineBlue{
+		@include button-line($default-btnTXT, $brand-primary);
+			&:hover {
+				background-color:darken($brand-primary,8%);
+				color:$default-btnTXT;
+				border-color:darken($brand-primary,8%);
+				@include transition(all 0.3s ease);
+			  }
+			&:active {
+				background-color:darken($brand-primary,25%);
+				border-color:darken($brand-primary,25%);
+			} 
+	 }
+	&.btn-green {
+		@include button-bg($brand-secondary, $default-btnTXT, $brand-secondary);
+		&:hover{
+			background:darken($brand-secondary,8%); 
+		}
+	  }  
+	  
+  
+	&.btn-greenLine{
+		@include button-line($default-btnTXT, $brand-secondary);
+	}
+	  &:hover {
+		text-decoration: none;
+	  }
+	  &:focus {
+		text-decoration: none;
+		outline: none;
+	  }
+	  
+	&.download-brochure-linkBtn{
+        @include button-bg($default-btnTXT, $default-btnBG, $default-btnBG);
+        &:hover{
+            border-color:darken($default-btnBG,8%);
+            background:darken($default-btnBG,8%); 
+            color:#fff;
+        }
+        &.brochure{
+            &:before{
+                    content: "";
+                    width: 10px;
+                    height: 12px;
+                    left: 0;
+                    top: 1px;
+                    display: inline-block;
+                    position: relative;margin-right:5px;
+                    background: url(https://static.career360.biz/images/frontend/desktop/download.svg) no-repeat 0px 1px;
+            }
+			&:hover {
+				&:before{
+					-webkit-filter: brightness(0) invert(1);
+					filter: brightness(0) invert(1);
+				}
+			}
+        }
+    }
+	  &.applied{
+		border-color:$gray-lightest;color:$gray-dark;background-color:$gray-lightest;
+		&:before{
+				content: '';
+				width: 5px;
+				height: 10px;
+				position: relative;
+				top: -1px;
+				display: inline-block;
+				margin-right: 6px;
+				border-right: 1px solid $brand-secondary;
+				border-bottom: 1px solid $brand-secondary;
+				@include transform(rotate(35deg));
+			}
+		&:hover{
+			border-color:$gray-lightest;color:$gray-dark;background-color:$gray-lightest;
+		}
+	  }
+	}
+	
+.bothPrimaryBtn{
+		.button{
+			@include button-bg($gray-lightest, $gray-dark, $gray-lighter);
+			&:hover{
+				border-color:$gray-light;
+				background-color:$gray-lightest;
+			}	
+		}
+	}
+.blueBGBTn{
+	.button:not(.applyBTn):not(.btn-primary){
+		background-color:transparent;
+		border-color:#fff;
+		color:#fff;
+		&:hover{
+			background-color:#fff;
+			color:#666;
+		}
+		&.applied{
+			&:before{
+				content: '';
+				border-right: 1px solid #fff;
+				border-bottom: 1px solid #fff;
+			}
+			&:hover{
+				&:before{
+					border-color:#666;
+				}
+			}
+		}
+	}
+	.btn-gray{
+		background-color:#fff !important;color:#666 !important;
+		&:hover{
+			background-color:#ccc !important;color:#333 !important;
+			border-color:#ccc !important;
+		}
+	}
+}
+
+.btnInherit{
+	min-width:inherit;
+}
+	.btn-xssmall {
+	  @include buttonSize(18px, 0px, 11px);
+	  min-width:50px;  
+	  padding:0 5px;
+	}
+
+	.btn-small {
+	  @include buttonSize(30px, 2px, 14px);
+	  min-width:100px; 
+	}
+	.btn-large {
+	  @include buttonSize(50px, 4px, 22px);
+	}
+	.btn-medium {
+	  @include buttonSize(50px, 4px, 18px);
+	  min-width:180px;
+	}
+	.btn-xlarge {
+	  @include buttonSize(60px, 5px, 26px);
+	}
+
+	.btnBlk{width:100%;display:inline-block;}
+
+	.viewAllOuter {
+		margin: 20px -10px -20px;
+	}
+	.viewAllBtn{ background-color: #fcfcfc; color:$brand-primary;font-size:1.2rem;font-weight:600;width: 100%;
+		text-align: right; padding: 10px;
+		}
+	.nxtpageLink{
+		&:after{
+					font-family: 'careers-icon' !important;
+					content: "\e951";
+					padding-left: 5px;
+					font-size: 9px;
+			}
+	}
+
+	.moreContLink{
+		&:after{
+					font-family: 'careers-icon' !important;
+					content: "\e950";
+					padding-left: 5px;
+					font-size: 9px;
+			}
+		&.less{
+			&:after{content:"\e952"}
+		}
+	}
+
+	.popupLink{
+		&:after{
+					font-family: 'careers-icon' !important;
+					content: "\e94e";
+					padding-left: 5px;
+					font-size: 9px;
+			}
+	}
+
+	.appBtn{@include inline-block;margin-left:10px;}
+	.appLink{@include button-bg($brand-secondary, $default-btnTXT, $brand-secondary);
+			@include buttonSize(15px, 2px, 1rem);
+			text-transform:uppercase;
+			padding: 0;
+			min-width: 49px;
+			font-weight:600;
+			text-align: center;
+		&:active{
+			background:darken($brand-secondary,5%);
+		}	
+	}
+	
+/* Ripple magic */
+.button{
+  position: relative;
+  overflow: hidden;
+}
+
+.button:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, .5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
+}
+
+.button:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+
+.topBannerSection .button:first-child{margin-right:10px;}
+
+.bind-textBTN {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 150px;text-align:center;
+}
+
+.stickyBottom{
+	.bind-textBTN {
+		vertical-align: top;
+		margin-top: 0px;
+	}
+
+}
+
+.loadMore {
+    .button {
+        background: #666;
+        color: #fff;
+        padding: 0;
+        min-width: 100px;
+    }
+}

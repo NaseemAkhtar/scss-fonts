@@ -1,0 +1,233 @@
+@import "../../includes/mixins"; 
+@import "../../includes/variables";
+@import "../../partials/components/bannerSlider";
+@import "../../partials/components/listBlk";
+@import "../../partials/components/stickySubNav";
+@import "../../partials/components/checkboxRadio";
+@import "../../partials/components/cardBlk";
+@import "../../partials/components/compare-strip";
+@import "../../partials/components/popup";
+@import "../../partials/components/form";
+@import "../../partials/components/stickyBottom";   
+@import "../../partials/components/reviewBlk"; 
+@import "../../partials/components/qnaBlk";
+
+.compareBtn{font-size:1.4rem;color:#333;} 
+.c360-info-tip{color: #ccc !important; 
+    font-size: 16px !important;
+    vertical-align: text-bottom;
+    margin-left: 5px;}
+.quickFact{
+	.factDetails{
+		padding:0;margin:0;list-style-position: inside; margin-top:25px;
+		li{width:50%;float:left;
+		strong{font-size:1.4rem;color:#333;}
+		}
+	}
+	
+	.display-table{margin-bottom:20px;padding:0 10px 20px;border-bottom:1px solid #f2f2f2;
+		&:last-child{margin-bottom:0;border:0;padding-bottom:0;}
+	}
+	.leftBlk{width:57px;padding-top:2px;}
+	.rightBtm {
+		margin-top:3px;
+		strong{
+			font-size:1.6rem;
+			color:#333;
+		}
+		a.detailLink{color:#3a4d95;text-decoration:underline;margin-left:10px;vertical-align:text-bottom;}
+	}
+	
+	
+}
+.impDate{
+	table{
+	tr{
+			th{text-align:left;} 
+			&:not(:first-child){border-top:1px solid #e5e5e5;}
+			td{text-align:left;vertical-align:top;
+				span{color:#999;}
+			}
+		}
+	}
+}
+.feeDetails{
+	table th h3{font-size:1.6rem;margin:0;}
+	.ftlBlk {   width: 49%;   display: inline-block;
+		&:not(:nth-child(-n+2)){margin-top:20px;}
+
+		strong{font-size:1.4rem;color:#333;}
+	}
+}
+.actionBox{
+		background-color: #fff;margin-top:30px;border: solid 2px #e5e5e5;@include border-radius(4px);padding:20px 8px;
+		strong{display:block;font-size:1.6rem;color:#333;}
+		.button{margin-top:15px;}
+	}
+
+.courseListblk{
+.listblk{
+	box-shadow: 0 0 5px 0 rgba(102, 102, 102, 0.15); background-color: #ffffff;min-height:89px; border: solid 1px #e5e5e5;padding:15px 20px 15px 10px;position:relative;margin-top:10px;display:block;color:#666;
+	&:hover, &:focus{background-color: #f2f2f2; border: solid 1px #e5e5e5;}
+	
+	&:first-child{
+		margin-top:0;
+	}
+	
+	span{
+		padding-bottom:25px;display:inline-block;font-size:1.4rem;
+	}
+	ul{
+		padding:0;list-style:none;position: absolute;margin:0; bottom: 15px;
+	}
+	&:after{
+	content:"\e902";font-family: 'careers-icon';position:absolute;top:50%;margin-top:-10px;right:10px;
+	}
+}
+}
+
+.pipeUl li{display:inline-block;font-weight:300;position:relative;margin-right:5px;padding-right:15px;
+			&:after{content:"|";position:absolute;right:0;top:50%;margin-top:-9px;}
+			&:last-child{margin:0;padding:0;
+				&:after{content:"";}
+			}
+	}
+.ratingBlk {width: 215px; margin: 20px auto 0;border-top:2px solid #e5e5e5;padding-top:20px;
+	&:first-child{border:none;padding:0;margin:0 auto;}
+	p{font-weight:300;color:#999;}
+	.ratingNote{font-size:1.1rem;}
+	
+}
+
+.ratingCircle{width:100px;height:100px;border:1px solid #e5e5e5;@include border-radius(100px);margin-bottom:15px;display:inline-block;padding-top:30px;
+	strong{font-size:1.4rem;display:block;}
+	span{font-weight:300;}
+}
+
+.c360ranking  .disclaimer{margin-top:20px;}
+
+.boxBlk{border: solid 1px #e5e5e5;padding:20px 10px;text-align:center;display: inline-block; width: 100%;margin-top:8px; vertical-align:top;
+ul{padding:0;margin-bottom:0;
+	li{padding-right:20px;margin-right:10px;}
+}
+&:first-child{margin-top:0;}
+	&:nth-child(n+2){margin-right:1px;}
+	strong{font-size:1.4rem;}
+	span{color:#333;display:block;margin-bottom:5px;}
+	
+	&.widthHalf{width:49%;}
+}
+
+.halfList{
+list-style:none;padding:0;margin:0;
+li{width:49%;display:inline-block;
+	i{font-size: 2.5rem;
+    margin-right: 10px;
+    color: #333;
+    vertical-align: middle;}
+}
+
+}
+.facilities {
+	.halfList {
+		li{margin-top:30px;
+			&:nth-child(-n+3){margin-top:0;}
+		}
+	}
+}
+
+
+.gallery {
+	.leftBlk{width:225px;height:156px;
+		img{width:100%;height:100%;}
+	}
+	.rightBlk{width:95px;padding-left:10px;height:72px;
+		img{width:100%;height:72px;margin-bottom:10px;margin-bottom: 12px;display: inherit;
+		&:last-child{margin-bottom:0;}
+		}
+	}
+}
+
+.alumni-carousel{
+	.item{border:1px solid #e5e5e5;padding:20px;}
+	img{width:60px;height:60px;@include border-radius(50%);}
+}
+.alName{font-size:1.4rem;color:#222;}
+.alCompany{color:#999;}
+
+.alDetail.ellipsis{width:200px;}
+
+.campuses-carousel{
+	.item{ 
+		@include border-radius(4px);
+		@include box-shadow(0 0 5px 0 rgba(102, 102, 102, 0.15)); padding:20px;margin: 3px 0 3px 3px;
+		img{width:60px;height:60px;border:1px solid #e5e5e5;@include border-radius(5px);}
+	}
+	.owl-item {
+		&:hover{background-color:#f2f2f2;
+			.item{@include box-shadow(none);}
+		}
+		
+	}		
+}
+
+.news-carousel{	 
+	.blockHeading{font-size:1.6rem;line-height:24px;margin-bottom:10px; height: 50px; overflow: hidden;}	
+	p{color:#333;    height: 35px;  overflow: hidden;}
+	.newsUpdate{color:#999;
+	span:nth-child(2){color:#3a4d95;}
+	}
+	.item{position:relative;}
+	.blockLink{position:absolute;top:0;left:0;width:100%;height:100%;}
+}
+
+.generalInfo{
+	address{
+	    font-style: normal;
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
+}
+.socialShare{margin-top:10px;
+	img{width:30px;}
+}
+
+.stickyBrochure{background-color:#fff;padding:10px;@include box-shadow(0px -4px 6px 0 rgba(0, 0, 0, 0.3));position:fixed;bottom:0;left:0;width:100%;}
+
+
+.impDBlk{margin-top:30px;color:#333;font-size:1.2rem;
+	strong{color:#333;font-size:1.6rem;border-bottom:1px solid #e5e5e5;display:block;padding-bottom:15px;margin-bottom:5px;}
+	
+	.impRow{
+		&:not(:last-child){margin-bottom:15px;}
+		span{display:inline-block;vertical-align:top;
+		&:first-child{width:35%;padding-right:10px;}	
+		&:last-child{width:63%;}			
+		}
+	}
+}
+.coursedetails{
+	.courseUpr{
+		li{margin-bottom:10px;
+			strong{color:#333;font-size:1.4rem;width: 46%;display: inline-block;}
+			span{width: 46%; display: inline-block; vertical-align: top;}
+		}
+	}
+}
+
+.breadCrumb{
+	position:relative !important;
+}
+
+.college-write-review{  background-color: #e5f6f0 !important;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 16px !important;
+    color: #333;
+    border: 1px dashed #02a569;
+    padding-bottom: 19px !important;
+		a {    margin-top: 15px !important;}
+		strong {display:block;}
+	}
+    
+ 

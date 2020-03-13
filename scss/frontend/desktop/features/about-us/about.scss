@@ -1,0 +1,310 @@
+@import "../../include/variables";
+@import "../../include/mixins";
+@import "../../partial/cardBlk";
+@import "../../partial/BannerBlk";
+@import "../../partial/breadcrumb";
+@import "../../vendor/animate";
+	
+	.paddingT-35{padding-top:70px;}
+	.container{width: 1180px;}
+	 .main_newblock p img {max-width: 100%;} 
+	 
+	.new-team-add{
+		.p-content{margin:10px 0 17px; color:$gray-darker;}
+	}
+	.contaier-1080{width:1080px; margin:0 auto;}
+	.aboutUs-content-12{
+		h2{font-weight: $font-stack-bold;color:$gray-darker;}
+		p{color:$gray-darker;}
+	}
+	.menu_item{box-shadow: 0 0 46px 0 rgba(0, 0, 0, 0.2);
+		background-color: rgba(0, 0, 0, 1);
+		position: absolute;
+		background-color:#fff;
+		-webkit-transition: all 0.4s ease;
+		-moz-transition: all 0.4s ease;
+		-o-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+		bottom: 0;width: 90%;transform: translate(-50%, 25px);left: 50%;}
+	#menu-center {margin: 0 auto;height: 75px;}
+	#menu-center ul {margin: 0 0 0 0;}
+	#menu-center ul li {list-style: none;display: inline-block;}
+	#menu-center ul li a.active, #menu-center ul li a:hover  {color:#3a4d95;text-decoration: none;border-bottom:4px solid #3a4d95;}
+	#home {
+		background-color: #286090;
+		height: 50vh;
+		width: 100%;
+		overflow: hidden;
+	}
+	#portfolio {
+		background: gray; 
+		height: 50vh;
+		width: 100%;
+	}
+	#about {
+		background-color: blue;
+		height: 50vh;
+		width: 100%;
+	}
+	#contact {
+		background-color: rgb(154, 45, 45);
+		height: 50vh;
+		width: 100%;
+	}
+	.main_newblock{
+	  position: relative;
+	}
+#menu-center ul li a {font-weight: 400;
+    text-decoration: none;
+    margin:0 30px;
+    font-size: 18px;
+     color: #737171;
+    padding:23px 5px;
+}
+.image_slice img{
+  width: 100%;
+}
+.image_slice {
+    position: relative;
+}
+ .banner-content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    align-items: center;
+    text-align: center;
+}
+.banner-content h1{color:#fff; font-size: 52px; font-weight: $font-stack-bold; letter-spacing: 2.6px;display:block; margin:0; width: 100%;}
+.banner-content span{font-size:$font-size-h3;font-weight:$font-stack-semibold;  line-height: 2.78; letter-spacing: 9px; width: 100%;display:block; color: #fff;}
+  
+ 
+#about_careers,.gapp_desktop{
+background-color:#f5f6fa;
+}
+#aa,#ii,#mm,#tt{
+  border:2px solid #ddd;
+  width:100px;
+  height:200px;
+}
+.menu_item.sticky_menu {z-index:100000;
+    position: fixed;
+    top: -25px;
+    bottom: auto;
+    z-index:10000;
+	width:100%;
+}
+.paddin_top {
+    padding-top: 70px;
+}
+#about_careers h2 {
+    margin-top: 50px;
+}
+#team .team_item li {    list-style: none;
+    display: inline-block;
+    background: #e5e5e5;
+    padding: 5px 16px;
+    margin: 5px 11px;
+    border: 1px solid #cccccc;
+}
+#team .team_item li a {
+        color: #333;
+		font-size: 16px;
+		line-height: 1.75;
+}
+#team-center{text-align:center;}
+.team_heading {
+    color: #e56c5b;
+    font-weight: 600;
+    font-size: 18px;
+	position: relative;
+	margin-left:10px;
+	margin-top:5px;
+	margin-bottom: 10px;
+	padding-top: 15px;
+}
+.team_heading:before {position: absolute;width: 3px; height: 17px; background: #e56c5b; top: 50%; content: ""; left: -9px; margin-top: -2px;}
+#team{background: #f5f6fa;}
+.bg_block {background: #fff;padding:30px 30px 22px;box-shadow: 0 3px 5px -3px #847f7f;margin: 0 0px 30px; min-height: 170px;}
+#our_team .bg_block:last-child {margin-bottom: 20px;}
+
+.full_name{color:$gray-darker; font-size:$font-size-h3;line-height: 1.56;margin: -8px 0 0;}
+	
+ 
+p.ceo_block {font-size: 12px !important;
+    margin: 0;
+    color:$gray;
+    font-weight:$font-stack-semibold !important;
+    text-transform: uppercase;
+}
+p.ceo_subject {     margin: 15px 0 0 !important;
+    padding: 12px 0 0 !important;
+    border-top: 1px dashed $gray-lighter;
+    line-height: 1.75 !important; color:$gray-darker;
+}
+ 
+	
+.off-canvas{display:none;transform: translate(0, -60px);} 
+.padding-TB{padding-top: 0px; padding-bottom:50px;} 
+	 
+	.appreal_in{
+		background-color: #1f2e67;
+		min-height:220px;
+		position:relative;
+		padding:40px 0 0; 
+		.appreal_icons {    
+			margin-top:15px;
+			background: #fff;
+			border-radius: 10px;
+			margin-bottom: -60px;
+			z-index: 999;
+			position: relative;
+			 box-shadow: 0px 4px 57px 0 rgba(31, 46, 103, 0.17);
+			 -webkit-box-shadow: 0px 4px 57px 0 rgba(31, 46, 103, 0.17);
+			 -moz-box-shadow: 0px 4px 57px 0 rgba(31, 46, 103, 0.17);
+			 
+			.aprlimage {
+				height: 150px;line-height: 150px;text-align: center;	
+				a{
+					display: inline-block;
+					vertical-align: middle;
+					margin: 0 25px; 
+					padding-top: 20px;
+					&:first-child{margin-left:0;}
+					&:last-child{margin-right:0;}
+				}
+			}
+		}
+	} 
+	.appreal_in h2, .appreal_in p {color: #fff;margin:0 0 13px;} 
+	.gapp_desktop{padding-top: 40px;
+		.applext {width: 55%;padding-left: 6px;padding-top: 92px;vertical-align: middle;display: table-cell;}
+		.appimage{width: 45%; vertical-align: middle; display: table-cell;}
+		p{ font-size:$font-size-h4;font-weight: normal;line-height: 1.88;color:#8b8b8c;margin:20px 0 45px;}
+	} 
+	.block-content2{ 
+		p{color:$gray-darker;margin: 10px 0 14px;}
+	} 
+	.image_left {border: 7px solid #ddd;
+		width: 152px;
+		margin-right: 13px;
+		display: inline-block;
+		vertical-align: top;
+		height: 152px;
+	}
+	.right-content {display: inline-block;vertical-align: top;width: 83.3%;padding: 0 0 0 13px;}
+	.center_img { margin: 20px 0px 60px;}
+	
+	#team .team_item li:hover, #team .team_item li:active {background: #cccccc;}
+
+
+	/* New css */
+	.block-11{position: relative;z-index: 555;}
+	.bg-about-new{background: url("/../../../images/frontend/desktop/pattern-bg.png");}
+		.block-11 .heading-new{ padding-top:70px;}
+	
+		.heading-new{
+			h2{margin:0;font-weight: $font-stack-bold;color:$gray-darker;}
+			p{font-size:$font-size-h4;opacity: 0.8; color:#7f8082; margin:14px 0 0;}
+		}
+    .aboutNew-Carousel{
+        .about-profile{background-color:#f5f6fa; padding:40px; width:100%;margin-top: 90px; border-radius: 10px;position: relative;
+			&:before{position:absolute; content:'';background: url("../../../../../images/frontend/desktop/arrow-double.png") no-repeat; width:19px; height:16px; right:40px;top:40px;}
+            .pic-1{ margin-top: -80px;
+                span{width:80px; height:80px; display: inline-block;background-color:#f5f6fa;border-radius:50%;
+                    img{width:100%; height:100%;border-radius:50%; border: 0px solid !important;   }
+                }
+            }
+            h3{color:$gray-darker; font-size:$font-size-h4;font-weight: $font-stack-semibold;margin: 26px 0 12px;
+                span{color:$gray-dark;font-size:$font-size-base; font-weight:$font-stack;}
+            }
+            p{ margin:10px 0 0;}              
+        }
+        .owl-dots {position: relative;
+                    width: 100%;
+                    text-align: center;
+            .owl-dot{
+                width: 25px;
+                height: 5px;
+                border-radius: 2.5px;
+                background-color: #b1bce8;
+                display: inline-block;
+                margin: 50px 5px 0;
+        }    }
+    }
+    .aboutNew-Carousel .owl-dots .owl-dot.active{background-color:#1f2e67;   }
+	 .about-new-top{
+		p{font-size:$font-size-h4;line-height: 1.88;}
+	}
+	
+	.panorama {
+	width: 100%;
+	float: left;
+	margin-top: -5px;
+	}
+	.pv-container {
+    overflow: inherit !important;
+	}
+ .pv-container .pv-overlay{
+   background:none !important;
+    }
+	.cycle {
+			}
+	.positionTeam {
+	    position: fixed;
+	    top: 70px;
+	    width: 100%;
+	    left: 0;
+	    right: 0;
+	    background: #fbfbfb;
+		z-index: 1000;
+		box-shadow: 5px 3px 5px #b3b1b1;
+     }
+     .positionTeam ul {
+        margin: 2px;
+     }
+	 #team-center li.team_focus,#team-center li.team_focus:hover {
+    background: #3a4d95;
+}
+#team-center li.team_focus a {
+    color: #fff;
+}
+#team .team-block {
+    padding-top: 72px;
+}
+ .page-dropdown-menu.fl,.fixed-search-form,.new-companion-header-button {
+    display: none;
+}
+.commonFooter {
+    display: none !important;
+	}
+	commonFooter {
+    display: none !important;
+	}
+	.appreal_in .appreal_icons {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 13%);
+	}
+.c360-header.fixed{
+display:none;
+}
+header.header{
+    background: #636161;
+    opacity: 0.7;
+    height: 60px;
+}
+.overlay_careers {
+    background: #636161;
+    opacity: 0.7;
+    padding: 5px;
+    border-radius: 5px;
+}
+#about_careers h2.heading1 {
+    margin-top: 2px !important;
+}
+.dropdown-menu li a{
+font-weight:800;
+}

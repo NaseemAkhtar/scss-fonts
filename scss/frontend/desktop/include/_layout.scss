@@ -1,0 +1,13 @@
+.sectionLayout{padding:70px 0;}
+
+
+.leftSidebar{
+	.contentPart{width:885px;float:right;padding: 0 15px 0 10px;}
+	.sidebarPart{padding: 0 10px 0 15px;}
+} 
+.rightSidebar{ 
+	.contentPart{width:885px;padding:0 10px 0 15px;}
+	.sidebarPart{padding:0 15px 0 10px;}
+}
+.contentPart{float:left;padding:0 15px;}
+.sidebarPart{width:325px;float:left;}

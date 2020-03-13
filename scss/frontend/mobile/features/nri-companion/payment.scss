@@ -1,0 +1,604 @@
+@import "../../includes/mixins"; 
+@import "../../includes/variables";
+@import "../../includes/button";
+
+footer.footer, .appBlk, .layout-container.textiMonial{
+    display: none;
+}
+
+
+.main-container {
+    background-color: #f2f2f2;
+    padding-top: 25px;
+    .orderSummery{
+        padding-top: 0;
+    }
+}
+.commonSection {
+    padding: 0 10px;
+    margin-top: 10px;
+    &.college_predictor{
+        margin-top: 120px;
+    }
+}
+
+.summery {
+    ul{
+        padding: 0;
+        margin: 0;
+        margin-top: 15px;
+        list-style: none;    
+    }
+    
+    li{
+        position: relative;
+        color: $gray-darker;
+        font-size: 14px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        line-height: 21px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        &:before{
+            content: '';
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            left: 0;
+            top: 8px;
+            border: 1px solid #02a569;
+            @include border-radius(50%);
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            width: 4px;
+            display: block;
+            height: 2px;
+            left: 3px;
+            top: 12px;
+            transform: rotate(-45deg);
+            border-bottom: 1px solid #02a569;
+            border-left: 1px solid #02a569;
+        }
+    }
+}
+h1{
+    font-size: 24px;
+    margin-bottom: 25px;
+    line-height: 31px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+}
+.orderSummery{
+    padding-top: 5px;
+    background: #1f2e67;
+    background: -moz-linear-gradient(left, #1f2e67 0%, #3a4d95 100%);
+    background: -webkit-linear-gradient(left, #1f2e67 0%, #3a4d95 100%);
+    background: linear-gradient(to right, #1f2e67 0%, #3a4d95 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2e67', endColorstr='#3a4d95',GradientType=1 );
+    color: #fff;
+    
+    .summery {
+        padding: 15px;
+        @include border-radius(4px);
+    }
+    .msgBlk{
+        background: #f2faf7;
+        font-size: 12px;
+        color: #02a569;
+        padding: 15px;
+        padding-right: 40px;
+        position: relative;
+        margin-bottom: 20px;
+        @include border-radius(4px);
+        a{
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            margin-top: -10px;
+            &:before{
+                content: '';
+                width: 1px;
+                height: 20px;
+                position: absolute;
+                background: #02a569;
+                transform: rotate(45deg);
+            }
+            &:after{
+                content: '';
+                width: 1px;
+                height: 20px;
+                position: absolute;
+                background: #02a569;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+    
+    .predictorBox{
+        background: #fff;
+        padding: 20px 20px 17px;
+        border: 1px solid $gray-lighter;
+        @include border-radius(4px);
+        h3{
+            font-size: 18px;
+            line-height: 31px;
+            color: $gray-darker;
+            font-weight: 600;
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+        p{
+            color: $gray-dark;
+            margin: 0;
+            
+        }
+    }
+     form{
+        margin-top: 20px;
+        input{
+            width: calc(100%);
+            height: 40px;
+            color: $gray-darker;
+            padding: 10px;
+            border: 1px solid #ccc;
+            @include border-radius(4px);
+        }
+        .submitCode{
+             width: 80px;
+             height: 40px;
+             padding: 10px;
+             border: 0;
+             background: transparent;
+             color: #47599c;
+             text-align: center;
+             @include border-radius(4px);
+             margin-left: 7px;
+         }
+         .message {
+             font-size: 12px;
+             color: #02a569;
+             &.incorrect{
+                 color: #ec1c24;
+             }
+         }
+    }
+    .proceedPay{
+        text-align: center;
+        margin-top: 18px;
+        .appliedPromo {
+            font-size: 14px;
+            color: $gray-dark;
+            margin-bottom: 10px;
+            span{
+                font-size: 18px;
+                font-weight: 600;
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+        .totalAmount {
+            font-size: 16px;
+            color: $gray-darker;
+            margin-bottom: 15px;
+            font-weight: 600;
+            span{
+                font-size: 24px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .strikeAmount {
+                font-size: 12px;
+                color: $gray;
+                margin-left: 3px;
+            }
+            
+        }
+        
+    }
+    .breif{
+        background: $gray-lightest;
+        border: 1px solid $gray-lighter;
+        padding: 15px;
+        margin-top: 20px;
+        @include border-radius(4px);
+        h3{
+            font-size: 16px;
+            color: $gray-dark;
+            margin-top: 0;
+        }
+        p{
+            font-size: 14px;
+            line-height: 21px;
+            color: $gray-dark;
+        }
+        ul{
+            padding: 0;
+            li{
+                list-style: none;
+                font-size: 14px;
+                line-height: 25px;
+                color: $gray-dark;
+                padding-left: 15px;
+                margin-bottom: 5px;
+                position: relative;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                &:before{
+                    content: '';
+                    position: absolute;
+                    width: 6px;
+                    height: 6px;
+                    left: 0;
+                    top: 10px;
+                    background: $gray;
+                    @include border-radius(50%);
+                }
+            }
+        }
+    }
+    .bottom{
+        font-size: 12px;
+        line-height: 19px;
+        color: #fff;
+        font-weight: 600;
+        text-align: center;
+        padding: 15px 0;
+    }
+}
+
+.blockHeading.amout{
+    font-size: 16px;
+    color: $gray-darker;
+    font-weight: 600;
+    span{
+        font-size: 13px;
+        color: $gray-darker;
+    }
+    .save {
+        background: $brand-secondary;
+        color: #fff;
+        font-size: 13px;
+        padding: 0px 10px;
+        position: relative;
+        &:before{
+            content: '';
+            border-top: 9px solid transparent;
+            border-bottom: 9px solid transparent;
+            border-left: 4px solid #f0f1f7;
+            position: absolute;
+            left: 0;
+            top: 0px;
+        }
+        
+        
+        &:after{
+            content: '';
+            border-top: 9px solid transparent;
+            border-bottom: 9px solid transparent;
+            border-right: 4px solid #f0f1f7;
+            position: absolute;
+            right: 0;
+            top: 0px;
+        }
+    }
+    strike{
+        color: $gray;
+        font-size: 13px;
+        display: inline-block;
+        margin: 0 5px;
+    }
+}
+.divMiddle{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.paymentOuter{
+    width: 100%;
+    min-height: calc(100vh - 45px);
+    display: table;
+    background: #1f2e67;
+    background: -moz-linear-gradient(left, #1f2e67 0%, #3a4d95 100%);
+    background: -webkit-linear-gradient(left, #1f2e67 0%, #3a4d95 100%);
+    background: linear-gradient(to right, #1f2e67 0%, #3a4d95 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2e67', endColorstr='#3a4d95',GradientType=1 );
+    text-align: center;
+    padding-top: 10px;
+    .summery{
+        background: #fff;
+        border: 1px solid $gray-lighter;
+        padding: 30px 15px 20px;
+        @include border-radius(4px);
+    }
+    .amount {
+        font-size: 18px;
+        color: $gray;
+        font-weight: 600;
+        margin: 12px 0 7px;
+    }
+    .title {
+        font-size: 24px;
+        color: $gray-darker;
+        font-weight: 600;
+        margin-bottom: 45px;
+    }
+    .breif {
+        font-size: 12px;
+        color: $gray-darker;
+        line-height: 19px;
+        border-bottom:  1px solid $gray-lighter;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+    .orderDetail {
+        span{
+            display: block;
+            color: $gray;
+            line-height: 19px;
+            &:last-child{
+                color: $gray-darker;
+                margin-top: 5px;
+                -ms-word-break: break-all;
+                word-break: break-all;
+            }
+        }
+    }
+    .retry {
+        margin: 25px 0 0;
+        a {
+            width: 100%;
+            height: 50px;
+            display: block;
+            line-height: 22px;
+            font-weight: 300;
+            background: $default-btnBG;
+            border: 0;
+            font-size: 18px;
+            color: #ffffff;
+            padding: 14px;
+            @include border-radius(4px);
+        }
+    }
+    .redirect {
+        margin: 30px 0 80px;
+    }
+    .unsuccesfull{
+        margin: 25px 0 0px;
+    }  
+}
+
+.footer {
+    background: transparent;
+    padding: 15px;
+    color: #fff;
+    a{
+        color: #fff;
+    }
+}
+footer.footer{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.thankyou {
+    text-align: center;
+    padding: 0 6px;
+    margin: 0 auto 13px;
+    > div {
+        font-size: 14px;
+        line-height: 24px;
+        color: $gray-darker;
+        font-weight: 600;
+        margin-bottom: 24px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        a{
+            display: block;
+            text-decoration: underline;
+            &:after{
+                font-family: 'careers-icon'!important;
+                content: "\e94e";
+                padding-left: 5px;
+                font-size: 9px;
+            }
+        }
+    }
+}
+    .pay {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 5px;
+
+        .btn-medium{
+            width: 250px;
+            line-height: 22px;
+            padding-left: 73px;
+            background: #e5e5e5 url(../../../images/frontend/desktop/paypal.png) no-repeat 127px 14px;
+            text-align: left;
+            color: $gray-darker;
+            border: 0;
+            font-size: 12px;
+            img{
+                position: relative;
+                top: 4px;
+            }
+         &.active{background-color:#ffc439;}
+		 &.active:hover{background:#ffc439 url(../../../images/frontend/desktop/paypal.png) no-repeat 127px 14px;}
+		 &:hover{background: #e5e5e5 url(../../../images/frontend/desktop/paypal.png) no-repeat 127px 14px;}
+		 }
+    }
+    .pay-paytm {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 5px;
+
+        .btn-medium{
+            width: 250px;
+            line-height: 22px;
+            padding-left: 73px;
+            background: #e5e5e5 url(../../../images/frontend/desktop/paytm-logo.png) no-repeat 127px 12px;
+            text-align: left;
+            color: $gray-darker;
+            border: 0;
+            font-size: 12px;
+            img{
+                position: relative;
+                top: 4px;
+            }
+         &.active{background: #042e6f url(../../../images/frontend/desktop/paytm-logo-white.png) no-repeat 127px 12px;color:#fff;}
+		 &.active:hover{background: #042e6f url(../../../images/frontend/desktop/paytm-logo-white.png) no-repeat 127px 12px;}
+		 &:hover{background: #e5e5e5 url(../../../images/frontend/desktop/paytm-logo.png) no-repeat 127px 12px;}
+		}
+    }	
+.pay-contant {font-size: 12px;color: #999;font-weight: 400;margin: 4px 0px;}
+.or-unsuccess {text-align:center;margin-bottom: 30px;color: #fff;}
+.or-unsuccess h4{margin:0;padding:0;text-align:center;}
+.or-unsuccess p{margin:0;padding:0;text-align:center;}
+.product_cname,.pack-price.f-right,.order_total,.order_amnt{
+  display: inline-block;
+}
+
+.payment-summary-header{
+    text-align:center;
+}
+
+.total.totalAmount span {
+    font-size: 16px;
+}
+.coupan_code{
+    margin-top:60px;
+    position: relative;
+}
+input.submitCode {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 39px;
+    border: none;
+    color: #fff;
+    background: #02a569;
+}
+.pay-button.center .btn-medium {
+    background: #e56c5b;
+    width: 100%;
+    color: #fff;
+    border: none;
+    height: 45px;
+    font-size: 16px;
+    padding:0 !important;
+}
+.pay-button.center {
+    margin-top: 15px;
+}
+.blockHeading.amout {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+.orderSummery .proceedPay .totalAmount{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+.orderSummery .proceedPay .totalAmount span{
+    font-size: 20px;
+}
+#companion_pay_form .user-details label.form-label {
+    display: block;
+    color: #4c4a4a;
+    text-align: left;
+    margin-top: 10px;
+}
+.payment-summary>span {
+    color: #000;
+    display: flex;
+    margin: 20px 0 15px;
+    font-weight: 600;
+    font-size: 17px;
+}
+.orderSummery .proceedPay .totalAmount span {
+    font-size: 16px;
+}
+.product_cname {
+    font-size: 15px;
+}
+.payment-summary {
+    background: #fff;
+    padding: 10px;
+}
+#companion_pay_form .user-details {
+    background: #fff;
+    padding: 10px;
+}
+.orderSummery .predictorBox>h2 {
+   text-align: center;
+   color: #6b6b6b;
+   font-size: 18px;
+   background: #ddd;
+   font-weight: 600;
+   margin-top: 0;
+   padding: 5px;
+}
+orderSummery .predictorBox {
+   padding: 0;
+}
+.orderSummery .predictorBox ul {
+   padding: 15px;
+}
+.error ul.errorlist li {
+ padding-left: 4px;
+ vertical-align: top;
+ font-size: 13px;
+ line-height: 25px;
+ color: #eb3016;
+ }
+.error ul.errorlist {
+ margin-top: 0px;
+ color: #e42727;
+ margin-bottom: 10px; }
+.error ul.errorlist li:before, .error ul.errorlist li:after {
+ display: none; }
+ #companion_pay_form .coupon-applied {
+    border: 1px solid #3ca664;
+   width: auto;
+   display: inline-block;
+   float: right;
+   clear: both;
+   margin-bottom: 30px;
+   line-height: 30px;
+   border-radius: 30px;
+   text-align: right;
+   padding: 5px 10px;
+   background: #3ca664;
+   color: #fff;
+   font-weight: 600;
+   padding-right: 30px;
+}
+.coupon-applied+input.submitCode {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   border: none;
+   color: #fff;
+   background: #3ca665;
+   width: auto;
+   padding: 0;
+   height: auto;
+}
+.coupan_code {
+   margin-top: 30px;
+}
+.summery .tryLogin {
+    background: #fff;
+    color: #585353;
+    padding: 10px;
+    font-size: 13px;
+}

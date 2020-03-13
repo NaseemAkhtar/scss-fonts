@@ -1,0 +1,208 @@
+.appBlk{background-color: #e5e5e5;clear:both;
+	.blockHeading{line-height:28px;}
+}
+
+.colgContBlk{background-color: #fcfcfc;clear:both;}
+.basicList{padding-left:0;list-style:none;margin:0 0 30px 0; 
+	&:last-child{margin:0;}
+	li{line-height:21px;}
+}
+
+//media
+.media-carousel{padding-top:30px;width:100%;float:left;border-top:1px solid #e5e5e5;margin-top:30px;}
+//testimonial
+.testiBox{ width: 49%; display: inline-block;
+	&:nth-child(-n+2){margin-bottom:40px;}
+	&:nth-child(odd){padding-left:50px;}
+	&:nth-child(even){padding-right:50px; }
+	i {
+		font-size: 2.9rem;
+		color: #999999;
+	}
+	strong{display:block;font-size:1.6rem;color:$gray-darker;margin-top:10px;}
+	span{font-size:1.4rem;}
+}
+.footer{background-color:rgba(0,0,0,0.9); }
+.footerLinks{
+	&:not(:first-child){margin-top:20px;}
+}
+//accordion
+.accordion{border-top:1px solid rgba(255, 255, 255, 0.04);}
+.accordion-section-content{
+    display: none;
+    padding: 0 10px 10px;
+}
+.accordion-section{border-bottom:1px solid rgba(255,255,255,0.04);}
+.accordion-section-title{color:#e5e5e5;padding:20px 15px;position:relative;display:block;}
+.accordion-section-title:after{content:"\e900";font-family:careers-icon;    color: #f2f2f2;
+    right: 15px;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px; @include transition(all ease .5s);}
+.accordion-section-title.active:after{@include transform(rotate(180deg));}
+.accordion-section-content .listUL li{display:block;padding:10px;}
+.listUL ~ p{ color:#999;margin-top:20px;}
+.listUL ~ .marginT20{color:#999;}
+.listUL {padding: 30px 0 40px 0;}  
+.footTopList li{padding: 10px 15px;}
+.footBtmList li{padding:5px 0;
+	&:not(:first-child){margin-left:15px;}
+}
+.androidBtn{
+    margin-top:-7px;
+    margin-bottom:-13px;
+}
+.footSocial{
+    border-top:1px solid rgba(255, 255, 255, 0.04); 
+    float: left;
+    width: 100%;
+    padding-top: 15px !important;
+    li{
+        padding: 0;
+        &:not(:first-child){margin-left:20px;}
+    }
+}
+.partnerLogo { 
+    .entranceLogo {width: 100px;margin-top:8px;}
+	a {
+		display: inline-block;
+		margin: 0 10px;
+		width: 88px;
+		vertical-align: middle;
+		img{
+            vertical-align:bottom;
+        }
+	}
+}  
+.testiDetail span { 
+    font-weight: 600;
+    font-size: 14px;
+}
+.owl-dots button{  background: transparent;border: none;}
+#testimonial .item p {
+    margin-top: 15px;
+}
+
+.sendSmsFrm{
+    width:319px;
+    margin:30px auto 0;
+    position:relative;
+        input[type="text"]{
+            width:100%;
+            height:100%;
+            line-height:100%;
+            color:#999;padding:0 12px;
+            border:none;@include border-radius(4px);
+         }
+         .button{
+             position:absolute;
+             right:0;
+             top: 0;
+             min-width:100px;
+             height: 100%;
+             @include border-radius(0 4px 4px 0);
+        }
+        .fieldArea{
+            height:52px;
+            background-color:#fff;
+            border:1px solid #ccc;
+            @include border-radius(4px);
+        }
+}
+
+.footerLinks {
+    table {
+        border: 0;
+        td{
+            display: block;
+            padding: 0;
+            border: 0;
+            text-align:  center;
+            &:last-child a{
+                border-right: 0;
+            }
+        }
+        a{
+            display: inline-block;
+            font-size:12px;
+            color:$gray-dark;
+            line-height: 13px;
+            margin-bottom: 12px;
+        }
+    }
+}
+
+.footerTabsLink {
+    margin-top:20px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    
+    .ui-tabs-nav{
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin: 0 -15px;
+        border-bottom: 1px solid #ccc;
+        overflow-y: scroll;white-space: nowrap;
+        .ui-tab{
+            display: inline-block;float: left;   
+            .ui-tabs-anchor{
+                color: #666;
+                font-weight: normal;
+                 padding: 5px 10px;
+                    font-size: 1.4rem; 
+            }
+            &.ui-tabs-active{
+                background-color: transparent;
+                padding: 0;
+                .ui-tabs-anchor{
+                    color: #d63c24;
+                    border-bottom: solid 2px #d63c24;
+                } 
+            } 
+        }
+    }
+    .ui-tabs-panel{
+        padding: 0;
+        margin-top:20px;
+    }
+    table 
+    {
+        border:none;
+        tbody tr td{ 
+            border-left:none;
+            padding:0;
+            text-align: left;
+            float: left;
+            width:100%;
+            &:not(:first-child){margin-top:10px;}
+        }
+    }
+    
+    .ui-widget-content a{
+        color: #3A4D95;
+    }
+ 
+}
+
+
+
+li.new-btech-comp-list a {
+		margin: 0!important;
+		padding: 0!important;
+	}
+	li.new-btech-comp-list ul {
+		margin: 0!important;
+		padding: 0 !important;
+	}
+	
+	.new-companion-header-button a {
+		margin: 0!important;
+		padding: 0  0 0 47px !important;
+		    height: auto!important;
+	} 
+	.new-companion-header-button ul {
+		margin: 0!important;
+		padding: 0 !important;
+	}

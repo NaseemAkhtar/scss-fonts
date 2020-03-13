@@ -1,0 +1,37 @@
+.searchFrm{
+	.searchRow{
+		@include border-radius(2px);
+		@include box-shadow(0px 2px 2px 0 rgba(188, 188, 188, 0.8));
+		background-color: #fff;
+		border: solid 1px #e5e5e5;
+		height:40px;
+		position:relative;
+		
+		input[type="text"]{
+			height:100%;width:100%;line-height:100%;border:none;color:#333;
+			padding:0 40px 0 10px;
+		}
+		&:after{position:absolute;right:15px;top:50%;font-family: 'careers-icon' !important;content:"\e925";margin-top: -8px;font-size: 1.4rem;color:#ccc;}
+	}
+	@include transition(all ease .5s);
+}
+
+.searchFrm.offCanvas {
+   position:fixed;top:0;left:0;z-index:9;padding:10px;width:100%; background-color: #f2f2f2;
+  @include box-shadow(0px 4px 6px 0 rgba(0, 0, 0, 0.1));opacity: 0;
+    -webkit-transform: translate(0, -60px);
+    transform: translate(0, -60px);
+  .searchRow{ 
+	@include border-radius(4px);
+	@include box-shadow(none); 
+	border:0;
+	&:after{
+		color:$default-btnBG;
+	}
+  }
+  &.fixed{
+	    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}

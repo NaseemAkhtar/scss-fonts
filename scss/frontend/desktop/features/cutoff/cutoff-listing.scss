@@ -1,0 +1,40 @@
+@import "../../include/variables";
+@import "../../include/mixins";  
+@import "../../partial/checkboxRadio";
+@import "../../partial/cardBlk";
+@import "../../partial/breadcrumb"; 
+@import "../../partial/pipeUl";
+@import "../../partial/bannerBlk"; 
+@import "../../partial/pagination";
+@import "../../partial/search"; 
+@import "../../partial/cardList";
+@import "../../partial/form";
+@import "../../partial/sidebarListBlk";  
+@import "../../partial/stickyBottom"; 
+
+
+.knownAs{font-size:1.2rem;color:#999;margin-top:10px;
+	a{color:#999;}
+}
+.closingRank{font-size:1.2rem;margin-top:15px;
+table{border:0;} 
+	tr{border:0;
+		td{	text-align:inherit;padding:0;border:0; 
+			&:not(:first-child){border-left:1px solid #f2f2f2;padding-left:20px;} 
+			&:first-child{width:50px;}
+		}
+		&:not(:first-child){
+			td{padding-top:5px;}
+		}
+	}
+}
+.showResults{margin-top:30px;}
+.cutoff-hidden-field{display:none;}
+
+
+
+
+
+
+
+

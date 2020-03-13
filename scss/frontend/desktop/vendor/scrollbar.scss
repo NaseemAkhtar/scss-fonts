@@ -1,0 +1,95 @@
+.mCustomScrollbar {
+    -ms-touch-action: none;
+    touch-action: none;
+}
+.mCustomScrollBox {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    max-width: 100%;
+    outline: none;
+    direction: ltr;
+}
+.mCSB_inside > .mCSB_container {
+    margin-right: 5px;
+}
+.mCSB_container {
+    overflow: hidden;
+    width: auto;
+    height: auto;
+}
+.mCSB_scrollTools {
+    opacity: 0.75;
+    filter: "alpha(opacity=75)";
+    -ms-filter: "alpha(opacity=75)";
+}
+.mCSB_scrollTools, .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_buttonUp, .mCSB_scrollTools .mCSB_buttonDown, .mCSB_scrollTools .mCSB_buttonLeft, .mCSB_scrollTools .mCSB_buttonRight {
+    -webkit-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+    transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+}
+.mCSB_scrollTools {
+    position: absolute;
+    width: 6px;
+    height: auto;
+    left: auto;
+    top: 5px;
+    right: 0;
+    bottom: 5px;
+}
+.mCSB_scrollTools .mCSB_draggerContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: auto;
+}
+.mCSB_scrollTools .mCSB_dragger {
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    z-index: 1;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color:#666666;
+    filter: "alpha(opacity=75)";
+    -ms-filter: "alpha(opacity=75)";
+}
+.mCSB_scrollTools, .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_buttonUp, .mCSB_scrollTools .mCSB_buttonDown, .mCSB_scrollTools .mCSB_buttonLeft, .mCSB_scrollTools .mCSB_buttonRight {
+    -webkit-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+    transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    position: relative;
+    width: 4px;
+    height: 100%;
+    margin: 0 auto;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    text-align: center;
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: transparent;
+    filter: "alpha(opacity=40)";
+    -ms-filter: "alpha(opacity=40)";
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+    width: 2px;
+    height: 100%;
+    margin: 0 auto;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+	background: #e5e5e5;
+}
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+	.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
+		background-color: #02a569;
+		filter: "alpha(opacity=90)"; -ms-filter: "alpha(opacity=90)"; 
+	}
+/******Fancy Scroll BAr END******/

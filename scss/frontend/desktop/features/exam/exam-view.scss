@@ -1,0 +1,598 @@
+@import "../../include/variables";
+@import "../../include/mixins";
+@import "../../include/buttons";
+@import "../../partial/popup";
+@import "../../partial/pipeUl";
+@import "../../partial/stickyBottom";   
+@import "../../partial/bannerBlk"; 
+@import "../../partial/subNav";
+@import "../../partial/cardBlk";
+@import "../../partial/ebookBlk"; 
+@import "../../partial/starRating"; 
+@import "../../partial/scrollbar";
+@import "../../partial/sidebarListBlk"; 
+@import "../../partial/breadcrumb";
+@import "../../partial/common-carousel"; 
+@import "../../partial/qnaBlk"; 
+.margin-top-30{
+	margin-top: 30px;
+}
+.margin-top-15{
+	margin-top: 15px;
+}
+.contentPart {
+    width: 885px;
+}
+
+.owl-item {
+    float: left;
+}
+ 
+.ebookCarousel{
+	margin-top: 25px;
+}
+.examView {
+	padding: 40px 0;
+}
+
+table tbody tr {
+    border-top: 1px solid $gray-lighter;vertical-align:middle;
+}
+table tbody tr td{
+	border-left: 1px solid $gray-lighter;
+	//word-break: break-all;
+    word-wrap: break-word;
+    max-width: 450px;vertical-align:middle;
+	text-align:left!important;padding-left:10px!important;
+}
+table thead tr th{
+vertical-align:middle;padding-left: 10px;text-align:left;}
+
+table thead tr th:first-child {
+    border-left: none;
+}
+.headingBanner {
+	.btnGroup {
+		text-align: center;
+		margin-top: 5px;
+		.button{
+			margin: 0 10px;
+		}
+	}
+}
+
+.moreContLink {
+    font-size: 12px;
+    line-height: 21px;
+}
+
+.push-right{
+    float: right !important;
+}
+
+.blockSubHeading {
+	font-size: 16px;
+	color: $gray-darker;
+	font-weight: 600;
+	line-height: 21px;
+	margin: 0;
+	margin-top: 20px;
+	margin-bottom: 14px;
+}
+
+
+.divider {
+	border-top: 1px solid $gray-lighter;
+	margin: 24px 0 10px 0px;
+}
+
+.cardBlk{
+	overflow: hidden;
+	 
+}   
+.heightMethod{
+	p{
+		margin-top:0;
+	}
+} 
+.modeStatus {
+	color: $gray;
+	span{
+		color: $gray-darker;
+		
+	}
+}
+
+.arrowNext{
+	&:after{
+		content: '\e933';
+		font-family: 'careers-fonts' !important;
+		float: right;
+		padding-left: 5px;
+		font-size: 9px;	
+		margin-top: 5px;
+	}
+}
+
+.arrowDown{
+	font-size: 12px;
+	float: right;
+	margin-top: 10px;
+	font-family: "Open Sans" !important;
+	&:before{
+		content: '\e932';
+		font-family: 'careers-fonts' !important;
+		float: right;
+		padding-left: 5px;
+		font-size: 9px;	
+		margin-top: 5px;
+	}
+	&.less{
+		&:before{
+			content: '\e934';
+			font-family: 'careers-fonts' !important;
+			float: right;
+			padding-left: 5px;
+			font-size: 9px;	
+			margin-top: 2px;
+		}
+	}
+}
+
+.readMore {
+	text-align: right;
+	margin-top: 5px;
+	a{
+		font-size: 12px;
+	}
+}
+
+.tableRowWithBorder{
+	border: 0;
+	td{
+		border: 0;
+		text-align: left;
+		padding: 20px 0;
+		color: $gray-darker
+	}
+	.pastdate{
+		td{
+			color: $gray;
+		}
+	}
+}
+
+.toggleBtnBox{
+	overflow: hidden;
+    background-color: #ffffff;
+	border: 1px solid $gray-lighter;
+	margin-top: -4px;
+	text-align: right;
+	padding: 11px 15px;
+	.readMoreToggle{
+		margin: 0;
+		float: none;
+	}
+}
+
+
+
+.divHeightToggle{
+	overflow: hidden;
+	//height: 167px;
+}
+.dateTable {
+	.divHeightToggle{
+		overflow: hidden;
+		//height: 240px;
+	}
+	.toggleBtnBox{
+		border: 0;
+		padding: 0;
+		margin-top: 5px;
+	}
+}
+
+
+.grayModal {
+    width: 730px;
+    .subHead {
+        padding: 17px;
+        text-align: center;
+        font-size: 16px;
+        color: $gray;
+        border-bottom: 0px solid $gray-lightest;
+        margin-bottom: 0px;
+    }
+    .closebtn {
+        z-index: 9;
+        top: 17px;
+    }
+}
+
+
+.pagination {
+    text-align: center;
+    li{
+        &:first-child{
+            margin-right: 0;
+        }
+        &:last-child{
+            margin-left: 0;
+        }
+    }
+}
+
+.boxWithBorder {
+    padding: 20px;
+	background-color: #ffffff;
+    border: 1px solid $gray-lightest;
+    @include border-radius(4px);
+	.titleSmall {
+    	font-size: 12px;
+		color: $gray-darker;
+		text-transform: uppercase;
+		margin-bottom: 13px;
+	}
+	.twoColBox {
+		margin: 0 -20px;
+		> div:first-child{
+			  border-right: 1px solid #e5e5e5;
+		}
+		> div {
+			 padding: 0 20px;
+		}
+		.collegeInfo {
+			float: left;
+			width: calc(100% - 160px); 
+			h5 {
+				margin: 0;
+				font-size: 14px;
+				margin-bottom: 3px;
+				color: #333333;
+			}
+			h6 {
+				margin: 0;
+				color: #333333;
+				font-size: 12px;
+				font-weight: normal;
+			}
+		}
+		.button {
+			float: right;
+			margin-top: 5px;
+		}
+	}
+}
+
+
+.toggleList {
+	overflow: hidden;
+    margin-top: 0;
+    margin-bottom: 7px;
+	padding-left: 0px; 
+	li{
+		color: $gray-dark;
+		position: relative;
+		padding-left: 13px;
+		margin-bottom: 6px;
+		&:before{
+			content: '';
+			width: 4px;
+			height: 4px;
+			left: 0;
+			top: 7px;
+			position: absolute;
+			background-color: $gray-dark;
+			@include border-radius(50%);
+		}
+	}
+	&.liHide{
+		height: 75px;
+	}
+}
+
+.videoOuter {
+	text-align: center;
+	margin-top: 30px;
+	iframe{
+		border: 0;
+	}
+}
+
+.ratingOuter{
+	margin: 0 -8px;
+	overflow: hidden;
+	margin-bottom: 25px;
+	.ratingBox {
+		width: 260px;
+		float: left;
+		overflow: hidden;
+		padding: 10px 15px;
+		min-height:136px;
+		background-color: #ffffff;
+		margin: 3px 8px 3px 8px;
+		@include border-radius(4px);
+		@include box-shadow(0 0 6px 0 rgba(102, 102, 102, 0.3));
+		&:last-child{
+			margin-right: 0;
+		}
+		i.careers-thumb-up {
+		margin-right: 5px;
+		margin-top: -5px;
+		display: inline-block;
+			}
+		h5 {
+			font-size: 14px;
+			font-weight: 600;
+			line-height: 21px;
+			color: #333333;
+			margin-top: 0;
+			min-height: 45px;
+			margin-bottom: 7px;
+		}
+		.button{
+			min-width: 118px;
+		}
+		.count {
+			float: right;
+			margin-left: 5px;
+			font-size: 11px;
+			margin-top: 6px;
+		}
+	}
+}
+
+.rating {
+	margin-bottom: 14px;
+	margin-top: 10px;
+}
+
+.generalInformation {
+	.box{
+		&:last-child{
+			width: 100%;
+		}
+		> div {
+			padding: 5px 10px;
+			min-height: 76px;
+			display: table;
+			width: 100%;
+		}
+		.vMiddle{
+			display: table-cell;
+			vertical-align: middle;
+		}
+		.more{
+			font-size: 12px;
+		}
+	}
+}
+
+.scrollBar {
+	height: 182px;
+    .popupHeading {
+        word-break: break-all;
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+}
+
+.numberBox {
+	width: 50%;
+	float: left;
+	margin-bottom: 20px;
+	.city{
+		font-size: 16px;
+		color: $gray-darker;
+		line-height: 21px;
+		font-weight: 600;
+	}
+	.number{
+		font-size: 14px;
+		color: $gray-darker;
+		line-height: 21px;
+	}
+}
+
+.linkBox {
+	margin-bottom: 8px;
+	word-break: break-all;
+	.website {
+        font-size: 14px;
+        font-weight: 600;
+        color: $gray-darker;
+        line-height: 21px;
+    }
+	a{
+		font-size: 14px;
+		line-height: 21px;
+	}
+}
+
+
+.chartOuter {
+	overflow: hidden;
+	.headingContainer {
+		z-index: 9;
+		position: relative;
+	}
+	#chart{
+		margin-top: -50px;
+	}
+}
+
+.dateTable {
+     td:first-child {
+       padding-right: 70px;
+       min-width: 300px;
+	}
+}
+
+
+.imgBlk img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    z-index: 99;
+    position: relative;
+}
+.ratingOuter{
+   .totalDownload{
+     margin-bottom:12px;
+   }
+ i.careers-thumb-up:before {
+    color: #ccc;
+    font-size: 14px;
+}
+ 
+ }
+.ratingBox .countbottomReview {
+    margin-bottom: 12px;
+    min-height: 15px;
+    font-size: 12px;
+    color: #999;
+}
+.ratingBox .dowloads {
+    display: inline-block;
+    vertical-align: middle;
+}
+h2.blockHeading a {
+    color: #333;
+}
+.examCarouselWithoutThumbnail a h5 {
+    min-height: 42px;
+}
+
+.heightMethod .tableTbody td {
+    vertical-align: top;
+	word-break: break-word;
+}
+
+.stickyBottom .button {
+    margin: 0px 5px;
+}
+.headingBanner .btnGroup .button {
+    margin: 0 0px 0px 20px !important; 
+}
+.breadCrumb {
+    margin: 0!important;
+}
+.tableTbody {
+    margin-bottom: 15px;
+}
+.heightBlk em {
+    font-size: 14px;
+    font-style: normal;
+}
+
+.heightMethod p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 21px!important;
+}
+
+.heightMethod ul {
+    padding: 0 0px 0px 20px;
+}
+
+.heightMethod ul li {
+    line-height: 21px;
+    margin-bottom: 5px;
+}
+
+h2.blockHeading a {
+		color: #3A4D95!important;
+}
+h2.blockHeading a {
+		color: #3A4D95!important;
+}
+
+.heightMethod span {
+		font-style: normal;
+		color: #333;
+		font-size: 1.4rem!important;
+		font-family:Open Sans!important;
+
+}
+
+.cardBlk.admsnOpen {
+    margin-top: 0;
+}
+
+.headingBanner.collegeFormHeader{min-height:auto;}
+.counselling-dates{position:relative;}
+.dateBtn{position:absolute;bottom:20px;}
+body.addActive .subNav.fixedNav {top: 40px;}
+.commonHeaderBanner.collegeFormHeader{text-align:center;}
+.commonHeaderBanner.collegeFormHeader h1 {
+    text-align: center;
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    line-height: 45px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 15px
+}
+
+.commonHeaderBanner.collegeFormHeader .btnGroup .button {
+    margin: 0 0 0 20px!important;
+}
+#qna.cardBlk {
+    padding: 30px 20px!important;
+}
+.cardBlk.noAnswer {
+    position: relative;
+    margin: 10px 0px;
+    padding: 0;
+}
+#qna.cardBlk .viewAllBtn{margin-bottom:30px;}
+
+.readMoreLinkBox .arrowDown:before{margin-top:2px;}
+
+.admsnBdyIframeBlk {
+    background-color: #fff;
+    margin-top: 20px;
+    padding-top: 17px;
+}
+.admsnBdyIframeBlk iframe {
+    height: 360px;
+    border: none;
+    width: 420px;
+}
+.toolBox .darkHeading{
+    font-weight:700;
+}
+.cardBlk.actionBox.upToDate {
+    background: transparent;
+	text-align: center;
+}
+.cardBlk.actionBox.upToDate .cardBlkInn {
+    display: inline-block;
+	background:#fff;
+    border:1px solid #eee;
+}
+.cardBlk.actionBox.upToDate .vmid{ 
+    margin: 6px 0;
+    line-height: 30px; 
+}
+.cardBlk.actionBox.upToDate .vmid .display-inlineBlock {
+    width: auto;
+    float: left;
+    vertical-align: middle;
+    margin-top: 5px;
+    color: #fff;
+    padding: 0 16px;
+}
+.cardBlk.actionBox.upToDate .vmid .blockHeading {
+    font-size: 1.6rem;
+    color: #333;
+}
+.examView * img, .examView:not(.textAd) img, .examView:not(.storyApplyForm) img {text-align: center;
+ margin: 0 auto;display: block;}

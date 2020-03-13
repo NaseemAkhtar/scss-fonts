@@ -1,0 +1,260 @@
+@import "../../include/variables";
+@import "../../include/mixins";
+@import "../../include/buttons";
+@import "../../partial/popup";
+@import "../../partial/pipeUl";
+@import "../../partial/bannerBlk";  
+@import "../../partial/checkboxRadio"; 
+@import "../../partial/pagination";
+@import "../../partial/tags";
+@import "../../partial/breadcrumb";     
+
+
+.examListing{ 
+    padding: 40px 0;
+}
+.qnaBlk p sapn {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 19px;
+    color: #666666;
+}
+.sidebarBox{
+    
+    background-color: #ffffff;
+    padding: 15px;
+    .sortFilter{
+        border-bottom: 1px solid $gray-lighter;
+        margin: -15px -15px 0;
+        padding: 10px 14px;
+        font-size: 16px;
+        color: $gray-darker;
+        font-weight: 600;
+        .clearAll{
+            font-size: 14px;
+            font-weight: normal;
+            color: $brand-primary;
+            float: right;
+        }
+    }
+    .filterBox{
+        margin-top: 30px;
+        &:first-child{
+            margin-top: 0;
+        }
+        h4{
+            font-size: 14px;
+            color: $gray-darker;
+            margin: 12px 0 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            .clearExamLabel{
+                    font-size: 14px;
+                text-transform: none;
+                    font-weight: normal;
+                    color: $gray;
+                    float: right;
+            }
+        }
+		    h3{
+            font-size: 14px;
+            color: $gray-darker;
+            margin: 12px 0 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            .clearExamLabel{
+                    font-size: 14px;
+                text-transform: none;
+                    font-weight: normal;
+                    color: $gray;
+                    float: right;
+            }
+        }
+        .box {
+            margin-bottom: 11px;
+        }
+        label{
+            font-size: 14px !important;
+            font-weight: normal !important;
+        }
+    }
+}
+
+.titleBox {
+    padding: 15px;
+    border-bottom: 3px solid $gray-lighter;
+    background-color: #ffffff;
+    @include border-radius(4px);
+    h3{
+        color: $gray-darker;
+        margin: 0 0 10px;
+        line-height: 15px;
+    }
+    p{
+        color: $gray;
+        font-size: 12px;
+        margin: 0;
+        line-height: 14px;
+    }
+}
+
+.cart{
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #ffffff;
+	&first-child{margin-top:10px}
+    @include border-radius(4px);
+    .row{
+        margin: 0;
+    }
+    .thumb{
+		width: 50px;
+		height: 50px;
+		@include border-radius(2px);
+		line-height: 40px;
+		float: left;
+		position: relative;
+		margin-right: 18px;
+		img{width:100%;@include border-radius(3px);height:100%; font-size: 12px;line-height: 12px; text-align: center;} 
+			&:after{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				border: 1px solid #e5e5e5;
+				top: 0;
+				left: 0;
+				content: "";
+				@include border-radius(2px); z-index: 99;
+				}
+	
+		}
+    .examDetail{
+        float: left;
+        width: calc(100% - 70px);
+        .titleDate{
+            width: calc(100% - 200px);
+            float: left;
+            h5{
+                font-size: 16px;
+                line-height: 28px;
+                margin: 0;
+				margin-top: -7px;
+                margin-bottom: 6px;
+            }
+			h2{
+                font-size: 16px;
+                line-height: 28px;
+                margin: 0;
+				margin-top: -7px;
+                margin-bottom: 6px;
+            }
+            p{
+                font-size: 12px;
+                line-height: 16px;
+                font-weight: normal;
+                color: $gray-darker;
+                margin: 6px 0 0px;
+                span{
+                    color: $gray;
+                }
+            }
+        }
+        .buttonBox{
+            width: 150px;
+            float: right;
+            .button{
+                padding: 0 7px;
+                &:first-child{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .useFullLink{
+		padding: 15px 15px 0;
+		margin: 15px -15px -10px;
+        border-top: 1px solid $gray-lighter;
+        span{
+            display: inline-block;
+            margin-right: 5px;
+            font-size: 12px;
+            color: $gray;
+            line-height: 30px;
+        }
+        .tagbox {
+            display: inline-block;
+            width: 765px;
+            width: calc(100% - 80px);
+            vertical-align: top;
+        }
+        a{
+			font-size: 12px;
+			margin-bottom: 10px;
+			margin-left: 7px;
+			border-radius: 20px;
+        }
+		a:hover{
+          background-color:#f2f2f2;
+        }
+    }
+}
+
+.grayModal {
+    width: 730px;
+    .subHead {
+        padding: 17px;
+        text-align: center;
+        font-size: 16px;
+        color: $gray;
+        border-bottom: 0px solid $gray-lightest;
+        margin-bottom: 0px;
+    }
+    .closebtn {
+        z-index: 9;
+        top: 17px;
+    }
+}
+.headingBanner {
+
+	.btnGroup {
+		text-align: center;
+		margin-top: 20px;
+		.button{
+			margin: 0 5px;
+		}
+	}
+}
+p.showing-text {
+    margin-top: -2px;
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 0;
+}
+
+.push-right .cart:first-child {
+    margin-top: 10px!important;
+}
+
+.sidebarPart.stick {
+   position: fixed;
+   width: 325px;
+   margin-top: 30px;
+}
+
+.contentPart.fixr-side {
+   margin-left: 25%;
+}
+
+.hasHeader{
+    @include transform(translate(0, 50px));
+    @include transition(transform ease .5s);
+}
+
+.sidebarBox .sortFilter {
+    border-bottom: 1px solid #e5e5e5;
+    margin: -15px -15px 0;
+    padding: 10px 14px;
+    font-size: 16px;
+    color: #333333;
+    font-weight: 600;
+}

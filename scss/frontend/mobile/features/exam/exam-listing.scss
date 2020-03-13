@@ -1,0 +1,288 @@
+@import "../../includes/mixins"; 
+@import "../../includes/variables";
+@import "../../includes/button";
+@import "../../partials/components/listBlk";
+@import "../../partials/components/checkboxRadio"; 
+@import "../../partials/components/popup";
+@import "../../partials/components/cardBlk";
+@import "../../partials/components/stickyBottom";
+@import "../../partials/components/stickySubNav";
+@import "../../partials/components/fixedScrollCard"; 
+@import "../../partials/components/cardList";
+@import "../../partials/components/tags"; 
+.cardBlkInn{
+   .blockHeading {
+       margin-bottom: 15px; 
+    }
+}
+
+.examList{
+     .tag{
+	 border: 1px solid $gray-lightest;
+    @include border-radius(20px);
+    font-size:1.2rem;
+    margin-right:0px;
+   } 
+}
+
+#question-data-section {
+    .twoColumnQnA {
+        .clearAll {
+            margin-bottom: 0px;
+        }
+        .readMoreLinkBox {
+            margin-top: 10px;
+        }
+    }
+}                  
+      
+.examList{
+    .scroll {
+		margin-right: -10px;
+		padding: 0px 10px;
+		margin-left: -10px;
+		margin-top: 10px;
+		border-top: 1px solid $gray-lighter;
+		padding-top: 15px;
+	}
+}
+.examArtiList.examList{
+  .cardBlkInn{margin-top:0;}
+  }
+	  
+.pagination {
+    width: 155px;
+    margin: 40px auto 10px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid $gray-lightest;
+    a{
+        float: left;
+        width: 40px;
+        height: 36px;
+        padding: 5px;
+        &.prev:before{
+            content: "";
+            width: 8px;
+            height: 8px;
+            margin-top: 9px;
+            border-top: 1px solid $default-btnBG;
+            border-right: 1px solid $default-btnBG;
+            display: inline-block;
+            transform: rotate(-135deg);
+        }
+        &.next:before{
+            content: "";
+            width: 8px;
+            height: 8px;
+            margin-top: 9px;
+            border-top: 1px solid $default-btnBG;
+            border-right: 1px solid $default-btnBG;
+            display: inline-block;
+            transform: rotate(45deg);
+        }
+        &.disabled:before{
+            border-top: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+        }
+    }
+    span{
+        width: 73px;
+        height: 35px;
+        padding-top: 9px;
+        float: left;
+        border-left: 1px solid $gray-lightest;
+        border-right: 1px solid $gray-lightest;
+        color: $gray-darker;
+    }
+}
+
+
+
+.cardOuter{
+    .card{
+        padding: 10px 15px;
+        border-bottom: 1px solid $gray-lightest;
+        &:last-child{
+            border: 0;
+        }
+    }
+    .headingFirst{
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+    .headingSecound{
+        font-size: 12px;
+        color: $gray;
+        margin-bottom: 10px;
+        span{
+            color: $gray-darker;
+        }
+    }
+    
+    .brochureSent{
+        font-size: 12px;
+        color: #02A569;
+        display: block;
+        margin-top: 1px;
+    }
+}
+.blueSticky{
+ a{ color: #fff;
+    font-size: 14px;}
+}
+
+.sortFilterOuter{
+    background-color: #ffffff; 
+    .head{
+        color: $gray-darker;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 15px;
+        border-bottom: 1px solid $gray-lightest;
+        .clearAll{
+            color: $gray;
+            font-size: 12px;
+            float: right;
+            font-weight: normal;
+        }
+    }
+    .sortFilterBox{
+        height: calc(100% - 100px);
+        .tabs{
+            width: 120px;
+            height: 100%;
+            float: left;
+            border-right: 1px solid $gray-lighter;
+            background-color: $gray-lightest;
+            h3{margin:0;padding:0;
+			 font-weight:normal;}
+			a{
+                display: block;
+                font-size: 14px;
+                color: $gray-dark;
+                padding: 12px 15px;
+                position: relative;
+                border-bottom: 1px solid #e7e7e7;
+                .checkedNum{
+                    color: #02a569;
+                    font-size: 12px;
+                }
+                &.active{
+                    background-color: #ffffff;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        width: 3px;
+                        height: 100%;
+                        left: 0;
+                        top: 0;
+                        background-color: #02a569;
+                    }
+                }
+            }
+        }
+        .radioCheckbox{
+            width: calc(100% - 121px);
+            height: 100%;
+            float: left;
+            padding: 0 15px;
+            .tabCatagory{
+                display: none;
+                &:first-child{
+                    display: block;
+                }
+            }
+            .box{
+                padding: 13px 0;
+                border-bottom: 1px solid $gray-lighter;
+            }
+        }
+    }
+    .cancelApply{
+        a {
+            float: left;
+            text-align: center;
+            padding: 14px;
+            color: $gray-lightest;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .cancel {
+            width: 120px;
+            background-color: $gray-dark;
+        }
+        .apply {
+            width: calc(100% - 121px);
+            background-color: $brand-primary;
+        }
+    }
+}
+
+
+.moreContLink{
+	display: block;
+	text-align: right;
+}
+
+
+.examList {
+   .cardBlkInn {
+     margin-top: 10px;
+    }
+}
+
+.examList {
+	.btnBlk{
+	  margin-top:10px;
+        .button {
+            &:first-child{
+                margin-right: 10px;
+            }
+             &:last-child{
+                
+            }
+        }
+	 }
+ }
+
+
+.titleDateBox{
+	float: left;
+	width: 50%;
+	.subTitle{
+		font-size: 12px;
+		color: $gray;
+		line-height: 19px;
+	}
+	.examDate{
+		font-size: 14px;
+		color: $gray-darker;
+		line-height: 21px;
+	}
+}
+
+.examList {
+    .baseHeading {
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+  }
+
+
+.grayModal {
+    .headerPopup{
+        padding: 15px 30px 15px 20px;
+    }
+    .subHead{
+        font-size: 14px;
+        padding: 14px 18px 14px;
+        text-align: center;
+        color: $gray;
+        margin-bottom: 0;
+    }
+}
+.stickyBottom .button, .topBannerSection .button{margin-left:10px;}
+

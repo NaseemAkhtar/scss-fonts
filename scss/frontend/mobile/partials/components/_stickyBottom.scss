@@ -1,0 +1,54 @@
+.stickyBottom{
+        .btn-small{min-width: 150px !important;}
+        &.loginSticky{
+            .btn-small{min-width: 100px !important;}
+        }
+		background-color:#fff;
+		padding:10px;
+		@include box-shadow(0px -4px 6px 0 rgba(0, 0, 0, 0.3));
+		position:fixed;
+		bottom:0;
+		left:0;
+		width:100%;
+		z-index:9;
+		@include transition(all ease .5s);
+		.stickyCol{display:inline-block; vertical-align: top;
+			&:not(:first-child){margin-left:20px;}
+		}
+		.button{vertical-align:middle;
+			&.compareFilter{color:#ccc;}
+		}
+		.blockRow{
+			.button{width:100%;}
+		}
+	&.stickyNotify{
+		background-color:#666;
+		padding:15px 30px 15px 15px;
+		font-size:1.4rem;
+		font-weight:600;
+		line-height:21px;
+		color:#fff; 
+	}
+	.cross{position:absolute;top:15px;right:15px;color:#fff;}
+	.applyBTn {margin-left:20px;}
+}
+.blueSticky{
+		background-color:$brand-primary; padding:0;
+		.button{color:#fff;font-weight:600;display: block; padding: 10px;  height: auto;
+			&:not(:first-child){border-left:1px solid;@include border-radius(0);}
+		}
+	}
+.hasOffset{opacity: 0;
+    @include transform(translate(0, 80px));}	
+.stickyOffset{
+	opacity: 0;
+    @include transform(translate(0, 80px));
+	}	
+.stickyFixed{
+	opacity: 1;
+    @include transform(translate(0, 0)); 
+	}
+	
+
+	
+	

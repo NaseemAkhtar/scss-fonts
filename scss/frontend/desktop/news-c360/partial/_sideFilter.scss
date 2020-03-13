@@ -1,0 +1,19 @@
+.sidebar{background-color:#fff;@include border-radius(4px);
+	.headingContainer{position:relative;} 
+}
+.filterBlks{padding:0 15px 15px;
+	.filterBlk{position:relative;
+		.filterHeading{display:block;text-transform:uppercase;color:#333;position:relative;font-size:1.4rem;}
+		.clearAll{right:0;color:#ccc;}
+		.control{
+			display:block;
+			&:not(:first-child){margin-top:11px;}
+		}
+		&:not(:first-child){margin-top:30px;}
+		.moreFilter{margin-top:10px;}
+		.controlIndicator{top:0;margin-top:3px;}
+	}
+}
+.clearAll{position:absolute;top:50%;right:10px;margin-top:-10px;}
+
+

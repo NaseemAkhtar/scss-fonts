@@ -1,0 +1,1454 @@
+@import "../../include/variables";
+@import "../../include/mixins";
+@import "../../partial/cardBlk";
+@import "../../partial/circleBlk";
+@import "../../partial/bannerBlk"; 
+@import "../../partial/tags";  
+@import "../../partial/popup";
+@import "../../partial/breadcrumb";  
+@import "../../partial/checkboxRadio"; 
+@import "../../partial/paginationLatest"; 
+
+.sectionLayout .container {
+    width: 1020px;
+}
+.grayBg {
+    background-color: #ebedf4;
+}
+.sectionLayout .container .contentPart {
+    width: 720px;
+}
+.sidebarPart {
+    width: 290px;
+    float: left;
+}
+.sectionLayout{padding-top:10px;padding-bottom:30px;}
+.main-container {
+    background-color: #ebedf4;
+}
+.commonSection {
+    padding: 0 10px;
+    background: #ebedf4;
+    padding-bottom: 10px;
+}
+.whiteBg{
+    background-color: #ffffff;
+}
+
+.cardBlkInn {
+    margin-bottom: 20px;
+    position:relative;
+    background:#fff;
+    padding:10px;
+    border-radius:8px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
+     -moz-box-shadow:   0 5px 8px 0 rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.cardBlkInn:first-child {
+    margin-top: 0px;
+    position:relative;
+}
+
+
+.universityRanking {
+    margin-bottom: 40px;
+}
+
+.breadCrumb{
+    position: relative;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+p {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 0;
+    color: #666666;
+}
+
+.topBlk{
+    padding: 20px 0 27px;
+    height:130px;
+}
+.banner-content{
+    h1{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    p{
+        font-size: 12px;
+        color: #ffffff;
+        margin: 10px 0 0;
+    }
+}
+
+.margin-top-35 {
+    margin-top: 35px;
+}
+
+.breadCrumb {
+    margin-bottom: 20px;
+}
+
+.tags {
+    .active{
+        background-color: $gray-lightest;
+    }
+}
+
+.blockHeading {
+    font-size: 16px!important;
+}
+
+.showCollege {
+    font-size: 11px;
+    color: #999999;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.schoolList {
+   color:#000;
+   .schoolPoint{
+    ul {margin:0; padding:0;list-style:none;
+       li{margin:0 0px 5px 0px;padding:0;font-size:14px;line-height:1.5em;color:#333;
+        .rate{color:#02a569;}
+         i{
+            color: #999;
+            display: inline-block;
+            vertical-align: top;
+            margin: 3px 0px;
+            }
+         .details{
+               display: inline-block;
+                max-width: 90%;
+                vertical-align: top;
+                margin-left: 7px;
+                margin-right:7px;
+           }
+        }
+     }
+   } 
+    .featuredTag{
+            width: 25px;
+            font-size: 9px;
+            text-align: center;
+            color: #333333;
+            background-color: #e5e5e5;
+            margin-bottom: 10px;
+            padding: 0px;
+            position: absolute;
+            line-height: 16px;
+            right: 20px;
+            height: 25px;
+            top: 0;
+            i{
+              color: #fff;
+              font-size: 16px;
+              padding: 4px 0px;
+              vertical-align: middle;
+              display: block;
+              }
+        }
+    
+    .headingBox {
+            overflow: hidden;
+            display: inline-block;
+            padding: 5px 0px 5px 0px;
+            width: 100%;
+        h3 {
+            float: left;
+            font-size:16px;
+            padding-right:100px;
+        }
+            }
+        .imageBlock {
+            position: relative;
+            margin: 20px 0px 0px 0px;
+            min-height: 50px;
+        .school-Img {
+                width: 50px;
+                border-radius: 5px;
+                overflow: hidden;
+                padding: 5px;
+                display: inline-block;
+                background: #fff;
+                border: 1px solid #ccc;
+                line-height: 0px;
+                vertical-align: middle;
+                position: absolute;
+            }            
+        .type{
+            display: inline-block;
+            vertical-align: middle;
+            margin: 30px 0px 0px 4px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+     
+
+    
+    .blockHeading{
+        color: #3a4d95;
+        margin-bottom: 5px;
+    }
+    
+
+    
+    .onlineFormBlk {
+        margin-top: 10px;
+        color: #d64936;
+        border-top: 1px solid #e2e4ef;
+        padding: 10px 0px 0px 0px;
+        vertical-align: middle;
+        font-size: 12px;
+        font-weight: 600;
+     i{ display: inline-block;
+        vertical-align: middle;
+        margin: 0 10px 0px 0px;
+        }
+    }
+}
+
+.compareBox, .qnaBox {
+    border: 1px solid $gray-lighter;
+    padding: 11px 15px 13px 15px;
+    margin-bottom: 25px;
+    @include border-radius(4px);
+    h4 {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0;
+        margin-bottom: 5px;
+        color: $brand-primary;
+    }
+    .text {
+        display: inline-block;
+        width: calc(100% - 75px);
+        color: $gray-darker;
+        margin-right: 20px;
+        a{
+            font-size: 12px;
+            font-weight: 600;
+            i{
+                font-size: 8px;
+                font-weight: bold;
+            }
+        }
+    }
+    .icon {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 5px;
+        width: 50px;
+    }
+    &.qnaBox {
+        h4, a{
+            color: $brand-secondary;
+        }
+    }
+}
+
+
+.sortFilter {
+    background-color: $brand-primary;
+    @include box-shadow (0px -4px 6px 0 rgba(0, 0, 0, 0.3));
+    position: fixed;
+    bottom: -55px;
+    left: 0;
+    width: 100%;
+    @include transition(bottom ease-in-out 0.3s);
+    &.showSortFilter{
+        bottom: 0;
+        @include transition(bottom ease-in-out 0.3s);
+    }
+    a{
+        display: block;
+        padding: 16px;
+        font-size: 14px;
+        color: #ffffff;
+    }
+}
+
+.sortFilterOuter{
+   
+    .head{
+        color: $gray-darker;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 15px;
+    box-shadow: 0px 0px 10px 0px #666;
+    position: relative;
+    z-index: 99;
+        .clearAll{
+            color: $gray;
+            font-size: 12px;
+            float: right;
+            font-weight: normal;
+        }
+    }
+    .sortFilterBox{
+        height: calc(100% - 50px);
+        position: relative;
+        padding-bottom: 50px;
+        .tabs{
+            width: 125px;
+            height: 100%;
+            overflow-y: scroll;
+            float: left;
+            border-right: 1px solid $gray-lighter;
+            background-color: $gray-lightest;
+            a{
+                display: block;
+                font-size: 14px;
+                color: $gray-dark;
+                padding: 12px 15px;
+                position: relative;
+                border-bottom: 1px solid #e7e7e7;
+                .checkedNum{
+                    color: #02a569;
+                    font-size: 12px;
+                }
+                &.active{
+                    background-color: #ffffff;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        width: 3px;
+                        height: 100%;
+                        left: 0;
+                        top: 0;
+                        background-color: #02a569;
+                    }
+                }
+            }
+        }
+        .radioCheckbox{
+            width: calc(100% - 126px);
+            height: 100%;
+            float: left;
+            padding: 0 15px;
+            .tabCatagory{
+                display: none;
+                height: 100%;
+                overflow-y: scroll;
+                &:first-child{
+                    display: block;
+                }
+            }
+            .box{
+                padding: 13px 0;
+                border-bottom: 1px solid $gray-lighter;
+            }
+        }
+    }
+    .cancelApply{
+        position: absolute;
+        bottom: 0;
+        z-index: 9;
+        width: 100%;
+        left:0;
+        a {
+            float: left;
+            text-align: center;
+            padding: 14px;
+            color: $gray-lightest;
+            font-size: 16px;
+            font-weight: 600;
+            height:52px;
+             color:#fff;           
+        }
+        .cancel {
+            width: 125px;
+            background-color: #999; 
+            
+        }
+        .apply {
+            width: calc(100% - 126px);
+            background-color: $brand-primary;
+            height: 52px;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+        }
+    }
+}
+#compare_college {
+    .footerPopup{
+        bottom: -20px;
+    }
+    .outer {
+        padding: 20px 15px;
+        .errorMsg {
+            font-size: 12px;
+            line-height: 21px;
+            margin: -6px 0 12px;
+            color: $default-btnBG;
+        }
+    }
+    .box {
+        overflow: hidden;
+        border-bottom: 1px solid $gray-lighter;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        &:last-child {
+            border-bottom: 0;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        > div {
+            width: calc(100% - 30px);
+            font-size: 14px;
+            font-weight: 600;
+            color: $gray-dark;
+            line-height: 21px;
+            float: left;
+        }
+        .delete {
+            float: right;
+        }
+    }
+    
+    .conpareNow {
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+.description {
+     padding: 30px 0 35px;
+    background: #ffffff;
+    text-align: center;
+    h5 {
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 600;
+        line-height: 29px;
+        margin-top: 0;
+        color: $gray-darker;
+    }
+    .content {
+        line-height: 25px;
+        margin-bottom: 30px;
+        &:last-child {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border-bottom: 0;
+        }
+    }
+    p{
+        margin: 0;
+        font-size: 12px;
+        line-height: 25px;
+        color: $gray-darker;
+    }
+}
+
+.schoolList-header{  
+    background: url(../static/images/frontend/desktop/school-listBG.png);
+    background-position: center bottom;
+    background-repeat: repeat-x;
+   
+   }
+.button.btn-lineBlue {border: 1px solid #3A4D95;
+    color: #3A4D95;
+    background: transparent;
+    padding: 3px;
+    min-width: 100px;
+    height: 100%;
+    line-height: 2em;}
+
+ 
+.button.btn-lineBlue i{
+    font-size: 10px;
+    margin: 2px 0px;color: #3A4D95;}
+    
+.feature-SchoolBlock {
+     h4 {
+        font-size: 14px;
+        font-weight: 500;
+        padding: 0;
+        margin: 0 0px 10px 0px;
+        line-height: 1.5em;
+    }
+
+}
+.text {
+    max-width: 190px;
+    line-height: 2em;
+}
+
+.feature-SchoolBlock {
+    background-image: url(../static/images/frontend/mobile/featureSchool.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    padding: 13px 20px;
+}
+
+.sortFilterOuter {
+    background: #fffbf7;
+    padding:0;
+       .head{background:#fff;}
+    }
+
+
+.sliderBlock {
+    min-height: 30px;
+    position:relative;
+}
+.filters {
+    padding: 15px;
+    height: 100%;
+    margin-right: 5px;
+}
+.ui-slider-range {
+    background: #02a569;
+    padding: 1px;
+    width: 100%;
+    display: block;
+    position: relative;
+    height: 5px;
+}
+
+.ui-slider-handle {
+    background: #02a569;
+    height: 20px;
+    padding: 2px;
+    position: absolute;
+    right: 0;
+    top: -8px;
+    width: 20px;
+    border-radius: 50%;
+    margin-left: -.6em;
+    box-shadow: 0px 5px 15px 0 rgba(2, 165, 105, 0.3);
+}
+
+.ui-slider-handle:focus {
+    outline: none;
+}
+.ui-widget-header {
+    border: 1px solid #dddddd;
+    background: #e9e9e9;
+    color: #333333;
+    font-weight: bold;
+}
+#slider-range-min {
+    width: 93%;
+    background: #ccc;
+    height: 2px;
+    position: relative;
+    float: left;
+    padding:0;
+    margin: 25px 10px 10px 10px;
+}
+.filters{
+       h5 {
+        font-size: 14px;
+        font-weight: 500;
+        color: #000;
+    }
+}
+
+.sliderBlock .inputValue input {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ccc;max-width: 100px;width:auto;color:#02A569;font-size:14px;font-weight:bold;
+}
+
+.sliderBlock #id_fees_min{float:left;}
+.sliderBlock #id_fees_max{float:right;}
+.filterLists ul{padding:0; margin:0;}
+.filterLists ul li input[type=checkbox] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+
+.filters input[type=text]{
+    border-radius:4px; 
+    border:1px solid #ccc;
+    padding:8px;width:100%;
+}
+
+.tabCatagory {
+    margin-bottom: 20px;
+}
+
+.filterCheckbox {
+    text-align: center;
+}
+
+.filterLists label:after {
+    position: absolute;
+    display: none;
+    content: '';
+}
+
+
+.filterCheckbox {
+   input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+}
+
+.filterCheckbox{
+    label{
+        font-size: 14px;
+        color: #000;}
+    }
+
+
+.differentFilter li {
+    background: transparent;
+    text-align: center;
+    margin-right:10px;
+    min-width:90px;
+    border:1px solid transparent;
+}
+
+.differentFilter li .addImage {
+    display: block;
+}
+   
+
+
+.differentFilter ul li.checkActive {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: transparent;
+    color: #333;
+}
+.differentFilter ul li.checkActive:after{
+            content: '\e96e'; 
+            height:20px;width:20px;
+            font-family:'careers-icon';
+            color:#02a569;
+            position:absolute;
+            top:0;
+            font-size:16px;
+            right:0;
+}
+
+    
+    
+h6.filter-Subheading {
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+}
+
+
+span.annual {
+    font-size: 12px;
+    color: #999;
+}
+
+
+.feeTitle, .feeAmout {
+    display: inline-block;
+}
+
+input#amount {
+    width: 58px;
+    float: right;
+    border: none;
+    background: transparent;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    border-radius: 0;
+    color: #02a569;
+    font-weight: bold;
+    padding: 0px 0px 5px 0px;
+}
+
+
+.tabCatagory.secondType-filter {
+    .filterIndicator {
+        background: transparent;
+        text-align: center;
+        min-width: 95px;
+        border-radius: 8px;
+        opacity: 0.6;
+        color: #3a4d95;
+        border-color:#b2bce1;
+    }
+
+
+}
+
+.tabCatagory.secondType-filter{
+    .filterIndicator  {
+        .bg_img{
+                text-align: center;
+                display: block;
+        } 
+    }
+}
+.tabCatagory.secondType-filter .filterCheckbox input:checked ~ .filterIndicator{background-color:#ebedf4;opacity: 1;}
+
+
+.tabCatagory.thirdType-filter .filterIndicator:before {
+    background-color: #ebedf4;
+    color: #fff;
+    display: block;
+    content: '';
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+.tabCatagory.thirdType-filter .filterIndicator {
+    position: relative;padding-left:35px;
+}
+
+.tabCatagory.thirdType-filter .filterIndicator:after {
+    color: #333;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 6px;
+    font-size: 11px;
+}
+.tabCatagory.thirdType-filter .filterCheckbox.item1 .filterIndicator:after{content:'EN';}
+.tabCatagory.thirdType-filter .filterCheckbox.item2 .filterIndicator:after{content:'HI';}
+.tabCatagory.thirdType-filter .filterCheckbox.item3 .filterIndicator:after{content:'SA';}
+
+.tabCatagory.thirdType-filter .filterCheckbox input:checked ~ .filterIndicator:before{background:#3a4d95;}
+.tabCatagory.thirdType-filter .filterCheckbox input:checked ~ .filterIndicator:after{color:#fff;}
+
+
+span.clickTO, span.clickTO2, span.clickTO3{
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    margin-left: 5px;
+    background: #fff;
+    border-radius: 20px;
+    opacity: 0.7;
+    white-space: nowrap;
+    margin: 5px 4px;
+    display: inline-block;
+}
+
+.filterLists .row:first-child {
+    padding-bottom: 20px;
+}
+.filterLists .row {
+    padding-top: 20px;
+}
+
+.loc-block {
+    position: relative;
+}
+.loc-block a {
+    color: #96a3d6;
+}
+
+
+.loc-icon .careers-near-location:before {
+    color: #3A4D95;
+}
+
+.loc-icon i.careers-near-location {
+    margin-top: -2px;
+    display: inline-block;
+}
+
+.loc-icon {
+    color: #96a3d6;
+    border-radius: 4px;
+    text-align: center;
+    display: block;
+    line-height: 25px;
+    position: relative;
+    padding: 4px;
+    font-size: 13px;
+    border: 1px solid #96a3d6;
+    background: #ebedf7;
+}
+
+.loc-icon:hover {
+  background: #02a569;
+  border-color: #02a569;}
+
+
+.loc-icon:hover a, .loc-icon:hover i:before {
+  color: #fff; }
+
+
+
+.loc-block  input[type=text]{padding: 8px 10px 8px 30px!important;}
+
+.loc-block:before {content: "\e900";position: absolute;left: 8px;display: block;font-family: careers-fonts;font-size: 14px;color: #999;top: 8px;}
+
+span.type {
+     position: absolute;
+    top: 0px;
+    right: 15px;
+    color: #00796b;
+    background: #e0f2f1;
+    padding: 4px 5px;
+    border-radius: 4px;
+    font-size: 10px;
+}
+
+span.simpleText {
+    font-weight: 500;
+    color: #666;
+}
+
+.calenderIcon, .footerText {
+    display: inline-block;vertical-align:top;line-height:20px;
+}
+
+.footerText {max-width: 90%;}
+
+.cloudTag{ overflow: hidden;
+    span {
+        font-size: 11px;
+        line-height: 24px;
+        color: $gray-dark;
+        background-color: #ffffff;
+        margin-right: 10px;
+		margin-top: 6px;
+        margin-bottom: 6px;
+        border-radius: 20px;
+        padding: 3px 8px 3px 10px;
+        float: left;
+        a{
+            width: 17px;
+            height: 17px;
+            display: inline-block;
+            position: relative;
+            top: 4px;
+            float: right;
+            margin-left: 10px;
+            background-color: $gray;
+            @include border-radius(50%);
+            @include transform(rotate(45deg));
+            &:before{
+                content: '';
+                width: 7px;
+                height: 1px;
+                position: absolute;
+                background: #ffffff;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+
+            &:after{
+                content: '';
+                width: 1px;
+                height: 7px;
+                position: absolute;
+                background: #ffffff;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+    }
+    .clearAll{
+        color: $gray-dark;
+        float: left;
+        font-size: 11px;
+        line-height: 28px;
+        margin-left: 5px;
+        &:hover{
+            color: $gray;
+        }
+    }
+}
+
+
+.filterStateINNER {
+    white-space: nowrap;
+    overflow: auto;
+    min-height: 50px;
+    padding: 0px 20px 30px 0px;
+}
+
+.outerfilterState {
+    margin: 0px -10px;
+    overflow: hidden;
+    height:60px;
+}
+
+.filterBY {
+    color: #366ed8;
+    
+}
+
+.filterBG {
+    background-image: url(../static/images/frontend/mobile/filterBG.svg);
+    background-color: #cad9f5;
+    background-size: cover;
+} 
+
+
+
+.clickTO a, .clickTO2 a, .clickTO3 a {
+    color: #999;
+}
+
+.filterBG .filterLists ul li.checkActive {
+    background: #366ed8;
+    color: #fff;
+}
+.schoolNear{color:#f8a805;margin-left:5px;}
+
+.row.filterBox {
+    background: #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #e4e0e0;
+    border-radius: 10px;
+}
+
+.headingContainer{
+    margin: 25px 0px 0px 0px;
+    }
+
+
+
+.filterLists ul li label{position: relative;
+    padding-left: 30px;}
+
+.filterLists ul li label:before {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: absolute;
+    left: 4px;
+    top: 2px;
+}
+.filterLists ul li{margin-bottom:10px;}
+.filterLists ul li.checkActive label:before {
+    background: #02a569;    border: 1px solid #02a569;
+}
+
+.filterLists ul li.checkActive label:after {
+    top: 3px;
+    left: 9px;
+    width: 5px;
+    height: 10px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    content: '';
+    display: block;
+    background: #02a569;
+}
+.paraText{color:#fff;}
+
+
+
+
+
+
+
+
+
+
+.filters {
+    .heading {
+        font-size: 16px;
+        margin: 0px;
+        color: $gray-darker;
+        font-weight: 600;
+    }
+
+    .subHeading {
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-top: 20px;
+        color: $gray-darker;
+        font-weight: 600;
+    }
+}
+
+.filterBlk {
+    position: relative;
+    margin-bottom: 25px;
+    &:before, &:after{
+        content: '';
+        clear: both;
+        display: table;
+    }
+    .filterHeading {
+        display: block;
+        margin-bottom: 15px;
+        margin-top: 0;
+        text-transform: uppercase;
+        color: $gray-darker;
+        position: relative;
+        font-size: 1.4rem;
+    }
+    label {
+        position: relative;
+        display: block;
+        font-size: 12px;
+        color: $gray-dark;
+        margin-bottom: 13px;
+        padding-left: 22px;
+        cursor: pointer;
+		text-transform: capitalize;
+        .controlIndicator{
+            background-color: #ffffff;
+			top: 1px;
+			margin-top: 0;
+        }
+    }
+    .showMore {
+        display: block;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .toggleBtn {
+        text-align: center;
+        display: inline-block;
+        position: relative;
+        &.active{
+            &:before{
+                content: '';
+                width: 12px;
+                height: 12px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 24px;
+                margin: 0 auto;
+                background: #00a669;
+                @include border-radius(50%);
+            }
+
+            &:after{
+                content: '';
+                width: 3px;
+                height: 6px;
+                border-bottom: 1px solid #ffffff;
+                border-right: 1px solid #ffffff;
+                position: absolute;
+                top: 2px;
+                right: 0;
+                left: 24px;
+                margin: 0 auto;
+                @include transform(rotate(45deg));
+            }
+        }
+        &:first-child{
+            margin-right: 40px;
+        }
+        span{
+            display: block;
+            color: $gray-dark;
+            font-size: 12px;
+            line-height: 12px;
+        }
+    }
+}
+
+.sortingOuter {
+    overflow: hidden;
+    margin-bottom:15px;
+     .showResult {
+        font-size: 14px;
+        color: $gray;
+        float: left;
+    }
+     .sortBy {
+        font-size: 14px;
+        color: $gray;
+        float: right;
+        span{
+            float: left;
+            font-size: 14px;
+            margin-right: 0px;
+        }
+        form{
+            float: left;
+            border: 0;
+            select{ 
+                border:none;
+                background-color: transparent;
+                font-size: 14px;
+                padding: 0px 2px;
+                color: $gray-darker;
+                @include border-radius(4px); 
+				position: relative;
+				top: -1px;
+            }
+        }
+    }
+
+
+}
+
+.filters {
+    #slider-range{
+        background: #ddd;
+        border: 0;
+        height: 4px;
+        margin-bottom: 8px;
+        padding: 0;
+    }
+    .ui-widget-header{
+        background: $brand-secondary;
+    }
+    .ui-slider-handle {
+        width: 12px;
+        height: 12px;
+        outline: none;
+        background: $brand-secondary;
+        @include border-radius(50%);
+    }
+   #amountFrom{
+    background: transparent;
+    width: 50%;
+    float: left;
+    font-size: 12px;
+    }
+    #amountTo{
+        background: transparent;
+        width: 50%;
+        float: left;
+        text-align: right;
+        font-size: 12px;
+    }
+}
+
+a.filterLink {
+    z-index: 1;
+    position: relative;
+}
+
+.searchItem {
+    .search {
+        position: relative;
+        border: 1px solid $gray-lighter;
+        padding: 8px 10px;
+        @include border-radius(4px);
+        input {
+            border: 0;
+            width: calc(100% - 30px);
+        }
+    }
+    .careers-search-icon{
+        float: right;
+        position: inherit;
+        margin-right: 19px;
+        margin-top: -18px;
+        &:before{
+            color: #cccccc;
+        }
+    }
+
+    .itemSelector {
+        margin-top: 20px;
+        overflow: hidden;
+        height: 210px;
+        label{
+            display: block;
+            margin-bottom: 10px;
+            .title{
+                color: $gray-darker;
+            }
+            span{
+                color: #ccc;
+            }
+        }
+    }
+    
+    .submitBox{
+        text-align: right;
+        border-top: 1px solid $gray-lightest;
+        padding: 10px 20px;
+        margin: 0 -20px;
+        .btn-blue{
+            background-color: #3a4d95;
+            color: #ffffff;
+        }
+        .clearAll {
+            margin-top: 5px;
+            margin-right: 40px;
+        }
+    }
+}
+
+
+.differentFilter .control {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 0px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid transparent; }
+
+.differentFilter .control input {
+  width: 10px; }
+
+.differentFilter .control.checkActive {
+  border: 1px solid #e5e5e5; }
+
+.filterGender.differentFilter .control{max-width: 80px;}
+.differentFilter .addImage img {
+    width: 35px;
+}
+
+.filterGender.differentFilter .control:nth-child(odd) {
+    margin: 5px 5px 0px 0px;
+}
+
+.differentFilter .control:odd{}  
+  
+.differentFilter .control {
+    display: inline-block;
+    max-width: 125px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin: 5px 5px 0px 0px;
+    vertical-align: top;
+}
+.differentFilter .control:nth-child(even) {
+    margin-right: 0;
+}
+.differentFilter .control:last-child{margin: 5px 0px 0px 0px!important;}  
+
+.filterSchoolType .control {
+    padding: 10px 0px;
+}  
+
+.filterResidentialStatus.differentFilter .control{min-height:100px;}
+  
+#schoolTypecheck {
+  margin: 0; }
+
+.differentFilter .control:hover input ~ .controlIndicator,
+.differentFilter .control input:focus ~ .controlIndicator {
+  border: none; }
+
+.differentFilter .addImage {
+  display: block; }
+
+.filterSchoolType.differentFilter{clear: both; overflow: hidden;} 
+  
+.differentFilter .controlIndicator {
+  border: none;
+  position: absolute;
+  width:100%;
+  background-color: transparent !important; }
+
+.differentFilter .control input:checked ~ .controlIndicator:after {
+  display: block;
+  content: '\e947';
+  height: 20px;
+  width: 20px;
+  font-family: 'careers-fonts';
+  color: #02a569;
+  position: absolute;
+  top: 1%;
+  font-size: 16px;
+  right: 1%;
+  transform: rotate(0deg);
+  left: unset; }
+
+.differentFilter .control input:checked ~ .controlIndicator {
+  background-color: tranparent;
+  border: none; }
+
+.differentFilter .control:hover input:not([disabled]):checked ~ .controlIndicator,
+.differentFilter .control input:checked:focus ~ .differentFilter .controlIndicator {
+  background-color: transparent;
+  border: none; }
+
+.filterFees .sliderBlock input[type=text]{border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;}
+    
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -.4em;
+    margin-left: -.6em;
+    box-shadow:none;
+}
+
+.ui-slider-horizontal .ui-slider-range{top:-1px;}
+span.lightText {
+    color: #9999;
+    font-size: 13px;
+}
+
+
+span.loc-icon input {
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    left:0;
+    height: 100%;
+    top:0;
+}
+
+.loc-icon.locationActive {background: #02a569;color:#fff;border-color: #02a569;}
+.loc-icon.locationActive a{color:#fff;cursor:pointer;} 
+.loc-icon.locationActive i:before{color:#fff;}
+
+
+.sliderBlock .sliderValue {
+    border: 0;
+    background-image: url(../../../../../images/schoolRupee-symbol.svg);
+    background-repeat: no-repeat;
+    background-size: 9px!important;
+    padding-left: 12px!important;
+    background-position: left;
+}
+
+
+.graphSlider li {
+    height: 100%;
+    width: 10px;
+    display: inline-block;
+    position: relative;
+}
+.graphSlider ul{height:100%;}
+
+.graphSlider li span{
+    width: 10px;
+    display: inline-block;
+    background: #dff5d9;
+    position: absolute;
+    bottom: 0;
+}
+
+.graphSlider {
+    height: 30px;
+    position: absolute;
+    top: -19px;
+}
+
+.filterFees.differentFilter {
+    clear: both;
+    display: block;
+    overflow: hidden;
+}
+
+.filterResidentialStatus.differentFilter .control {
+    display: inline-block;
+    min-height: 95px;
+}
+
+.topSchoolBlock{
+    margin-bottom:20px;
+    padding-bottom:10px;
+    border-bottom:1px solid #eee;
+}
+
+.container.topSchoolBlock{width:1210px;}
+
+.headingBanner p {display: inline-block;}
+.headingBanner .small-text {font-size: 14px;font-weight: normal;display: inline-block;}
+.headingBanner{padding: 20px 0 25px;}
+.topSchoolBlock h3{font-size:20px;color:#333;}
+
+.topSchoolBlock * {
+    font-size: 14px;
+    line-height: 25px;
+    font-family: "Open Sans", Verdana, "sans-serif"!important;
+    color:#333;
+}
+
+.topSchoolBlock a.readMore.nxtpageLink {
+    color: #3A4D95;font-weight:600;
+}
+
+.schoolPoint{width: calc(100% - 180px);
+    float: left;
+    padding: 0 10px;}
+    
+.imageBlock{width: 180px;
+    float: left;
+    padding: 0px;}
+    
+    
+.schoolCon {
+    width: 100%;
+    overflow: hidden;
+}
+ 
+.imageBlock img {
+    border-radius: 8px;
+    display: block;
+} 
+
+.schoolPoint.noGalleryImage {
+    width: 100%;
+}
+
+.schoolPoint.noGalleryImage .headingBox h3 {padding-right: 120px;}
+
+.imageBlock:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0px;
+    border-radius: 10px;
+    bottom: 0;
+    background: #000;
+    opacity: .3;
+}
+
+.imageBlock a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    z-index: 99;
+    padding: 40px 0px;
+}
+
+#id_location_error {
+    color: #f34848;
+    text-align: left;
+    margin: 0px 0px;
+    padding: 3px 0px;
+    border-radius: 4px;
+}  

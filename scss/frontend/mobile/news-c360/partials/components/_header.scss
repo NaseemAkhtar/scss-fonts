@@ -1,0 +1,89 @@
+.c360-header{
+	background: #1f2e67;
+    background: -moz-linear-gradient(left, #1f2e67 0%, #3a4d95 100%); 
+    background: -webkit-linear-gradient(left, #1f2e67 0%, #3a4d95 100%);
+    background: linear-gradient(to right, #1f2e67 0%, #3a4d95 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2e67', endColorstr='#3a4d95',GradientType=1 );
+	@include transition(all 0.5s);
+	height:45px;
+	padding:15px 0;
+	position:fixed;
+	width:100%;
+	z-index:9999;
+	top:0;  
+	&.off-canvas { opacity: 0;
+    -webkit-transform: translate(0,-60px);
+    transform: translate(0,-60px);}
+	&.fixed { opacity: 1;
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);}
+	}
+
+.headerBtn{position:absolute;right:15px;top: 50%;
+    margin-top: -8px;}	
+.c360-logo{width:111px;margin: 1px auto 0;
+	a{display:block;height:13px;}
+}
+
+.search-icon{
+@include inline-block;vertical-align:middle;
+	i{color:#fff;font-size:14px;} 
+} 
+
+.main-nav {
+    display: none;
+}
+
+.c360-header.c360-headerAdd{top:60px;position:relative;}
+
+.popContainer {
+   width: 100%;
+    position: absolute;
+    top: 0;
+    height: 50px;
+    text-align: center;margin:0;
+    padding: 5px 0;display:none;background-color:#fff;z-index:10000;
+}
+.popContainer.stick{display:block;}
+.main-container.main-container-headerAdd { 
+    margin-top: 60px!important;
+}
+.navbar.navbarAdd{top:60px;}
+
+a.addCross {
+    position: absolute; 
+    right: 1px;
+    background: #666;
+    padding: 1px;
+    width: 17px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 9px;
+    height: 17px;
+    line-height: 16px;
+}
+.popContainercontent h1 {
+    font-size: 13px !important;
+    margin: 0;
+    line-height: normal !important;
+    font-weight: 300 !important;
+}
+.popButton {
+    padding-right: 5px !important;
+    vertical-align: bottom !important;
+    width: 28%;
+    display: inline-block;
+    text-align: right;
+    float: left;
+    padding-top: 5px;
+}	
+.popButton a {
+    background-color: #ce362e !important;
+    font-weight: 500 !important;
+    color: #fff;
+    padding: 5px 7px !important;
+    display: inline-block;
+    border-radius: 8px !important;
+    font-size: 12px !important;
+    box-shadow: 0 2px 5px #444 !important;
+}

@@ -1,0 +1,276 @@
+@import "../../include/variables";
+@import "../../include/mixins";
+@import "../../partial/checkboxRadio";
+@import "../../partial/cardBlk";
+@import "../../partial/circleBlk";
+@import "../../partial/tags";
+@import "../../partial/compare";
+@import "../../partial/popup";
+@import "../../partial/breadcrumb";
+@import "../../partial/pipeUl";
+@import "../../partial/bannerBlk";
+@import "../../partial/subNav";
+@import "../../partial/stickyBottom";
+@import "../../partial/qnaBlk";
+@import "../../partial/sidebarListBlk";
+@import "../../partial/review";
+
+.collegeFormHeader {
+    min-height: 131px!important;
+	}
+ 
+p {
+    margin: 0 0 10px 0!important;
+}
+.disclaimer {
+	    color: #888888!important;
+    margin-top: 10px!important;
+}
+
+.placement .collegeFormHeader {
+    height: inherit;
+}
+.progressbar {
+      background-color: #ebedf7;
+      border-radius: 13px;
+      padding: 0px;
+	  margin: 0 30px 0 0;
+	  position:relative;
+	  top:5px;
+    }
+  .progressbar span {
+    position: absolute;
+    right: -36px;
+    top: -5px;
+}
+.row.progressbarDiv {
+    min-height: 30px;
+	margin-top:10px;
+	color: #333;
+}
+.collegeDetail .detail .location i {
+    font-size: 14px;
+    position: relative;
+    top: 1px;
+}
+.cardBlkInn.quickgoogleMap h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+.cardBlkInn.quickgoogleMap .map h5 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+	z-index: 99;
+	  -ms-transform: rotate(270deg); /* IE 9 */
+  -webkit-transform: rotate(270deg); /* Safari 3-8 */
+  transform: rotate(270deg);
+  top: 50%;
+  left: -20px;
+}
+.progressbar > div {
+       background-color: #455cb1;
+       height: 8px;
+       border-radius: 10px;
+    }
+.tabsDomainContent .active{
+        display: block;
+    }
+.tabsDomainContent .hide{
+        display: none;
+    }
+
+.tabsDomainContent ul{
+        padding: 0px;
+        list-style: none;
+		    position: relative;
+		display: inline-block;
+		margin-bottom:0;
+    }
+ul.no-click:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.collegeDetail .detail h3 {
+    font-size: 14px;
+	font-weight:500;
+    color: #fff;
+}
+.collegeDetail .detail h3 a.collegeLink {
+    color: #fff;
+    font-size: 12px;
+}
+.tabsDomainContent ul li{
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 0;
+		a{  height: 39px;
+			border-radius: 20px;
+			border: solid 1px #cccccc;
+			background-color: #ffffff;
+			padding: 8px 20px;
+			    text-transform: capitalize;
+			  color: #999999;
+		}
+    }
+ .domainDiv .title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0 0 0;
+	color:#333333;
+}
+
+.contentDiv {
+    border-bottom: solid 1px #e5e5e5;
+    padding: 15px 0;
+}
+
+ 
+.tabsDomainContent .list{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+}
+.tabsDomainContent .activelink{
+        color:#4f66bb;
+		background: #f3f4fa;
+border: solid 1px #4f66bb;
+}
+.progressBarOuter{
+	        position: relative;
+    display: inline-block;
+    width: 100%;
+	float: left;
+}
+.progressBarOuter span.leftSpan {
+    position: absolute;
+top: 3px;
+    margin-left: -86px;
+    font-size: 12px;
+	    font-weight: 600;
+}
+.insightContent {
+    border-radius: 8px;
+    background-color: #ebedf7;
+    padding: 15px;
+	h5 {
+		margin: 0;
+		padding: 0 0 5px 0;
+		font-weight: 600;
+		font-size: 12px;
+		color: #333;
+	}
+
+	ul {
+		margin: 0;
+	   li{
+
+		}
+	}
+}
+p.headingcol {
+    font-size: 14px;
+    padding: 0 70px 0 12px;
+}
+.cardBlkInn.quickgoogleMap h4 {
+    color: #333;
+}
+.progressBarOuter span.rightSpan {
+margin: 0 0 0 9px;
+    float: none;
+    position: absolute;
+    background: no-repeat;
+    right: -32px;
+    top: 3px;
+    width: auto;
+    font-size: 12px;
+}
+.progressBarOuter span {
+    display: inline-block;
+    float: left;
+}
+.progressBarOuter div:before{
+border-left: solid 1px #ccc;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    left: 0;
+}
+.progressBarOuter div {
+    display: block;
+    float: left;
+    position: relative;
+    padding: 9px 0 0 0;
+    height: 25px;
+    margin-top: 0;
+    margin-left: -33px;
+}
+.cardBlk > .headingContainer {
+    padding-left: 0!important;
+}
+.col-sm-12.map h4 {
+    font-weight: 600;
+    font-size: 16px;
+}
+div#placements .heightHidden h2 {
+    font-size: 18px; 
+}
+div#placements .heightHidden h3 {
+    font-size: 16px; 
+}
+div#placements .heightHidden h4 {
+    font-size: 14px;
+}
+div#placements .heightHidden h4,div#placements .heightHidden h3,div#placements .heightHidden h2 { 
+    margin: 15px 0 10px 0!important;
+    padding: 0;
+}
+
+.progressBarOuter div span {
+    background: #ccc;
+	width: 100%;
+	-webkit-border-top-right-radius:10px;
+-webkit-border-bottom-right-radius: 10px;
+-moz-border-radius-topright: 10px;
+-moz-border-radius-bottomright: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+.boxHeight {
+    max-height: 500px;
+}
+.cardBlk.checkBlk.download-section {
+    padding: 15px;
+    text-align: center;
+	min-height:100%!important;
+}
+.cardBlk.checkBlk.download-section span {
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 16px;
+    color: #333333;
+    font-weight: 600;
+    padding: 4px 12px;
+}
+.cardBlk.checkBlk.download-section a {
+    vertical-align: middle;
+}
+.progressBarOuter div span.color1 {
+    background: #6FB98F;
+    height: 5px;
+}
+.progressBarOuter div span.color2 {
+    background: #4F66BB;
+    height: 5px;
+} 
+.insightContent ul li {
+    margin: 0 0 5px;
+}

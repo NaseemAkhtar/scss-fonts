@@ -1,0 +1,119 @@
+.boxesLayout {
+	margin: 0 -8px;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+	.box {
+		width: 33.33%;
+		float: left;
+		padding: 0 8px;
+		text-align: center;
+		margin-top: 20px;
+		min-height:102px;
+		> div {
+            width: 100%;
+            height: 100%;
+            display: table;
+			padding: 15px;
+			border: 1px solid $gray-lighter;
+			@include border-radius(4px);
+            .vMiddle {
+                display: table-cell;
+                vertical-align:  middle;
+            }
+		}
+		.headingfirst {
+			color: $gray-dark;
+			font-size: 14px;
+			line-height: 25px;
+		}
+		.headingSecound {
+			color: $gray-darker;
+			font-size: 14px;
+			font-weight: 600;
+			line-height: 25px;
+		}
+	}
+}
+
+.boxWithShadow{
+	margin: 0 -8px;
+	overflow: hidden;
+	padding: 4px 0;
+    .owl-item {
+        position: relative;
+    }
+	.box{
+		width: 33.33%;
+        height: 100%;
+		float: left;
+		padding: 0 5px;
+		h5{
+			height: 48px;
+			font-size: 16px;
+			line-height: 24px;
+			margin: 0 0px 10px 0px;
+			overflow: hidden;
+			color: $gray-darker;
+            a{font-size:16px;color: #333;}
+		
+		}
+		p{
+			font-size: 12px;
+			color: #333333;
+			line-height: 19px;
+			margin-top: 0;
+			margin-bottom: 20px;
+			min-height: 40px;
+		}
+		> div {
+            height: 100%;
+            position: relative;
+			min-width: 260px;
+			padding: 15px;
+			overflow: hidden;
+			@include border-radius(4px);
+			@include box-shadow(0 0 6px 0 rgba(102, 102, 102, 0.3));
+		}
+		.pushLeft{
+			float: left;
+			font-size: 12px;
+			color: $gray;
+		}
+		.pushRight{
+			float: right;
+        }
+        .push-right{
+            right: 10px;
+        }
+		a.readMore{
+			font-size: 12px;color: #3A4D95!important;
+		}
+	}
+    
+    &.boxWithShadow.owl-carousel{
+        overflow: initial;
+		margin:0;
+        .owl-item {
+            margin: 5px 0;
+            .box a{
+                margin-top: 0;
+            }
+        }
+        .box {
+            width: 100%;
+            float: left;
+        }
+        .owl-nav .owl-prev, .owl-nav .owl-next{
+            margin-top: -40px !important;
+        }
+    }
+}
+
+.moreArticle-block{
+   overflow:hidden;
+}

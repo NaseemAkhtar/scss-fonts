@@ -1,0 +1,60 @@
+.qnaBlk{border: solid 1px #e5e5e5;padding:15px 20px;
+	.blockHeading{margin:0;border-bottom:1px solid #f2f2f2;margin-bottom:15px;padding-bottom:10px;
+		a{color:#333;}
+	}
+	.leftBlk { width: 60px;
+		.imgBlk{width:40px;height:40px;background-color:#e5e5e5;@include border-radius(50%);line-height:25px;text-align:center;
+			i{font-size:25px;line-height:40px;}
+		}
+		img {
+			@include border-radius(50%); 
+			width: 40px; 
+			height: 40px;
+			display:block;
+		}
+	}
+	.rightBlk{
+		.qDate{color:#999;font-size:1.2rem;} 
+	}
+	.qnaTxt{margin-top:15px;}
+	&:not(:first-child){margin-top:20px;}
+	.candName a{color:#666;}
+}
+
+.askWidget{
+	a{display:block;color:#333;padding:0 15px;}
+	padding:0 !important;height:60px;line-height:60px;margin-top:20px;@include box-shadow(0 0 5px #e5e5e5);
+	strong{display:inline-block;vertical-align:middle;font-size:1.6rem;color:#666;} 
+	.button{vertical-align:middle;margin-top:15px;margin-left:15px ; } 
+}
+
+
+.hoverPop {
+    position: absolute;
+	@include transition(transform 0.2s);
+	@include transform(scale(0));
+    font-size: 1.2rem;
+    transform-origin: top left;
+    text-align: left;
+    top: 0;
+    left: 0;
+    margin-top: -25px;
+    margin-left: -15px;
+    z-index: 9;
+	@include box-shadow(0 0 6px 0 rgba(78, 78, 78, 0.14));
+    width: 282px;
+	@include border-radius(4px);
+    padding: 20px 15px;
+    background-color: #fff;
+}
+
+
+.imgBlk:hover .hoverPop {
+   @include transform(scale(1));
+}
+
+.askWidget.single-strip {
+    @include border-radius(4px);
+}
+
+

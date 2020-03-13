@@ -1,0 +1,35 @@
+.post.post-thumb {
+	.post-body {
+		position: absolute;
+		margin: 0;
+		padding: 0 20px;
+		z-index: 20;
+		bottom: 0;
+		background-color: transparent;
+		width: 100%;
+		P{
+					padding: 0;
+					color:#fff;
+					margin:5px 0 10px 0;
+					    font-weight: 400;
+					a{
+						padding:0 15px 0 0;
+						color:#fff;
+					}
+					span{
+						padding:0 0 0 15px;
+					}
+					
+				}
+	}
+	.post-meta li {
+		color: #fff;
+		display: inline-block; 
+		font-size: 12px;
+		text-transform: uppercase;
+		a {
+			color: #fff;
+			font-weight: 700;
+		}
+	}
+}

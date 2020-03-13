@@ -1,0 +1,75 @@
+.vertical-menu a {
+    color: #333;
+    display: block;
+    margin: 5px 0;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .3s ease;
+    background: #ffffff;
+	font-size:20px;
+}
+
+.vertical-menu a:hover {
+  background: none repeat scroll 0 0 #a3a3a3;
+    color: #fff;
+}
+.careers_life {
+    background: linear-gradient(to right,rgba(31,46,103,1) 0%,rgba(58,77,149,1) 100%)!important;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+    min-height: 200px;
+}
+.right_content {
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+p.cnt_head {
+    border-bottom: 1px solid #f1f1f1;
+    color: #00466c;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 35px;
+}
+.list_groupitem h4 {
+    font-size: 25px;
+    margin: 5px 0 8px;
+    color: #0a506c;
+    line-height: 1.5em;
+}
+.list_groupitem p {
+    font-size: 17px;
+	color: #333;
+}
+.list_groupitem{
+border-bottom: 1px solid #f1f1f1;
+padding: 5px 15px;
+}
+.list_groupitem a {
+    color: #3b5998;
+    font-weight: 600;
+}
+.main_contact {
+    padding-top: 70px;
+}
+     .vertical-menu.sticky_menu {
+    position: fixed;
+    width: 20%;
+    top: 0;
+    transition: .5s ease-in-out;
+}
+.careers_life h1 {
+    font-size: 50px;
+    font-weight: 400;
+}
+.careers_life p {
+    font-size: 20px;
+}
+a.active_control{
+    background: none repeat scroll 0 0 #a3a3a3;
+    color: #fff;
+	}

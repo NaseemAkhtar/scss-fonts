@@ -1,0 +1,214 @@
+@import "../../includes/mixins"; 
+@import "../../includes/variables";
+@import "../../vendor/owlcarousel";
+@import "../../partials/components/popup";
+.topBlk{ 
+	background: #1f2e67;
+    background: -moz-linear-gradient(left, #1f2e67 0%, #3a4d95 100%);
+    background: -webkit-linear-gradient(left, #1f2e67 0%, #3a4d95 100%);
+    background: linear-gradient(to right, #1f2e67 0%, #3a4d95 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2e67', endColorstr='#3a4d95',GradientType=1 );
+	
+	color:#fff;
+}
+
+.banner-content {
+.blockHeading{color:#fff;font-size:2.4rem;}
+p{color:#fff;font-size:1.2rem;}
+}
+
+.marginT20.imagesMagazine img {
+    max-width: 150px;
+}
+.labeltag{color:#fff; background-color: #41508a;width: 118px;
+    height: 29px;
+    display: inline-block;
+    padding-top: 4px;
+ position:relative;}
+  
+.labeltag .left:before{
+position:absolute;content:"";width: 0; height: 0; 
+  border-bottom: 14px solid transparent;
+    border-right: 10px solid #41508a;
+    left: -10px;
+    top: 0;}
+  
+.labeltag .left:after{position:absolute;content:"";width: 0; height: 0; 
+  border-top: 14px solid transparent;
+    border-right: 10px solid #41508a;
+    left: -10px;
+    bottom: 0; }
+	
+.labeltag .right:before{
+position:absolute;content:"";width: 0; height: 0; 
+  border-bottom: 14px solid transparent;
+    border-left: 10px solid #41508a;
+    right: -9px;
+    top: 0;}
+  
+.labeltag .right:after{position:absolute;content:"";width: 0; height: 0; 
+  border-top: 14px solid transparent;
+    border-left: 10px solid #41508a;
+    right: -9px;
+    bottom: 0; }	
+
+//radio
+$color1: #f4f4f4;
+$color2: #02a569;
+.radioBlk {
+  background-color:#fff;
+  border:1px solid $gray-light; 
+  @include border-radius(5px);
+  box-shadow:1px 1px 1px #ccc;
+  margin:4px 0;
+  text-align:center;
+  .offerBlk {
+			strong {
+			FONT-SIZE: 18PX;
+		}
+  }
+  
+  input[type="radio"] {
+    display:none;
+    + label {display:block;padding:20px;
+	.radio-label {
+      &:before {
+        content: '';
+        background: $color1;
+        border-radius: 100%;
+        border: 1px solid darken($color1, 25%);
+        display: inline-block;
+        width: 1.4em;
+        height: 1.4em;
+        position: relative;
+        margin-right: 10px; 
+		margin-top:3px;
+        vertical-align: top;
+        cursor: pointer;
+        text-align: center;
+        transition: all 250ms ease;
+      }
+    }
+	}
+    &:checked {
+      + label{
+	  .radio-label {
+        &:before {
+          background-color: $color1;
+          box-shadow: inset 0 0 0 5px $color2;
+        }
+      }
+	  }
+    }
+    &:focus {
+      + .radio-label {
+        &:before {
+          outline: none;
+          border-color: $color2;
+        }
+      }
+    }
+    + .radio-label {
+      &:empty {
+        &:before {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  
+  /*label{    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;}*/
+}
+
+//
+.offerBlk{display:inline-block; color:$gray-darker; text-align:left;}
+.offerBtm{font-size:1.8rem;}
+
+.offerBottom .text-link{color: $gray-dark;}
+.price{color:$gray-darker;font-size:1.6rem;margin-bottom:8px;} 
+
+.price i {
+    font-size: 14px;
+}
+//almanacs
+.almanacBlk{background-color:#fff;padding:22px 25px;margin-top:15px;}
+.almanacLeft{width: 160px;padding-right:10px; padding-top:0px;}
+.almanacLeft img{width: 140px;}
+.almanacRight .titleHeading {
+    margin-top: 0;
+    font-size: 16px;
+    height: 42px;
+    overflow: hidden;
+	color:#333;
+	    font-weight: 600;
+		margin-bottom:5px;
+}
+.almanacRight .titleHeading a{color:$gray-darker;}
+
+//archive
+.archive-carousel .box{background-color:#fff;@include box-shadow(0 0 5.4px 0.6px rgba(0, 0, 0, 0.06));padding:15px; margin:5px 0;border:1px solid #e5e5e5;@include border-radius(5px);}
+.archive-carousel img{width:112px;}
+
+//media
+.mediaBox{margin-top:15px;padding-top:15px;border-top:1px solid #f7f7f7;}
+.mediaBox.borderNone {
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.archive-carousel .box a {
+    color: #666;
+}
+
+.almanacRight.display-cell p {
+    height: 88px;
+    overflow: hidden;
+    line-height: 1.5em;
+    font-size: 12px;
+}
+.button.btn-100 {
+    min-width: 100px;
+}
+#subscribebtn{
+    margin: 0;
+    font-weight: 300;
+    padding: 10px 30px;
+    height: auto;
+    font-size: 18px;
+}
+#offer-subs .offerBlk i.c360-rupees {
+    font-size: 15px;
+}
+#offer-subs .owl-dots {
+    visibility: hidden;
+}
+.marginT20.description {
+    list-style: none; 
+}
+.description ul {
+    list-style:none;
+	margin:0;
+	padding:0; 
+}
+.bannerContent.text-center {
+    margin-top: 30px;
+}
+.mag-block {
+    display: inline-block;
+    margin-right: 20px;
+    width: 90px;
+    vertical-align: top;
+}
+
+.mag-block:last-child {
+    margin-right: 0;
+}
+
+.offerBottom {
+    margin-top: 20px;
+}

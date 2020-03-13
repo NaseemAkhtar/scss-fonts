@@ -1,0 +1,56 @@
+.panel-heading.cHeading {
+    background: #428bca;
+    padding: 1px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    color: #fff;
+}
+.main-container{
+	background: transparent;
+}
+.panel-heading.cHeading .panel-title {
+    font-weight: 500;
+    font-size: 24px;
+    margin: 8px;
+}
+
+ul.contacts_page.list-group {
+    list-style: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.disclaimer_page span, .disclaimer_page strong,.disclaimer_page p,.disclaimer_page ul li {
+    font-size: 14px;
+	color:#333;
+}
+.main_mterm {
+    border: 1px solid #428bca;
+    margin-top: 20px;
+	margin-bottom:30px;
+}
+.disclaimer_page {
+    padding: 10px;
+}
+.disclaimer_page h5 {
+    font-size: 17px;
+    margin: 4px 0px;
+    font-weight: 500;
+}
+ul.comment_policy_page {
+    padding-left: 3px;
+    list-style: none;
+}
+.c_policy p strong {
+    font-weight: 800;
+}
+.hiring_blk h2 {
+    font-weight: 600;
+    font-size: 18px;
+}
+.hrinfo-box{
+font-size:14px;
+color: #333;
+margin-top: 20px;
+}

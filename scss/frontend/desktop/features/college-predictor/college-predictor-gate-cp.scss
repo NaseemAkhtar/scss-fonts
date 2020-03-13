@@ -1,0 +1,70 @@
+@import "../../include/variables";
+.subNav .top-menu li a.red {
+    border-bottom: 3px solid #e56c5b;
+}
+
+.subNav .top-menu{
+    text-align: center;
+}
+
+.subNav .top-menu li a{
+    min-width: 152px;
+}
+
+.changeCounselling {
+    padding: 10px 0;
+    background: $gray-lighter;
+    text-align: center;
+    span{
+        font-size: 14px;
+        display: inline-block;
+        margin-right: 20px;
+        color: $gray;
+    }
+    form{
+        display: inline-block;
+        select{
+            border: 1px solid #ccc;
+            width: 250px;
+            height: 40px;
+            padding: 8px 5px;
+            border-radius: 4px;
+        }
+    }
+}
+
+.cardListOuter {
+    .heading {
+        margin-bottom: 10px;
+        a{
+            font-size: 16px;
+            line-height: 21px;
+            color: #000;
+            font-weight: 600;
+        }
+    }
+    
+    .rated{
+        font-size: 11px;
+        overflow: hidden;
+        .year{
+            float: left;
+            margin-top: 7px;
+        }
+        span{
+            color: $gray;
+            font-size: 11px;
+            font-weight: normal;
+        }
+        color: #000;
+        .button{
+            float: right;
+            padding: 0 10px;
+            border-color: #ccc;
+        }
+    }
+}
+.carouselOuter{
+    border-bottom: 0;
+    margin-bottom: -16px;
+}

@@ -1,0 +1,214 @@
+@import "../../includes/mixins"; 
+@import "../../includes/variables";
+@import "../../includes/button";
+@import "../../vendor/owlcarousel";
+@import "../../partials/components/listBlk";
+@import "../../partials/components/cardBlk";
+@import "../../partials/components/popup";
+@import "../../partials/components/tags";
+@import "../../partials/components/checkboxRadio";
+@import "../../partials/components/breadcrumb";
+@import "../../partials/components/pagination";
+@import "../../partials/components/form";
+
+.blockHeading .blockHeading{display: inline;}
+.banner-content{
+	p{color:#fff;font-size:1.2rem;
+		a{color:#fff;text-decoration:underline;}
+	}
+}
+.breadCrumbOuter{width:100%;float: left;
+    .breadCrumb{position: relative;}
+    }
+.rankingFilter{
+	background-color: #fff;
+    display: flex;
+    z-index: 1; 
+    border-bottom: 1px solid #ccc;
+    height: 41px;
+    margin:0; @include transition(all ease .2s); 
+	.selectFilter{
+        webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1; min-width: 25%;
+         &:not(:first-child){
+             .SumoSelect > .CaptionCont{
+                border-left:1px solid #ccc;
+             }
+        } 
+	}
+    .SumoSelect > .optWrapper > .options li label a{color:#666;}
+    .SumoSelect > .CaptionCont{@include border-radius(0);border:none;width:100%;}
+    select{
+        padding: 0;
+        margin: 0;
+        border: 0;
+        opacity: 0; 
+        display: none;
+    }
+    .SumoSelect > .CaptionCont > label{width:25px;}
+	.SumoSelect>.optWrapper.isFloating>.options li.opt {padding:13px 6px;}
+    .SumoSelect > .optWrapper li.optHidden{display: none;}
+    .SelectBox{padding:0 6px;}
+    .SumoSelect > .CaptionCont > span{padding-right:15px;max-width: 80px;}
+    .SumoSelect > .CaptionCont > span a{color:#666;}
+    .fullScreenForm.active .SumoSelect{z-index: 9999 !important;}
+    
+    &.sumoActive{height: 100%;
+    top: 0 !important;
+    left: 0;
+    z-index: 9999;}
+    
+    .SumoSelect.open {
+        padding-top:50px;
+        > .optWrapper{margin:90px auto;padding-bottom: 105px;}
+    }
+}
+.sumoCross{position: absolute;
+    right: 0;
+    top: 0;
+    padding:10px;
+    font-size: 16px;}
+.rankingFilter { 
+    width: 100%;
+    z-index: 9;
+    
+     &.off-canvas {
+        opacity: 0;
+        @include transform(translate(0, -110px));
+    }
+    &.fixed {
+        opacity: 1;background-color: rgba(255, 255, 255, .5);
+        @include transform(translate(0, 0));
+        position: fixed;top:45px;
+        @include box-shadow(0 0 10px 2px #f2f2f2);   
+    }
+}
+
+.table-stripped{
+	thead{
+		tr{background-color:#f8f8f8;}
+	}
+	tr{background-color:#fff;
+		&:nth-child(2n+2){background-color:#f8f8f8;}
+		th, td{padding:15px 5px;}
+		td{border-left:0;}
+	}
+	
+}
+
+.lineUl{padding:0;
+	li{display:inline-block;font-size:1.1rem;line-height:10px;
+		&:not(:first-child){border-left:1px solid; padding-left:6px;margin-left:3px;}
+		span{font-size:1.2rem;}
+	}
+}
+
+.rankingTable{
+	.collegeLink{font-size:1.4rem;font-weight: 600;}
+	.rank{color:#00a651;font-size:2.2rem;font-weight:600;}
+    th{border:none;}
+	.college{font-size:1rem;color:#999;line-height: 10px;display: inline-block;}
+	td:first-child{width:76px;}
+	.controlIndicator{background-color:#fff;}
+	.controlCheckbox{font-size:1.4rem;margin-left:30px;}
+}
+
+.tagCloud{width:100%;float:left; margin-bottom:20px;
+	.cloudTag{background-color:#fff;font-size:1.1rem; padding: 5px 10px; padding-right: 30px;
+        position: relative;@include border-radius(30px);
+        display: inline-block;margin-top: 10px;
+        &:not(:last-child){margin-right:10px;}
+    }
+	.fcross{  
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left:0;
+        i{ text-align: center;font-size: 7px;
+            font-weight: bold;
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            right: 5px; color: #fff;
+            background-color: #999;
+            @include border-radius(50%);
+            margin-top: -9px;
+            top: 50%;
+            line-height: 17px;
+            }
+	}
+}
+
+.sortSelect{
+    span{color:#ccc;}
+    select{border:none;background-color: transparent;padding:0;padding-left: 10px;}
+}
+
+#compare_college .outer {
+    padding: 20px 15px;
+}
+
+#compare_college .outer .errorMsg { 
+    font-size: 12px;
+    line-height: 21px;
+    margin: -6px 0 12px;
+    color: #e56c5b;
+}
+
+#compare_college .box {
+    overflow: hidden;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+#compare_college .box > div {
+    width: calc(100% - 30px);
+    font-size: 14px;
+    font-weight: 600;
+    color: #666666;
+    line-height: 21px;
+    float: left;
+}
+#compare_college .box .delete {
+    float: right;
+}
+#compare_college .conpareNow {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.rankingBtn {
+    .display-cell{width: 100px;}
+    .bind-textBTN{margin-left:0 !important;}
+    .button{min-width: 100px !important;
+        &.btn-primary:first-word{display: none;}
+    }
+}
+
+.tosedPop{position: absolute;
+    width: 145px;
+    background-color: #444;
+    color: #fff;
+    padding: 5px;
+    z-index: 9;
+    font-size: 1rem;
+    text-align: center;
+    @include border-radius(5px);
+    left: 50%;
+    @include transition(all ease .5s);
+    margin-bottom:-30px;
+    bottom:0;margin-left:-65px;
+    &:before{
+            border-bottom: 5px solid #444;
+    border-left: 5px solid transparent;
+    content: "";
+    border-right: 5px solid transparent;
+    position: absolute;
+    top: 0;
+    margin-top: -5px;
+    left: 0;
+    margin-left: 25px;
+    }
+}

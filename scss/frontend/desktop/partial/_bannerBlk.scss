@@ -1,0 +1,112 @@
+.collegeFormHeader {
+ padding-bottom:15px;
+ min-height:221px;
+    background: #1f2e67;
+   background: -moz-linear-gradient(left, #1f2e67 0%, #3a4d95 100%);
+   background: -webkit-linear-gradient(left, #1f2e67 0%, #3a4d95 100%);
+   background: linear-gradient(to right, #1f2e67 0%, #3a4d95 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2e67', endColorstr='#3a4d95',GradientType=1 );
+    position:relative;
+    
+    .bannerImg{position:absolute;top:0;left:0;width:100%;height:100%;
+        img{width:100%;height:100%;}
+    &:before{position:absolute;bottom:0;left:0;width:100%;height:80px;content:"";
+        background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+        }
+    }
+    .container{position:relative;z-index:9;}
+    
+    .button{
+        &:nth-child(2){margin-left:0 !important;} 
+    }
+}
+
+.headingBanner {
+   width: 100%;
+   padding: 35px 0 45px;
+   background: #1f2e67;
+   text-align:center;
+   color:#fff;
+   background: -moz-linear-gradient(left, #1f2e67 0%, #3a4d95 100%);
+   background: -webkit-linear-gradient(left, #1f2e67 0%, #3a4d95 100%);
+   background: linear-gradient(to right, #1f2e67 0%, #3a4d95 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2e67', endColorstr='#3a4d95',GradientType=1 );
+    .bannerHeading {
+       text-align: center;
+       color: #fff;
+       font-size: 32px;
+       line-height: 45px;
+       font-weight: 600;
+       margin: 0;
+       margin-bottom: 15px;
+    }
+}
+
+.collegeDetail {
+    margin-top: 20px;
+	margin-bottom:20px;
+    .thumb {
+        width: 64px;
+        height:64px;
+        margin-right: 25px;
+        float: left;
+        @include border-radius(5px);
+        background-color: #fff;
+        position:relative;
+        img{
+            max-width: 100%;width:100%;
+            @include border-radius(5px);
+            background-color: #3a4d95;
+        }
+		&:after{
+			position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+	top:0;left:0;content:"";
+	@include border-radius(5px);
+		}
+    }
+    
+    .detail {
+        margin-top: 10px;
+        overflow: hidden;
+        position:relative;
+        .shortList{right:10px;}
+        h1 {
+            margin-top: -5px;margin-bottom:10px;font-weight:400;
+            color:#fff;font-size:2.4rem;padding-right:200px;line-height:31px;
+            .shortName{color:#fff;font-size:1.2rem;vertical-align: text-bottom;}
+            a{color:#fff;
+                &.collegeLink{
+                    font-size:1.4rem;line-height:22px;
+					.shortName{vertical-align: top;
+						span{text-transform:uppercase;}
+					}
+                }
+            } 
+			.shortName span{text-transform:uppercase;}
+        }
+        .location, .university{ 
+            color:#fff;
+            font-size: 12px;
+            display: inline-block;
+            margin-right: 20px;
+            i{padding-right:5px;vertical-align:top;}
+            .entity-refrence-data{color:#fff;text-decoration:underline;}
+            a{color:#fff;} 
+        }
+        
+        .btnBox  {
+            margin-top: 20px;
+            .btn-primary{margin-left:20px;}
+        }
+    }
+}
+
+.btn-lineGray input[type="checkbox"]{ 
+    display:none; 
+}

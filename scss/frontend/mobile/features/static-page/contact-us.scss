@@ -1,0 +1,46 @@
+.panel-heading.cHeading {
+    background: #428bca;
+    padding: 1px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    color: #fff;
+    margin-top: 10px;
+}
+.main-container{
+	background: transparent;
+}
+.panel-heading.cHeading .panel-title {
+    font-weight: 500;
+    font-size: 24px;
+    margin: 8px;
+}
+.pannel_contant {
+    padding: 10px;
+    border: 1px solid #428bca;
+    margin-bottom: 30px;
+}
+ul.contacts_page.list-group {
+    list-style: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.pannel_inner h4 {
+    font-weight: 500;
+}
+.pannel_inner li.list-group-item {
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding: 2px 10px 5px;
+}
+.pannel_inner span, .pannel_inner strong,.pannel_inner p {
+    font-size: 14px;
+}
+.pannel_inner li.list-group-item:last-child {
+    border-bottom: none;
+}
+.pannel_inner h4.editor {
+    font-size: 25px;
+    color: #263672;
+    font-weight: 700;
+}

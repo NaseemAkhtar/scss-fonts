@@ -1,0 +1,13 @@
+@import "../../include/variables";
+@import "../../include/mixins";
+@import "../../partial/sidebarListBlk"; 
+
+.iframeListBlks{border:1px solid #ccc;background-color:#fff;margin-top:-45px;font-size: 1.4rem;
+    .cardBlkInn {background-color:#f2f2f2;margin-top:15px;}
+}
+.thankyouMsg{text-align: center;margin-top: 20px;}
+.applyHead{padding-top: 10px; color: #999; text-align: center;}
+
+.colgListBlk .colgTitle{vertical-align: middle;margin-top:0;}
+.colgListBlk .applied{background-color: #e5e5e5;top:0;}
+.colgListBlk .button{top: 0;}

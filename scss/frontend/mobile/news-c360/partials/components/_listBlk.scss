@@ -1,0 +1,67 @@
+.colgListCard{
+	.blockHeading{line-height:24px;} 
+}
+.colgListBlk {
+	.colgTitle{font-size:1.4rem;color:#333;}
+	.leftBlk{width:70px; height:50px;
+		.imgBlk{width:50px;height:50px;border:1px solid #e5e5e5;@include border-radius(2px);padding:4px;line-height:40px;}
+	}
+    .rightBlk{
+        a{display: block;}
+    }
+	.display-table{position:relative;
+		&:not(:last-child){margin-bottom:15px;min-height:60px;
+			.rightBlk{
+				border-bottom: 1px solid #e5e5e5;
+			}
+		}
+	}
+	
+	.button{position:absolute;right:0;top:3px;min-width:80px;} 
+}
+
+	.btnList .colgTitle{padding-right:85px;} 
+	.arrowList { 
+		.display-table{
+			.colgTitle{
+				a{position:relative;color:#333;padding-right:20px;
+					&:after{content: "\e902";
+					font-family: 'careers-icon';
+					position: absolute;
+					top: 50%;
+					margin-top: -6px;
+					right: 0;
+					font-size: 1.2rem;
+					line-height: normal;}	 
+				}
+			}
+		}
+	}
+	
+.withoutImg {padding:10px !important; 
+	.display-table{margin-bottom:0 !important;min-height:inherit !important;height:60px;}
+}
+
+.relatedExamBlock {
+    div:last-child{
+        margin-bottom: -17px;
+    }
+    .rightBlk{
+        position: relative;
+        padding-right: 20px;
+        &:after{
+            content:'';
+            width: 12px;
+            display: block;
+            height: 12px;
+            right: 3px;
+            top: 50%;
+            margin-top: -15px;
+            position: absolute;
+            border-top: 1px solid $gray-dark;
+            border-right: 1px solid $gray-dark;
+            @include transform-rotate(46deg);
+        }
+    }
+}
+

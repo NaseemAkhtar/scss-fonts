@@ -1,0 +1,6 @@
+.tags{margin-bottom:-10px;
+	a,.tag{border: solid 1px $gray-lighter;color:$gray-dark;height:30px;line-height:27px;padding:0 15px;font-size:12px;margin-bottom:10px; @include border-radius(20px);
+		&:not(:last-child){margin-right:10px;}
+		&:hover, &:focus{background-color: $gray-lightest;box-shadow:none;} 
+	}
+} 

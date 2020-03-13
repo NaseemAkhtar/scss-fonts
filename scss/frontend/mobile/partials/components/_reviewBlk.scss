@@ -1,0 +1,78 @@
+.studentReviews {
+	.tags{
+		.tag{color:#333;font-size:1.2rem;
+			span{color:#999;}
+		}
+	}
+}
+
+.srBlks{
+	.blockHeading{margin-bottom:15px;}
+	.srBlk{margin-top:20px;padding-top:20px;border-top:1px solid #e5e5e5; 
+		.halfList{margin-top:20px;
+			li{
+				&:not(:nth-child(-n+2)){margin-top:20px;} 
+			}
+		}		
+		&:first-child{margin:0;padding:0;border:none;}
+		.leftBlk { width: 50px;
+			.imgBlk{width:40px;height:40px;background-color:#e5e5e5;@include border-radius(50%);line-height:25px;text-align:center;
+			i{font-size:25px;line-height:40px;}
+		}
+		img {
+			@include border-radius(50%); 
+			width: 40px; 
+			height: 40px;
+			display:block;
+		}
+	}
+		.rightBlk{
+			.stName{
+				span{color:#999;}
+				
+			}
+			.btnBlk{margin-top:10px;}
+			.followBtn{text-transform:uppercase;}
+			.tag{display:inline;}
+		}
+	}
+	
+	.actionBox{margin-top:15px;}
+}
+.rating {
+    width: 87px;
+    height: 15px;
+    background: url(../../../../../images/frontend/desktop/stars.svg) no-repeat 0 -19px;
+	
+	.userRating {
+    width: 87px;
+    height: 15px;
+    background: url(../../../../../images/frontend/desktop/stars.svg) no-repeat 0 0; 
+	}
+}
+
+.smallRating{width:70px;background-size:70px;background-position:0 -14px;
+	.userRating{background-size:70px;background-position:0 1px;}
+}
+.reviewGallery{margin-top:10px;
+	a{&:not(:last-child){margin-right:7px;}}
+    img{width:80px;height: 53px;@include border-radius(4px); }
+}
+
+.likeRow{margin-top:25px;}
+.ldcontrol{
+	margin-left:13px;
+	input[type="checkbox"]{
+		display:none;
+	}
+	i{padding-right:5px;font-size:1.4rem;vertical-align: text-top;
+		&:before{color:#ccc;}
+	}
+	&.dislike{
+		i{vertical-align:text-bottom;}
+	}
+}
+.thumbActive.ldcontrol i:before{color:#02a569;}
+.checkOuter{position:relative;
+	.reviewAnchor{position:absolute;top:0;width:100%;left:0;height:100%;}
+}

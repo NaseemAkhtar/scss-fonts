@@ -1,0 +1,113 @@
+.admissionOpenfixedCard {
+	position: fixed;
+	width: 100%;
+	bottom: -100%;
+    left: 0;
+	background-color: #fff;
+	z-index: 999;
+	.cardScroll{
+		padding: 0 15px;
+		height:70vh;
+		overflow-y: scroll;width:100%;
+	}
+}
+.admissionOpencardOverlay{
+	position: fixed;
+	z-index: 99;
+	display: none;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: $gray-base;
+	opacity: 0.7;
+}
+.instituteOuter{
+	.titleToggle {
+		color: $gray-darker;
+		font-size: 16px;
+		position: relative;
+		line-height: 19px;
+		padding: 13px 15px 11px;
+		margin-bottom: 10px;
+		text-align: center;
+		font-weight:bold;
+		border-bottom: 1px solid $gray-lighter;
+		a.close-togle {
+		position: absolute;
+		right: 17px;
+		color: #000!important;
+		i {
+			font-size: 12px;
+			font-weight: bold;
+		}
+	}
+	}
+	.institute{
+		overflow: hidden;
+		margin-bottom: 10px;
+		.thumb {
+			width:50px;height:50px;line-height:40px;position:relative;float:left;margin-right: 10px;
+			img{@include border-radius(3px);}
+			&:after{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			content: "";
+			border:1px solid #e5e5e5;
+			@include border-radius(2px); z-index: 99;
+			}
+		 
+		}
+		.nameApply{
+			float: left;
+			width: calc(100% - 60px);
+			border-bottom: 1px solid $gray-lighter;
+			overflow: hidden;
+			padding-bottom: 15px;
+			.institutename{
+				float: left;
+				font-size: 14px;
+				line-height: 21px;
+				padding-top: 3px;
+				width: calc(100% - 114px);
+				color: $gray-darker;
+				margin-right: 15px;
+			}
+			.button{
+                min-width: 70px;
+				margin-top: 10px;
+				margin-left:10px;
+			}
+		}
+		&:nth-last-child(2){
+			.nameApply{
+				border-bottom: 0;
+			}
+		}
+	}
+	.viewAllForm{
+		background-color: #fcfcfc;
+		display: block;
+		font-size: 12px;
+		padding: 12px;
+		margin: 0 -15px;
+		text-align: center;
+		text-transform: uppercase;
+		color: $brand-primary;
+	}
+	.viewAllApplication{
+		background-color: $brand-primary;
+		display: block;
+		font-size: 12px;
+		position: relative;
+		padding: 12px;
+		margin-top: -12px;
+		text-align: center;
+		color: #fff;
+		z-index:100;
+		text-transform:unset!important;
+	}
+}

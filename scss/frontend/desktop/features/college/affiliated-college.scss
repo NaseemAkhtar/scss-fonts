@@ -1,0 +1,54 @@
+@import "../../include/variables";
+@import "../../include/mixins";  
+@import "../../partial/checkboxRadio";
+@import "../../partial/cardBlk";
+@import "../../partial/breadcrumb";
+@import "../../partial/pipeUl";
+@import "../../partial/bannerBlk"; 
+@import "../../partial/sideFilter";
+@import "../../partial/pagination"; 
+@import "../../partial/cardList";   
+
+
+.searchFrm{
+	.microTxt{display:inline-block;}
+	.searchInput{height:40px;width:150px;border:1px solid #ccc;display:inline-block;@include border-radius(4px);position:relative;margin-left:13px;color:#999;
+		&:after{
+			content: "\e900"; font-family: 'careers-fonts' !important;position:absolute;right:10px;top:50%;margin-top:-9px;
+		}
+		input[type="text"]{
+			height:100%;width:100%;border:none;padding:0 10px;background-color:transparent;
+		}
+	}
+}
+
+.cardList .baseUl li{width:300px !important;} 
+		
+
+.colgRate{margin-top:7px;color:#999; 
+	.rate{color:#000;}
+}
+
+.sidebarPart.stick {
+    position: fixed;
+    width: 325px;
+    margin-top: 30px;
+}
+
+.contentPart.fixr-side {
+    margin-left: 25%;
+}
+
+.hasHeader{
+	@include transform(translate(0, 50px));
+	@include transition(transform ease .5s);
+}
+
+.showResults{margin-top:-5px;margin-bottom:8px; display: inline-block;}
+
+
+
+
+
+
+

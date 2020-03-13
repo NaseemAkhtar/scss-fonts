@@ -1,0 +1,309 @@
+@import "../../includes/mixins";
+@import "../../includes/variables";
+
+.row.progressbarDiv .col-lg-12 {
+    padding-top: 10px;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.row.progressbarDiv .col-lg-12.generaltxt {
+    padding: 5px 15px 0px;
+}
+.placementDownload {
+    border: solid 2px #f2f2f2;
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.placementDownload span {
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.cardBlkInn.generalInfo.checkBlk .heightBlk h2,.cardBlkInn.generalInfo.checkBlk .heightBlk h3,.cardBlkInn.generalInfo.checkBlk .heightBlk h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 6px;
+}
+.placement .collegeFormHeader {
+    height: inherit;
+}
+.progressbar {
+      background-color: #ebedf7;
+      border-radius: 13px;
+      padding: 0px;
+	  margin: 0 30px 0 0;
+	  position:relative;
+    }
+  .progressbar span {
+    position: absolute;
+    right: -30px;
+    top: -5px;
+	font-size: 11px;
+}
+.row.progressbarDiv {
+    min-height: 30px;
+	border-bottom: solid 1px #e5e5e5;
+}
+.cardBlkInn.quickgoogleMap h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+.cardBlkInn.quickgoogleMap .map h5 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+	z-index: 99;
+	  -ms-transform: rotate(270deg); /* IE 9 */
+  -webkit-transform: rotate(270deg); /* Safari 3-8 */
+  transform: rotate(270deg);
+  top: 50%;
+  left: -20px;
+}
+.progressbar > div {
+       background-color: #455cb1;
+       height: 7px;
+       border-radius: 10px;
+    }
+.tabsDomainContent .active{
+        display: block;
+    }
+.tabsDomainContent .hide{
+        display: none;
+    }
+
+.tabsDomainContent ul{
+        padding: 0px;
+		margin-bottom:0;
+        list-style: none;
+		display: inline-block;
+    }
+p.disclaimar {
+  color: #999999;
+font-size: 12px;
+position: relative;
+line-height:17px;
+margin: -20px 0 0;
+}
+.cardBlk > .headingContainer {
+    padding-left: 0!important;
+        margin-bottom: 10px;
+    
+}
+.cardBlkInn{
+        padding: 15px 10px!important;
+}
+.knownInstitute {
+    font-size: 14px;
+    margin: 10px 0 0;
+    line-height: 20px;
+	color:#333333;
+	span.caps { color:#999;
+}
+}
+.bannerDetail .bannerHeading {
+    margin-bottom: 8px!important;
+}
+.tabsDomainContent ul li{
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 0;
+		a{  height: 39px;
+			    height: 39px;
+				border-radius: 20px;
+				border: solid 1px #cccccc;
+				background-color: #ffffff;
+				padding: 8px 20px;
+				color: #999999;
+				line-height: 20px;
+				font-size: 12px;
+				font-weight: 600;
+				    text-transform: capitalize;
+		}
+    }
+ .domainDiv .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0 0 0;
+    color:#333;
+}
+.col-sm-12.map h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+.contentDiv {
+    border-bottom: solid 1px #e5e5e5;
+    padding: 5px 0;
+}
+
+ .contentDiv:last-child{
+		border:none;
+ }
+.tabsDomainContent .list{
+        width: 100%;
+        height: 100%; 
+}
+.tabsDomainContent .activelink{
+    color: #4f66bb;
+    border: solid 1px #4f66bb;
+    background: #f3f4fa;
+    font-size: 12px;
+    font-weight: 600; 
+}
+.progressBarOuter{
+	        position: relative;
+    display: inline-block;
+    width: 100%;
+	    width: 81%;
+        margin: 0 0 0 55px;
+	float: left;
+}
+.progressBarOuter span.leftSpan {
+position: absolute;
+    top: 3px;
+    margin-left: 0;
+    font-size: 11px;
+    color: #666666; 
+    left: -53px;
+}
+.insightContent {
+    border-radius: 8px;
+    background-color: #ebedf7;
+    padding: 15px;
+	h5 {
+		margin: 0;
+		padding: 0;
+	}
+
+	ul {
+		margin: 0;
+	   li{
+
+		}
+	}
+}
+p.headingcol {
+    font-size: 14px;
+    padding: 0 70px 5px 0;
+}
+.bannerDetail h1 {    margin: 0 0 10px 0;
+}
+.bannerDetail .bannerHeading h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+.insight li {
+    margin: 0 0 5px 0;
+}
+.progressbarDiv:last-child{
+  border: none;
+}
+.progressbarDiv:first-child{
+   padding: 0 0 20px 0;
+}
+.progressbarDiv {
+    border-bottom: solid 1px #e5e5e5;
+    padding: 10px 0 20px 0;
+}
+.col-sm-12.map {
+    color: #333;
+}
+.generaltxt {
+    margin: 0 0 10px 0;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+}
+.progressBarOuter span.rightSpan {
+margin: 0 0 0 9px;
+    float: none;
+    position: absolute;
+    background: no-repeat;
+    right:-4px;
+    top: 3px;
+    width: auto;
+    font-size: 11px;
+}
+.bannerDetail .knownAs{
+font-size: 12px;
+}
+.col-sm-12.map .col-sm-4 {
+    margin-bottom: 20px;
+}
+.disclaimer { 
+    margin: -23px 0 0!important;
+}
+.progressBarOuter span {
+    display: inline-block;
+    float: left;
+}
+.progressBarOuter div:before{
+border-left: solid 1px #f2f2f2;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    left: 0;
+}
+.progressBarOuter div {
+    display: block;
+    float: left;
+    position: relative;
+    padding: 9px 24px 0 0;
+    height: 25px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.progressBarOuter div span {
+    background: #ccc;
+	width: 100%;
+	-webkit-border-top-right-radius:10px;
+-webkit-border-bottom-right-radius: 10px;
+-moz-border-radius-topright: 10px;
+-moz-border-radius-bottomright: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+.boxHeight {
+    max-height: 260px;
+}
+.cardBlk.checkBlk.download-section {
+    padding: 15px;
+    text-align: center;
+}
+.cardBlk.checkBlk.download-section span {
+    vertical-align: top;
+    display: inline-block;
+    font-size: 16px;
+    color: #333333;
+    font-weight: 600;
+    padding: 4px 12px;
+}
+.progressBarOuter div span.color1 {
+    background: #6FB98F;
+    height: 6px;
+}
+.progressBarOuter div span.color2 {
+    background: #4F66BB;
+    height: 6px;
+}
+.domainDiv {
+    display: inline-block; 
+    width:100%;
+    border-top:1px solid #f2f2f2;
+    margin-top:10px;
+}
+
+.insight h4 {
+    font-size: 12px!important;
+}

@@ -1,0 +1,630 @@
+$OpenSansPath: '../../../fonts/fonts' !default;
+$OpenSansVersion: '1.101' !default;
+
+@import "../include/mixins/fonts";
+@import "fonts/Light";
+@import "fonts/Regular";
+@import "fonts/SemiBold";
+@import "fonts/Bold";
+@import "fonts/ExtraBold";
+
+
+$icomoon-font-path: "../../../fonts" !default;  
+
+@font-face {
+  font-family: 'careers-fonts';
+  src:  url('#{$icomoon-font-path}/careers-fonts.eot?jtja9e'); 
+  src:  url('#{$icomoon-font-path}/careers-fonts.eot?jtja9e#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/careers-fonts.ttf?jtja9e') format('truetype'),
+    url('#{$icomoon-font-path}/careers-fonts.woff?jtja9e') format('woff'),
+    url('#{$icomoon-font-path}/careers-fonts.svg?jtja9e#careers-fonts') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}  
+[class^="careers-"], [class*=" careers-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'careers-fonts' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;vertical-align:middle;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@function unicode($str) {
+  @return unquote("\"") + $str + unquote("\"");
+}
+
+.careers-thumb-up {
+  &:before {
+    content: "\e930";     
+    color: #02a569;
+  }
+}
+.careers-arrow-sign-back {
+  &:before {
+    content: "\e931";     
+
+  }
+}
+.careers-arrow-sign-down {
+  &:before {
+    content: "\e932";     
+    
+  }
+}
+.careers-arrow-sign-next {
+  &:before {
+    content: "\e933";     
+    
+  }
+}
+.careers-arrow-sign-up {
+  &:before {
+    content: "\e934";     
+    
+  }
+}
+.careers-pop-up {
+  &:before {
+    content: "\e935";     
+    
+  }
+}
+.careers-thumb-down {
+  &:before {
+    content: "\e936";     
+    color: #e56c5b;
+  }
+}
+.careers-hospital {
+  &:before {
+    content: "\e915";     
+    
+  }
+}
+.careers-info-tip {
+  &:before {
+    content: "\e916"; 
+  }
+}
+.careers-it-infrastructure {
+  &:before {
+    content: "\e917";     
+    
+  }
+}
+.careers-laboratories {
+  &:before {
+    content: "\e918";     
+    
+  }
+}
+.careers-library {
+  &:before {
+    content: "\e919";     
+    
+  }
+}
+.careers-medical {
+  &:before {
+    content: "\e91a";     
+    
+  }
+}
+.careers-moot-court {
+  &:before {
+    content: "\e91b";     
+    
+  }
+}
+.careers-navigation {
+  &:before {
+    content: "\e91c"; 
+  }
+}
+.careers-parking {
+  &:before {
+    content: "\e91d";     
+    
+  }
+}
+.careers-school {
+  &:before {
+    content: "\e91e"; 
+  }
+}
+.careers-seat {
+  &:before {
+    content: "\e91f"; 
+  }
+}
+.careers-sports {
+  &:before {
+    content: "\e920";     
+    
+  }
+}
+.careers-swimming-pool {
+  &:before {
+    content: "\e921";     
+    
+  }
+}
+.careers-transport {
+  &:before {
+    content: "\e922";     
+    
+  }
+}
+.careers-wifi {
+  &:before {
+    content: "\e923";     
+    
+  }
+}
+.careers-ac-classrooms {
+  &:before {
+    content: "\e924";     
+    
+  }
+}
+.careers-alumni {
+  &:before {
+    content: "\e925";     
+    
+  }
+}
+.careers-auditorium {
+  &:before {
+    content: "\e926";     
+    
+  }
+}
+.careers-banks-facilities {
+  &:before {
+    content: "\e927";     
+    
+  }
+}
+.careers-boarding {
+  &:before {
+    content: "\e928";     
+    
+  }
+}
+.careers-books {
+  &:before {
+    content: "\e929";     
+    
+  }
+}
+.careers-boys-hostel {
+  &:before {
+    content: "\e92a";     
+    
+  }
+}
+.careers-cafeteria {
+  &:before {
+    content: "\e92b";     
+    
+  }
+}
+.careers-convenience-store {
+  &:before {
+    content: "\e92c"; 
+  }
+}
+.careers-girls-hostel {
+  &:before {
+    content: "\e92d";     
+    
+  }
+}
+.careers-guest-room {
+  &:before {
+    content: "\e92e";     
+    
+  }
+}
+.careers-gym {
+  &:before {
+    content: "\e92f";     
+    
+  }
+}
+.careers-indian-rupee {font-size:80%;  vertical-align: baseline; 
+  &:before {
+    content: "\e914"; 
+	
+  }
+}
+.careers-shape-e-books {
+  &:before {
+    content: "\e910";     
+    color: #999;
+  }
+}
+.careers-shape-exams {
+  &:before {
+    content: "\e911";     
+    color: #999;
+  }
+}
+.careers-shape-colleges {
+  &:before {
+    content: "\e912";     
+    color: #999;
+  }
+}
+.careers-shape-students {
+  &:before {
+    content: "\e913";     
+    color: #999;
+  }
+}
+.careers-bg-right {
+  &:before {
+    content: "\e905";     
+    color: #02a569;
+  }
+}
+.careers-s-arrow-right {
+  &:before {
+    content: "\e906"; 
+  }
+}
+.careers-s-arrow-left {
+  &:before {
+    content: "\e907"; 
+  }
+}
+.careers-bg-cross {
+  &:before {
+    content: "\e908";     
+    color: #666;
+  }
+}
+.careers-cross {
+  &:before {
+    content: "\e909"; 
+  }
+}
+.careers-big-arrow-left {
+  &:before {
+    content: "\e90a"; 
+  }
+}
+.careers-big-arrow-right {
+  &:before {
+    content: "\e90b"; 
+  }
+}
+.careers-big-arrow-down {
+  &:before {
+    content: "\e90c"; 
+  }
+}
+.careers-big-arrow-up {
+  &:before {
+    content: "\e90d"; 
+  }
+}
+.careers-s-arrow-up {
+  &:before {
+    content: "\e90e"; 
+  }
+}
+.careers-s-arrow-down {
+  &:before {
+    content: "\e90f"; 
+  }
+}
+.careers-burger-menu {
+  &:before {
+    content: "\e904"; 
+  }
+}
+.careers-youtube {
+  &:before {
+    content: "\e901";     
+    color: #e5e5e5;
+  }
+}
+.careers-twitter {
+  &:before {
+    content: "\e902";     
+    color: #e5e5e5;
+  }
+}
+.careers-facebook {
+  &:before {
+    content: "\e903";     
+    color: #e5e5e5;
+  }
+}
+.careers-search-icon {
+  &:before {
+    content: "\e900";     
+    color: #fff;
+  }
+}
+.careers-download {
+  &:before {
+    content: "\e937"; 
+  }
+}
+.careers-like-bg {
+  &:before {
+    content: "\e938";     
+    color: #02a569;
+  }
+}
+.careers-share {
+  &:before {
+    content: "\e939";     
+    color: #fff;
+  }
+} 
+.careers-announcment {
+  &:before {
+    content: '\e93a';     
+    color: #02a569;
+  }
+}
+.careers-comment {
+  &:before {
+    content: '\e93b'; 
+  }
+}
+.careers-edit {
+  &:before {
+    content: '\e93c';     
+    color: #ccc;
+  }
+}
+.careers-eye {
+  &:before {
+    content: '\e93d';     
+    color: #999;
+  }
+}
+.careers-follow {
+  &:before {
+    content: '\e93e'; 
+  }
+}
+.careers-Following {
+  &:before {
+    content: '\e93f';     
+    color: #02a569;
+  }
+}
+.careers-like {
+  &:before {
+    content: '\e940';     
+    color: #3a4d95;
+  }
+}
+.careers-Liked {
+  &:before {
+    content: '\e941';     
+    color: #3a4d95;
+  }
+}
+.careers-more {
+  &:before {
+    content: '\e942';     
+    color: #3a4d95;
+  }
+}
+.careers-reply {
+  &:before {
+    content: '\e943'; 
+  }
+}
+.careers-share1 {
+  &:before {
+    content: '\e944';     
+    color: #3a4d95;
+  }
+}
+.careers-badge-white-path1 {
+  &:before {
+    content: '\e945';  
+    color: rgb(0, 0, 0);
+  }
+}
+.careers-badge-white-path2 {
+  &:before {
+    content: '\e946';  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.careers-tick {
+  &:before {
+    content: '\e947';     
+    color: #00a66a;
+  }
+}
+.careers-tick3 {
+  &:before {
+    content: '\e948';     
+    color: #3a4d95;
+  }
+}
+.careers-edit-answer {
+  &:before {
+    content: '\e949';     
+    color: #ccc;
+  }
+}
+.careers-tick2 {
+  &:before {
+    content: '\e94a'; 
+  }
+}
+.careers-question {
+  &:before {
+    content:  '\e94b';  
+    color: #ccc;
+  }
+}
+.careers-answer {
+  &:before {
+    content: '\e94c';     
+    color: #ccc;
+  }
+}
+.careers-edit_profile {
+  &:before {
+    content:  '\e94d';     
+    color: #fff;
+  }
+}
+.careers-dashboard {
+  &:before {
+    content:  '\e94e';      
+    color: #e56c5b;
+  }
+}
+.careers-followers {
+  &:before {
+    content:  '\e94f';     
+    color: #ccc;
+  }
+}
+.careers-notification {
+  &:before {
+    content: '\e950';     
+    color: #ccc;
+  }
+}
+.careers-Following1 {
+  &:before {
+    content: '\e951';     
+    color: #ccc;
+  }
+}
+.careers-comment1 {
+  &:before {
+    content: '\e953';     
+    color: #3a4d95;
+  }
+}
+
+.careers-ranking {
+  &:before {
+    content: "\e93b";   
+  }
+}
+.careers-rank-predictors {
+  &:before {
+    content: "\e943";  
+  }
+}
+.careers-counselling {
+  &:before {
+    content: "\e94a"; 
+  }
+}
+.careers-otherProducts {
+  &:before {
+    content: "\e952";    
+  }
+}
+.careers-exam {
+  &:before {
+    content: "\e954";  
+  }
+}
+.careers-admissionsOpen {
+  &:before {
+    content: "\e955";   
+  }
+}
+.careers-college-predictors { 
+  &:before {
+    content: "\e956";    
+  }
+}
+.careers-samplePaper {
+  &:before {
+    content: "\e957";    
+  }
+}
+.careers-qna {
+  &:before {
+    content: '\e958';
+  }
+}
+.careers-articles {
+  &:before {
+    content: "\e959";   
+  }
+}
+.careers-preparation:before {
+  content: "\e95a";
+}
+
+.careers-board:before {
+  content: "\e95b";
+}
+.careers-location:before {
+  content: "\e95c";
+}
+.careers-mail:before {
+  content: "\e95d";
+}
+.careers-phone:before {
+  content: "\e95e";
+}
+.careers-web:before {
+  content: "\e95f";
+}
+.careers-news:before {
+  content: "\e960";
+}
+.careers-ans-later:before {
+  content: "\e961";
+  color: #3a4d95;
+}
+.careers-delete:before {
+  content: "\e962";
+  color: #3a4d95;
+}
+.careers-report:before {
+  content: "\e963";
+  color: #3a4d95;
+}
+.careers-request-answer:before {
+  content: "\e964";
+  color: #02a569;
+}
+.careers-school-icon:before {
+  content: "\e965";
+}
+.careers-near-location:before {
+  content: "\e966";
+  color: #999;
+}
+.careers-filter:before {
+  content: "\e967";
+  color: #366ed8;
+}
+.careers-sign-direction:before {
+  content: "\e968";
+  color: #f8a805;
+}
+.careers-class:before {
+  content: "\e969";
+  color: #999;
+}

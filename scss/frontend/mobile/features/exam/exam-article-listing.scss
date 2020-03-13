@@ -1,0 +1,96 @@
+@import "../../includes/mixins"; 
+@import "../../includes/variables";
+@import "../../includes/button";
+@import "../../partials/components/listBlk";
+@import "../../partials/components/cardBlk"; 
+@import "../../partials/components/popup";
+@import "../../partials/components/stickySubNav";
+@import "../../partials/components/stickyBottom";
+@import "../../partials/components/ebookBlk";
+@import "../../partials/components/fixedScrollCard";
+@import "../../partials/components/cardList";
+@import "../../partials/components/tags";
+@import "../../partials/components/pagination"; 
+.cardBlkInn{
+   .blockHeading {
+       margin-bottom: 10px; 
+    }
+} 
+
+.examList {
+  .tag:not(:first-child) {
+    margin-left: 10px;
+   }
+}   
+    
+.examList{
+     .tag{
+	 border: 1px solid $gray-lightest;
+                @include border-radius(20px);
+				padding:0px 11px;
+				font-size:1.2rem;
+				margin-right:0px;
+   }
+}
+      
+.examList{
+    .scroll {
+		margin-right: -10px;
+		padding: 0px 10px;
+		margin-left: -10px;
+		margin-top: 10px;
+		border-top: 1px solid $gray-lighter;
+		padding-top: 15px;
+	}
+}
+.examArtiList.examList{
+  .cardBlkInn{margin-top:0;}
+  }
+	  
+.showmoreResult {
+	text-align: center;
+	margin-top: 30px;
+	a{
+		width: 143px;
+		display: inline-block;
+		border: 1px solid $gray-lighter;
+		padding: 5px 10px;
+		background-color: #fff;
+		@include border-radius(20px);
+	}
+}
+
+.moreContLink{
+	display: block;
+	text-align: right;
+}
+
+
+.examList {
+   .cardBlkInn {
+     margin-top: 10px;
+    }
+}
+
+.examList {
+	.btnBlk{
+	  margin-top:30px;
+	 }
+ }
+ 
+ 
+.exam-articleBanner {
+    .headingContainer {
+           margin-bottom: 0;
+   }
+}
+.tag.current{background-color:#f2f2f2;}
+
+.stickyBottom .button{margin-left:10px;}
+
+.examArtiList a.nxtpageLink {
+    width: 100%;
+    display: block;
+    text-align: right;
+    margin: 10px 0px;
+}

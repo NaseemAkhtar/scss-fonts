@@ -1,0 +1,515 @@
+@import "../../includes/mixins"; 
+@import "../../includes/variables";
+@import "../../includes/button";
+@import "../../partials/components/checkboxRadio";
+
+
+.appBlk, .textiMonial, footer .row .footBrandLogo, footer .footTopList, footer .footSocial, footer .accordion{
+    display: none;
+}
+
+.main-container {
+    background-color: #f2f2f2;
+}
+.commonSection {
+	padding: 30px 15px 0;
+    background: #ffffff;
+}
+
+.whiteBg{
+    background-color: #ffffff;
+}
+
+.cardBlkInn {
+    margin-bottom: 25px;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+p {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 0;
+    color: #666666;
+}
+
+.c360-header{
+    background: transparent;
+    &.off-canvas, &.headerWithBg{
+        background: #1f2e67;
+        background: -moz-linear-gradient(left, #1f2e67 0%, #3a4d95 100%);
+        background: -webkit-linear-gradient(left, #1f2e67 0%, #3a4d95 100%);
+        background: linear-gradient(to right, #1f2e67 0%, #3a4d95 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2e67', endColorstr='#3a4d95',GradientType=1 );
+    }
+}
+
+.topBlk{
+    padding: 0;
+    margin-top: -90px;
+    text-align: center;
+    .container-fluid{
+        padding: 97px 15px 27px;
+        background: url(../../../images/frontend/mobile/header-bg.png) no-repeat center;
+    }
+    .banner-content {
+        p{
+            font-size: 14px;
+            line-height: 21px;
+            color: #cccccc;
+            margin-bottom: 25px;
+        }    
+    }
+    .button{
+        height: 35px;
+        line-height: 31px;
+        @include box-shadow(0px 10px 15px 0 rgba(0, 0, 0, 0.25));
+    }
+    
+}
+
+.popupbox {
+    width: 100%;
+    position: relative;
+    min-height: 262px;
+    background: #ffffff;
+    display: none;
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    height: 100%;
+    .head{
+        text-align: center;
+        height: 45px;
+        line-height: 44px;
+        font-size: 14px;
+        font-weight: 600;
+        color: $gray-dark;
+        @include box-shadow(0px 4px 8px 0 rgba(0, 0, 0, 0.15));
+    }
+    .outer{
+        padding: 15px;
+    }
+    .closebtn {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 15px;
+        top: 13px;
+        &:before{
+            content: '';
+            width: 1px;
+            height: 20px;
+            position: absolute;
+            background: $gray-dark;
+            transform: rotate(45deg);
+        }
+        &:after{
+            content: '';
+            width: 1px;
+            height: 20px;
+            position: absolute;
+            background: $gray-dark;
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+.banner-content{
+    h1{
+        font-size: 24px;
+        line-height: 33px !important;
+        text-transform: uppercase;
+    }
+    p{
+        font-size: 12px;
+        color: #ffffff;
+        margin: 10px 0 0;
+    }
+}
+
+
+.ulList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li{
+        position: relative;
+        font-size: 14px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        line-height: 21px;
+        &:before{
+            content: '';
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            left: 0;
+            top: 8px;
+            border: 1px solid #02a569;
+            @include border-radius(50%);
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            width: 4px;
+            display: block;
+            height: 2px;
+            left: 3px;
+            top: 12px;
+            transform: rotate(-45deg);
+            border-bottom: 1px solid #02a569;
+            border-left: 1px solid #02a569;
+        }
+    }
+}
+/*********home SCSS End here************/
+
+h2 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    color: #02a569;
+}
+
+h3{
+    color: $gray-darker;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.companionHelp {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.shadowBox{
+    border: solid 1px #e5e5e5;
+    padding: 15px;
+    margin-bottom: 15px;
+    @include border-radius(4px);
+    @include box-shadow(0px 5px 10px 0 rgba(0, 0, 0, 0.1));
+}
+
+.getStartedBox {
+    padding: 30px 0;
+    overflow: hidden;
+    @include border-radius(4px);
+    .button{
+        height: 35px;
+        min-width: 100%;
+        font-size: 14px;
+        line-height: 32px;
+        font-weight: 600;
+    }
+    .left{
+        width: 55%;
+        float: left;
+    }
+    .right{
+        width: 45%;
+        margin-top: 15px;
+        float: right;
+        text-align: right;
+        
+    }
+    .price{
+        font-size: 24px;
+        font-weight: 600;
+        color: $gray-darker;
+        margin-top: -25px;
+        span{
+            font-size: 16px;
+        }
+    }
+    
+    .onetimeFree{
+        font-size: 14px;
+        margin-top: 5px;
+        color: $gray-darker;
+        span{
+            color: #02a569;
+            
+        }
+    }
+    .txt{
+        font-size: 12px;
+        color: $gray;
+        line-height: 21px;
+    }
+}
+.intl-tel-input.separate-dial-code .selected-flag{background-color:#fff!important;padding:12px 7px;}
+.selected-flag .iti-flag{
+    color: #999999;
+    margin-top: 0px;
+    width: 20px;
+  }
+  .iti-flag{
+      width: auto;
+  }
+  .intl-tel-input.allow-dropdown .flag-container:hover .selected-flag{
+      background: transparent;
+  }
+  .intl-tel-input.allow-dropdown .flag-container{
+    padding: 0px;
+    border-right: 1px solid #ccc;
+    min-height: 40px;
+    margin-right: 10px;
+  }
+  .allow-dropdown{
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      &:before, &:after{
+          content: '';
+          display: table;
+          clear: both;
+      }
+  }
+
+  .intl-tel-input .flag-container{
+      position: relative;
+      float: left;
+  }
+  .intl-tel-input.allow-dropdown input[type=number]{
+      width: auto;
+      float: left;
+      border: 0;
+      padding: 0;
+	  padding-left:0!important;
+  }
+
+.studyInIndia {
+    text-align: center;
+    background: #fcfcfc url(../../../images/frontend/mobile/studyIndiaBg.png) no-repeat center;
+    padding: 30px 15px 35px;
+    margin: 0px -15px 33px;
+    .twoCol {
+        text-align: center;
+        overflow: hidden;
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        > div {
+            width: 50%;
+            float: left;
+            padding: 30px 0;
+            border-right: 1px solid $gray-lightest;
+            border-bottom: 1px solid $gray-lightest;
+            &:nth-child(2n+0){
+                border-right: 0;
+            }
+            &:nth-last-child(1), &:nth-last-child(1){
+                border-bottom: 0;
+            }
+        }
+        .heading {
+            font-size: 24px;
+            line-height: 26px;
+            color: $gray-darker;
+            font-weight: 600;
+            margin-bottom: 7px;
+        }
+        .subHeading {
+            font-size: 14px;
+            color: $gray;
+        }
+    }
+}
+
+.getstartedCompanion{
+    padding-bottom: 30px;
+    form {
+        width: 100%;
+        > div {
+            margin-bottom: 25px;
+            &:before, &:after{
+                content: '';
+                display: table;
+                clear: both;
+            }
+            span{
+                display: block;
+                color: #f30606;
+                font-size: 12px;
+                margin-top: 2px;
+            }
+        }
+        .intl-tel-input {
+            display: block;
+        }
+        label {
+            display: block;
+            font-size: 12px;
+            color: $gray;
+            margin-bottom: 2px;
+        }
+        input, select{
+            width: 100%;
+            height: 40px;
+            padding: 5px 10px;
+            border: 1px solid #cccccc;
+            display: block;
+            @include border-radius(4px);
+        }
+        .box {
+            display: inline-block;
+            margin-right: 70px;
+            &:nth-child(3){
+                margin-right: 0;
+            }
+            input {
+                border: 0;
+                height: auto;
+                padding: 0;
+                display: inline-block;
+            }
+            label{
+                font-size: 14px;
+                font-weight: normal;
+                color: $gray-darker;
+            }
+            input[type="radio"] + label:before{
+                vertical-align: middle;
+            }
+        }
+        .controlCheckbox {
+            width: 50%;
+            float: left;
+            font-size: 14px;
+            margin-top: 10px;
+            color: $gray-darker;
+        }
+        .button {
+            width: 140px;
+            display: inline-block;
+        }
+        .buttonHolder {
+            margin-top: 20px;
+            text-align: center;
+            
+        }
+    }
+    .alreadyLogin {
+        text-align: center;
+        font-size: 14px;
+        color: $gray;
+        margin-top: -5px;
+        a{
+            font-weight: 600;
+        }
+    }
+}
+
+.faqContainer {
+    background: #fcfcfc;
+    padding: 30px 15px;
+    margin: 0 -15px;
+    h2{
+        margin-top: 0;
+    }
+    h4{
+        font-size: 14px;
+        color: $gray-darker;
+        font-weight: 400;
+        margin-bottom: 0;
+        padding-right: 20px;
+        position: relative;
+        &:after{
+            content: '';
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -8px;
+            border-right: 1px solid #948f8f;
+            border-bottom: 1px solid #948f8f;
+            @include transform(rotate(45deg));
+        }
+        &.active{
+            &:after{
+                margin-top: -1px;
+                @include transform(rotate(-135deg));
+            }
+        }
+    }
+    .faqBox{
+        border-bottom:  1px solid $gray-lighter;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .faq{
+        margin-top: 10px;
+    }
+}
+
+.social {
+    h3{
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .button{
+        min-width: 160px;
+        height: 40px;
+        line-height: 37px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .btn-green{
+        background: #25d366;
+        margin-left: 6px;
+        border: 0;
+        img {
+            top: 14px;
+        }
+    }
+    img {
+        float: left;
+        position: relative;
+        left: 10px;
+        top: 11px;
+    }
+}
+
+#getStartedPopup{
+    h2{
+        display: none;
+    }
+    .closebtn{
+        right: 10px;
+    }
+    .getstartedCompanion form > div{
+        margin-bottom: 15px;
+    }
+}
+
+.stickyBottom {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    bottom: -50px;
+    transition: all ease-in-out 0.3s;
+    &.stickyShow{
+        bottom: 0;
+    }
+    .button{
+        width: 100%;
+        height: 50px;
+        line-height: 47px;
+        @include border-radius(0);
+    }
+}
+
+.disclaimer{
+    margin-top: -25px;
+    margin-bottom: 20px;
+}
+
+.intl-tel-input.hide_content  .contryPhone::-webkit-input-placeholder {color: transparent;}
+.intl-tel-input.hide_content  .contryPhone:-ms-input-placeholder {color: transparent;}
+.intl-tel-input.hide_content  .contryPhone::placeholder {color: transparent;}

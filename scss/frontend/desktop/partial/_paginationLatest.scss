@@ -1,0 +1,10 @@
+.pagination{margin:0;padding:0;list-style:none;padding-top:40px;
+    .pagiInn{display: inline-block;border:1px solid #e5e5e5;height:38px;@include border-radius(50px);line-height: 36px;}
+    a{width:75px;float: left;color:#333;
+        &.prev{@include border-radius(50px 0 0 50px);}
+        &.next{@include border-radius(0 50px 50px 0);}
+        i{font-size: 10px;}
+    }
+    .disabled{color: #ccc;cursor: default;background-color: #fff;}
+    span{background-color: #fff;border-left:1px solid #e5e5e5;border-right:1px solid #e5e5e5;display: inline-block; padding:0 15px;float: left;}
+}

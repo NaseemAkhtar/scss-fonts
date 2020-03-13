@@ -1,0 +1,30 @@
+
+.errorPage_new{background: #1f2e67;
+    background: -moz-linear-gradient(left,#1f2e67 0%,#3a4d95 100%);
+    background: -webkit-linear-gradient(left,#1f2e67 0%,#3a4d95 100%);
+    background: linear-gradient(to right,#1f2e67 0%,#3a4d95 100%);
+	padding-bottom:50px; height:100vh;  
+}
+.errorPage_new {
+	.logo-top{height:70px; line-height:70px;}
+ 	
+	.content-ErrorSect{ background-color:#fff; padding-top:20px; padding-bottom:15px;border-radius:5px;max-width: 1175px; 
+		.top-content{padding-top:80px; padding-bottom:25px;margin-top:60px;}
+	}
+	.error503web-content{ padding-bottom:20px; padding-top:15px;
+		h4{font-size:24px; line-height:28px; font-weight:600;color:#333; margin:10px 0;}
+		p{ color:#333; font-size:14px; line-height:21px; margin:5px 0;}
+	}
+	
+	.error404web-link{ padding-bottom:0;
+		h3{color:#333;font-weight:600; font-size:14px; line-height:20px;}
+		.link-errorPage{padding:8px 0 0;margin-bottom:50px;
+			a{height: 30px;line-height: 30px;color:#666; padding:0 10px; background-color:#f2f2f2; border:1px solid #e5e5e5; border-radius:15px;display:inline-block; vertical-align:top; margin:5px; font-size:12px;}			
+		}
+	}
+	.paddingBtm{padding-bottom:160px;}
+}
+
+
+
+	

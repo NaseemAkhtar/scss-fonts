@@ -1,0 +1,87 @@
+.sortFilterOuter{
+    background-color: #ffffff;
+    padding:0;	
+    .head{
+        color: $gray-darker;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 15px;
+        border-bottom: 1px solid $gray-lightest;
+        .clearAll{
+            color: $gray;
+            font-size: 12px;
+            float: right;
+            font-weight: normal;
+        }
+    }
+    .sortFilterBox{
+        height: calc(100% - 97px);
+        .tabs{
+            width: 120px;
+            height: 100%;
+            float: left;
+            border-right: 1px solid $gray-lighter;
+            background-color: $gray-lightest;
+			h2{font-weight:400;margin:0;}
+            a{
+                display: block;
+                font-size: 14px;
+                color: $gray-dark;
+                padding: 12px 5px 12px 10px;;
+                position: relative;
+                border-bottom: 1px solid #e7e7e7;
+                .checkedNum{
+                    color: #02a569;
+                    font-size: 12px;
+                }
+                &.active{
+                    background-color: #ffffff;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        width: 3px;
+                        height: 100%;
+                        left: 0;
+                        top: 0;
+                        background-color: #02a569;
+                    }
+                }
+            }
+        }
+        .radioCheckbox{
+            width: calc(100% - 121px);
+            height: 100%;
+            float: left;
+            padding: 0 15px;
+            .tabCatagory{
+                display: none;
+				height:100%;overflow:auto;
+                &:first-child{
+                    display: block;
+                }
+            }
+            .box{
+                padding: 13px 0;
+                border-bottom: 1px solid $gray-lighter;
+            }
+        }
+    }
+    .cancelApply{
+        a {
+            float: left;
+            text-align: center;
+            padding: 14px;
+            color: $gray-lightest;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .cancel {
+            width: 120px;
+            background-color: $gray-dark;
+        }
+        .apply {
+            width: calc(100% - 121px);
+            background-color: $brand-primary;
+        }
+    }
+}

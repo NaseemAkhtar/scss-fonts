@@ -1,0 +1,22 @@
+.pipeUl{list-style:none;
+	li{display:inline-block;position:relative;
+		strong{font-size:1.4rem;color:#333;}
+		&:not(:last-child){
+			&:after{position:absolute; right:-6px; top:0; content:"|";}
+		}
+	}
+}
+
+.usefulLinks{
+	.pipeUl{margin:0;padding:0;
+		li {line-height:21px;
+			&:not(:last-child){padding-right:20px;margin-right:15px;}
+			a{
+				font-size:1.2rem;color:#666;
+			}
+		}
+	}
+	h4{
+		color:#333;font-size:1.4rem;margin-top:0;
+	}
+}

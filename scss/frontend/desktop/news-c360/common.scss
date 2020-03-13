@@ -1,0 +1,129 @@
+/*!
+ * careers-grid v1.1 
+ *
+*/  
+// Core variables and mixins 
+@import "include/variables";
+@import "theme/newsfonts";
+@import "theme/fonts"; 
+@import "include/mixins";  
+@import "include/normalize"; 
+
+// Reset and dependencies
+@import "include/buttons";   
+@import "include/layout";  
+
+//Fonts File 
+@import "theme/jquery-ui"; 
+@import "include/dropdowns"; 
+@import "include/back-to-top";
+@import "partial/form";  
+
+//Body Elements CSS  
+@import "partial/navigation";
+@import "include/grid";
+@import "partial/header";
+@import "partial/footer";
+@import "partial/popup";
+@import "partial/error-page";   
+ .flex {
+    display: flex;
+}
+
+
+*,ul,li{
+	outline:none; 
+	list-style: none;
+} 
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+a { 
+    transition: 0.5s;
+}
+.borderNone {
+    border: none!important;
+}
+.nextpageLink {
+    font-size: 14px;
+}
+.nextpageLink i {
+    font-size: 10px;
+}
+.view-news p {
+    display: inline-block;
+}
+.bootomArticle {
+    position: relative; 
+    height: 30px;
+    display: table;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+	border-bottom: solid 1px $gray-lighter!important; 
+}
+.moreButtonBottom {
+    position: absolute;
+    bottom: -8px;
+    right: 50%;
+    width: 80px;
+    text-align: center;
+    background: #fff;
+    font-size: 14px;
+    color: #3a4d95;
+    margin: 0 -40px 0 0; 
+		a{
+			
+			 font-weight: 400;
+				.ico {
+				font-size: 10px;
+					padding: 0 0 0 7px;
+					
+				}
+		}
+	
+}
+#footer .middle-footer .footer-content h5{
+    text-transform: inherit!important;
+}
+.new-admBlock{ width:100%; margin:20px 0; 
+	.innerBlock{background-color:#3a4d95; border-radius:4px; padding:15px 20px; max-width:640px;width:100%; margin:0 auto;
+		.leftBlock{width:100%;vertical-align: middle; text-align:left;
+			 p{margin:0 0 5px;color:#fff;text-align:left;}
+			 h3{margin:0;color:#fff;text-align:left;font-size:18px !important; }
+		}	
+		.rightBlock{min-width:140px; text-align:right;vertical-align: middle;
+			a{
+				min-width: auto;
+			   display: inline-block;
+			   padding-left: 13px;
+			   padding-right: 13px;
+			   height: 30px !important;
+			   line-height: 28px !important;
+			   color: #fff !important;
+			}
+		}
+	}
+}
+
+
+.colgListBlk .leftBlk .imgBlk{position:relative;}
+
+.admsnOpen.stickySidebar {
+  top: 50px !important; }
+
+.admsnOpen .colgListBlk .display-table:not(:last-child) {
+  margin-bottom: 12px;
+  min-height: 60px; }
+
+.admsnOpen .colgListBlk {
+  padding: 15px 0px; }
+  .admsnOpen .colgListBlk .leftBlk {
+    width: 50px;
+    height: 50px; }
+    .admsnOpen .colgListBlk .leftBlk .imgBlk {
+      width: 45px;
+      height: 45px; }
+  .admsnOpen .colgListBlk .display-table:not(:last-child) {
+    min-height: 45px; }
+

@@ -1,0 +1,69 @@
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    display: inline-block;
+    margin-bottom: 5px;
+	font-size:1.2rem;
+	color:#999;
+}
+
+.form-control { 
+    display: block;
+    width: 100%; height:40px;line-height:1.5;
+    padding: 0 12px;
+    color: #333;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    @include border-radius(4px);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+select.form-control:not([size]):not([multiple]) {
+    height: calc(3.8rem + 2px);
+}
+
+
+form{
+	&.paymentForm{
+			input[type="text"], select,input[type="email"],input[type="number"] 
+			{
+				height:40px;
+			}
+		  }
+}
+
+label{font-size:1.2rem;color:#999;}
+
+input[type="text"],input[type="email"],input[type="number"], select, textarea{
+  @include border-radius(4px);
+  background-color: #fff;
+  border: solid 1px #ccc;
+  padding:10px;
+  color:#333;
+  margin:3px 0;
+}
+
+.formRow{margin-top:22px;
+	&:first-child{margin:0;}
+	.button{margin:0;}
+}
+.frmRowSingle{
+	input[type="text"], input[type="email"],input[type="number"],select, textarea{
+	  width:100%;
+	}
+}
+
+.error{color: #ec1c24;}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.formBtnRow .btn-lg{margin-top:0;}

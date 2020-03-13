@@ -1,0 +1,18 @@
+.cardListBlk{
+	.cardBlk{margin-top:15px;
+		.cardBlkInn{padding:15px 10px;}
+		.rating{margin-top:10px; width:100%;padding-left:0 !important; }   
+	}
+	.baseHeading{margin:0; } 
+	.btnBlk{margin-top:20px;}
+	.display-inlineBlock{width:32.5%;
+		span{color:#999;} 
+		div{font-size:1.4rem;color:#333;
+			i{vertical-align:middle;}
+		}
+	}
+	
+	.showMore{margin-top:30px;
+		.button{border-color:#e5e5e5;font-size:1.2rem;@include border-radius(15px);}
+	}
+}

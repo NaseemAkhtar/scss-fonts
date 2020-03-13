@@ -1,0 +1,160 @@
+.eBookDetail { 
+    display: inline-block;
+        width: 100%;
+         float: left;
+    padding:0;
+    background-color: #ffffff; 
+    margin:0 0 0 1px; 
+	.thumb{
+	    &:after{    
+		display: inline-block;
+		vertical-align: middle;
+		height: 100%; 
+		content: "";}
+		float: left;
+		width: 130px;
+		height: 180px;
+		margin-right: 13px;  
+		display: table;
+		text-align: center;
+	img{
+		display: inline-block;
+		vertical-align: middle;
+	 }
+	
+	}
+
+	.ebookInfo {
+		width: calc(100% - 160px);
+		float: left;
+		.topheading{   
+		    height: 155px;
+		} 
+		h5 {
+			font-size: 16px;
+			color: $gray-darker;
+			font-weight: 600;
+			line-height: 28px;
+			margin-top: -5px;
+			margin-bottom: 15px;
+			overflow: hidden;
+			max-height: 56px;
+			    a{
+			    color:$gray-darker;
+			    }
+		}
+		.countbottomReview {  
+		    font-size: 12px;
+		        margin: 10px 0 0;
+		    color: #999999;
+		    span{
+		    	i {
+					    margin: 0 10px 0 0;
+					}
+		    }
+		   	.careers-thumb-up{
+		   		 &:before{
+			     color: #ccc;
+			     position: relative;
+   				 top: -3px;
+   				 font-size: 14px;
+			    }
+		   	}
+		   	.careers-download{
+		   		 &:before{
+			     color: #ccc;
+			     position: relative;
+   				 top: -1px;
+    			font-size: 16px;
+			    }
+		   	}
+		}
+	}
+	&:last{
+	    border: none;
+	}
+}
+.reviewsCount {
+    color: #999999;
+}
+
+.totalDownload {
+	padding: 0 0 5px 0;
+    font-size: 11px;
+    color: #999;
+    width: 150px;
+    height:20px;
+    text-align: center;
+    margin: 0;
+    span{
+    	display: inline-block;
+   		width: 100%;
+    }
+}
+
+.ebookSamplePaper h2 { 
+    overflow: hidden;
+    max-width: 90%;
+    margin: 0;
+}
+
+.customNavigation {
+		position: relative;
+	.owl-carousel{
+		position: unset;
+		.owl-nav {
+		    position: absolute;
+		    top: 74px;
+		    width: 100%;
+		    right: 20px;  
+		}
+	}
+
+}
+.customNavigation .cardBlk .owl-carousel .owl-nav .owl-next, .customNavigation .cardBlk .owl-carousel .owl-nav .owl-prev{
+	top: -10px!important;
+}
+
+ 
+.ebookCarousel{
+    .owl-item{
+        float: left;
+    }
+    .thumb{ 
+        float: left;
+        width: 130px;
+        height:180px; 
+        margin-right: 15px; 
+    }
+    .ebookInfo {
+        width: calc(100% - 160px);
+        float: left; 
+        .ratingReview{
+            .rating{
+                float: left;
+                margin-right: 10px;
+            }
+            span{
+                display: inline-block;
+                color: #666666;
+                margin-top: 4px;
+                font-size: 12px;
+            }
+        }
+        .breif{
+            font-size: 15px;
+            line-height: 22px;
+            color: #666666;
+        }
+        .dowloads{
+            width: 150px;
+            float: left;
+            font-size: 13px;
+            color: #666666;
+            text-align: center;
+            a{
+             float: left;
+            }
+        }
+    }
+}

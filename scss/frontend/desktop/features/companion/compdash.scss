@@ -1,0 +1,302 @@
+@import "../../include/variables";
+@import "../../include/mixins";
+@import "../../partial/cardBlk";
+@import "../../partial/BannerBlk";
+@import "../../vendor/animate";
+	
+.comp_predictor{
+   margin-top:30px;
+}
+
+
+.prev-slide{
+    border: 1px solid #ccc9c9;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    margin: 0 0px 18px 8px;
+	}
+.next-slide{
+    border: 1px solid #ccc9c9;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin: 0 0px 18px 3px;
+	}
+	.comp_predictor .owl-carousel .owl-nav .owl-prev, .comp_predictor .owl-carousel .owl-nav .owl-next{
+	    background:transparent;
+	    box-shadow:none;
+		transform: translate(5%, -30%);
+	}
+	
+	.feeds_block h2 {
+		background: #a6d5ea;
+		font-size: 17px;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 20px 10px;
+		margin-top: 0;
+     }
+	 .feeds_block p {
+       padding: 10px;
+	   position:relative;
+     }
+	 .feeds_block {
+       border: 1px solid #ddd;
+      }
+	  .compa_carausol,.compa_carausol1,.compa_carausol2 {
+		padding: 20px 10px;
+      }
+	  .carausol_blk {
+		margin: 0px 0px 10px;
+        }
+		.feeds_block p:after {
+			content: "";
+			position: absolute;
+			width: 180px;
+			background: #d4cdcd;
+			top: 62px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			height: 1px;
+        }
+        .use_nowbtn a{
+	        border-radius: 4px;
+		    background-color: #e56c5b;
+		    padding: 5px 10px;
+		    margin-top: 16px;
+		    color: #fff;
+        }
+        .pastWebinar h4 {
+		    font-size: 18px;
+		    padding: 20px 0px 10px 0px;
+		    border-bottom: 1px solid #ddd;
+		    margin: 20px;
+      }
+      .pastWebinar .card.textCenter .link {
+        min-height: 50px;
+      }
+      .videoStatus {
+	    display: flex;
+	    justify-content: space-between;
+    }
+   .watch_nowmore {
+		    border: 1px solid #ced2e4;
+		    background: #ebedf4;
+		    margin-top: 10px;
+     }
+     .watch_nowmore a {
+	    font-size: 14px;
+	    padding: 3px;
+	    display: block;
+     }
+     .comp_predictor .owl-carousel .owl-nav .owl-prev {
+	    top: -33px;
+	    right: 70px;
+	    left: auto;
+	    border: 1px solid #e5e5e5;
+	    height: 25px;
+	    padding: 5px 0px 0px;
+	    width: 25px;
+    }
+    .comp_predictor .owl-carousel .owl-nav .owl-next {
+		    top: -33px;
+		    right: 39px;
+		    left: auto;
+		    border: 1px solid #e5e5e5;
+		    height: 25px;
+		    padding: 5px 0px 0px;
+		    width: 25px;
+     }
+     .owl-carousel .owl-stage-outer .owl-stage {
+       padding-left: 0 !important;
+      }
+      .book_library {
+        display: flex;
+       }
+       .imgebooks {
+		    border: solid 1px #ccc;
+		    width: 110px;
+		    margin: 0 10px;
+		    margin-bottom: 10px;
+		    flex: 1;
+		    height: 150px;
+        }
+        .book_titlename {
+           flex: 1.5;
+       }
+     .main_librarybooks {
+		    margin: 0px 20px 0px 0px;
+		    background-color: #ffffff;
+		    border: 1px solid #f1eded;
+		    padding: 10px;
+		    box-shadow: 0px 3px 8px 0 rgba(102, 102, 102, 0.15);
+    }
+    .book_titlename a {
+	    font-size: 16px;
+	    font-weight: 600;
+	    line-height: 1.81;
+	    letter-spacing: normal;
+	    text-align: left;
+	    color: #333333;
+}
+.gray_iconchanges img {
+    border: 0 !important;
+}
+.gray_iconchanges {
+    filter: grayscale(1);
+    margin-right: 10px;
+}
+.download_maincount {
+    display: flex;
+    justify-content: start;
+}
+span.download_count {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 12px;
+}
+.dowloads {
+    margin-top: 50px;
+    display: flex;
+}
+.dowloads a.btn.btn-danger {
+    border-radius: 4px;
+    border: solid 1px #ced2e4;
+    background-color: #ebedf4;
+    font-size: 14px;
+    font-weight: normal;
+    color: #3A4D95;
+    padding: 0px 30px;
+}
+.book_titlename>a {
+    height: 54px;
+}
+.videoStatus .status.live {
+    background: #d2260d !important;
+    color: #fff;
+    padding: 6px 10px !important;
+}
+.videoStatus .status.upcoming {
+    background: #f5f517 !important;
+    color: #000;
+    padding: 5px 10px !important;
+}
+.pastWebinar .breif{
+	min-height: 172px;
+}
+
+.buy_nowcourse a.btech-url.btn {
+    position: absolute;
+    top: 180px;
+    left: 160px;
+    background: #e56c5b;
+    color: #fff;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.buy_nowcourse a.mbbs-url.btn {
+    position: absolute;
+    top: 180px;
+    right: 200px;
+    background: #e56c5b;
+    color: #fff;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    
+}
+.contentPart.blur-imageshow{
+    background: url(/../../../images/blur-contentpart.png);
+    background-position: center 0;
+    background-size: cover;
+    padding-bottom: 20px;
+    height: 440px;
+    margin-top: 0px !important;
+   }
+   .dashboard-container .contentPart>h3 {
+    margin-left: 16px;
+    color: #fff;
+    font-size: 21px;
+}
+ .leftBanner {
+    position: absolute;
+    width: 300px;
+    color: #fff;
+    top: 0;
+    left: 50%;
+    transform: translate(-93%, 10px);
+}
+.leftBanner p,.rightBanner p {
+    color: #fff;
+}
+.rightBanner {
+    position: absolute;
+    width: 300px;
+    color: #fff;
+    top: 0;
+    transform: translate(-93%, 10px);
+    right: -22%;
+}
+.rightBanner h1,.leftBanner h1 {
+    margin-bottom: 5px;
+}
+.almanac-block {
+    margin-top: 20px;
+    border: 1px dashed #ccc;
+    padding: 20px 0px 20px 0px;
+}
+span.staSmallText {
+    margin-top:0px;
+    display: block;
+}
+
+.offlineCounseling{
+    padding: 0 20px;
+}
+.offlineCounseling:before,.offlineCounseling:after {
+   content: '';
+   display: table;
+   clear: both;
+}
+.offlineCounseling .dropdow {
+   max-width: 350px;
+   width: 100%;
+   float: left;
+   margin-right: 10px;
+}
+.offlineCounseling .dropdow label {font-size: 14px; color: #333; font-weight: normal; margin-bottom: 5px;}
+.offlineCounseling .dropdow select {
+    padding: 5px 10px;
+    height: 40px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 5px;
+}
+.offlineCounseling .submit {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    background: #cccccc;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    margin-top: 25px;
+    pointer-events: none;
+}
+.offlineCounseling .submit.active {
+    background: #3a4d95;
+    pointer-events: inherit;
+}
+.pastWebinar h4{color: #333; line-height: 28px;}
+

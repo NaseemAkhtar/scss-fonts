@@ -1,0 +1,355 @@
+@import "../../includes/mixins"; 
+@import "../../includes/variables"; 
+@import "../../partials/components/listBlk";
+@import "../../partials/components/popup";
+@import "../../partials/components/tags";
+@import "../../partials/components/cardBlk";
+
+.banner-content{
+	p{color:#fff;font-size:1.2rem;
+		a{color:#fff;text-decoration:underline;}
+	}
+}  
+	.layout-container.cardBlks {
+		padding:12px 0 0;
+	}
+.block-section .blockHeading img {
+    width: 21px;
+    margin: 0 5px 0 0;
+        position: relative;
+    top: 2px;
+}
+.block-section > h2 {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+}
+.green{color:$gray-darker;}
+.collegeListing{
+	.white-bg{background-color:#fff; margin-top:15px; margin-bottom:10px;} 
+	.view-more{		
+		a{font-size:$font-size-base;line-height: 2;}
+	}
+	.border-common{margin-bottom:10px;position:relative;
+		&:before{
+	 			height:3px;
+	 			width:100%;
+	 			content: "";
+	 			display: inline-block;
+			    position: absolute;
+			    bottom: -10px; 
+	 		}
+	}
+	.bg-border-1{  
+		&:before{ 
+		 		background: rgb(147,212,98);
+				background: linear-gradient(90deg, rgba(147,212,98,1) 0%, rgba(240,255,228,0.7931547619047619) 100%);
+	 		}
+	}
+	
+	.bg-border-2{  
+		&:before{ 
+		 		background: rgb(147,212,98);
+				background: linear-gradient(90deg, rgba(147,212,98,1) 0%, rgba(240,255,228,0.7931547619047619) 100%);
+	 		}
+	}
+	
+	.bg-border-3{ 
+		&:before{ 
+		 		background: rgb(147,212,98);
+				background: linear-gradient(90deg, rgba(147,212,98,1) 0%, rgba(240,255,228,0.7931547619047619) 100%);
+	 		}
+	}
+	.bg-border-4{ 
+		&:before{
+	 			 
+		 		background: rgb(147,212,98);
+				background: linear-gradient(90deg, rgba(147,212,98,1) 0%, rgba(240,255,228,0.7931547619047619) 100%);
+	 		}
+	}
+	
+	
+	.block-section{width:100%;padding:13px 0 6px;}
+	.paragraph{color:$gray-darker; font-size:$font-size-base; padding:15px 0 4px 20px; position: relative;
+		&:before{background: url(../../../../../images/frontend/mobile/listing-arrow.svg) no-repeat; width:10px; height:9px; content:'';top:21px;
+    	left: 0;position: absolute;}
+	}
+	
+	.box-container { 
+		@include border-radius(3px);background-color:#fff; padding:6px 15px 15px; margin:0px 0 15px;
+  			box-shadow:1px 1px 6px 0 rgba(0, 0, 0, 0.05);height: 147px;
+		 .top-info{
+			 .blockHeading{font-size:16px;line-height: 1.88; padding-bottom:5px;}
+			 p{color:$gray-dark;
+				font-size:$font-size-base;
+				line-height: 1.5;}
+		}	 
+		.bottomInfo {font-size:$font-size-small; color: #212121;
+			width: 100%;
+			overflow: hidden;
+			padding-top: 3px;
+			.price{padding-top:5px;}
+			span{
+				 display:inline-block; vertical-align:middle; padding-right:3px;
+			}
+			.greyColor{color:#c7c7c7;margin:3px 0px;
+				del {
+					color: #c7c7c7;
+				}
+			}
+			.oldPrice{color:#212121;font-size: 16px;font-weight: 600;}
+			.btn-small{     width: 100%; min-width: auto !important;padding: 0 10px; @include border-radius(4px);}
+			.price{width:61%;
+				.last-span{text-align:right; font-size: 16px;color: #212121;font-weight: 600;}
+				.price-detail-1{display:inline-block; width:43%;}
+				.price-detail-2{display:inline-block;width:53%;text-align: right; float:right;
+					span{padding-right:8px; 
+						&:last-child{padding-right:4px;}
+					}
+				}
+			}
+		} 
+		
+		  
+	}
+	
+	.buyNow{
+		.btn-small{width: 88px; @include border-radius(16px);}
+	}	
+	
+	.admission{ margin-top: 15px;} 
+	  
+	 .viewAllBtn{text-align: center;} 
+	.cardBlk {background-color:#fff; padding-top:24px;
+		margin-top: 15px; 
+	} 
+	.viewAllOuter {box-shadow: 0 0 ;
+		margin: 20px -15px -20px;
+	}
+}	
+#counselling {
+    background-color: #fff;margin-bottom: 20px;
+}
+ 
+.sticky-navignation{   
+    width: 100%;
+	.menu {padding-bottom:14px; 
+		-webkit-transition: all 0.4s ease;
+		-moz-transition: all 0.4s ease;
+		-o-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+		#menu-center { 
+
+			 ul {
+				margin: 0 0 0 0;
+				padding:0;
+					text-align: center;
+				li{list-style: none;
+					width: 32%;
+					margin: 0px 1% 0 0;
+					display: inline-block;
+					vertical-align: top; 
+
+					&:last-child{margin-right:0px;}
+					a{ 
+						height: 60px;background-color: #fff;
+						padding: 10px 5px;
+						text-align: center;
+						font-size: 14px;
+						width:100%;
+						color: #666666;
+						display: inline-block;
+						line-height: normal; 
+						@include border-radius(4px);
+						 box-shadow: 0 0 10px 0 rgba(102, 102, 102, 0.15);
+						 
+							i{font-size:20px}
+							span{
+								display: inline-block;
+								font-size: 14px;
+								font-weight: 400;
+								padding:1px 5px 0;
+							}
+						img{
+						    width: 25px;
+						}
+					}
+					&:last-child{
+					 margin-right:0;
+					}
+
+					span.careers-shape-colleges:before {
+						color: inherit;
+					}
+				}
+			}
+		}
+	}
+
+}
+.box-view{
+	&.more-content{
+		 &.showContent{
+			.box-view-height {
+				height:auto;
+			}
+		 }
+		.box-view-height {
+			height:482px;    
+			overflow: hidden; 
+		}
+	}
+} 
+a.successURL {visibility: hidden !important;  position: absolute;}
+
+section.layout-container.appBlk, section.layout-container.textiMonial, .footSocial, .footBrandLogo, .footTopList{display:none;}
+footer.footer.layout-container{padding:10px 0 30px;  }
+
+
+.bottomInfo {
+	.careers-indian-rupee.green {
+		color: #26a763;
+		margin:3px 0px;
+	}
+}
+
+
+
+
+.green .block-section > h2{
+	    	position: relative;
+	 		&:before{
+	 			height: 3px;
+	 			width:100%;
+	 			content: "";
+	 			display: inline-block;
+			    position: absolute;
+			    bottom:-5px;
+				background: rgb(50,204,188);
+				background: linear-gradient(90deg, rgba(50,204,188,1) 0%, rgba(183,222,218,1) 100%);
+		 	}
+	    } 
+.blue .block-section > h2{
+	    	position: relative;
+	 		&:before{
+	 			height: 3px;
+	 			width:100%;
+	 			content: "";
+	 			display: inline-block;
+			    position: absolute;
+			    bottom: -5px; 
+				background: rgb(144,216,245);
+				background: linear-gradient(90deg, rgba(144,216,245,1) 0%, rgba(219,244,254,1) 100%);
+	 		}
+	    }    
+.orange .block-section > h2{
+	    	position: relative;
+	 		&:before{
+	 			height: 3px;
+	 			width:100%;
+	 			content: "";
+	 			display: inline-block;
+			    position: absolute;
+			    bottom:-5px;
+				background: #f2cc5a;
+				background: linear-gradient(90deg, #f2cc5a 0%, #faedc5 100%);
+	 		}
+	    }  
+ 
+.orange .block-section > h2{
+	    	position: relative;
+	 		&:before{
+	 			height: 3px;
+	 			width:100%;
+	 			content: "";
+	 			display: inline-block;
+			    position: absolute;
+			    bottom:-5px;
+				background: #f2cc5a;
+				background: linear-gradient(90deg, #f2cc5a 0%, #faedc5 100%);
+	 		}
+	    }  
+.applications .headingContainer{
+	    padding-left: 15px;
+    padding-right: 15px;
+}
+.applications .headingContainer > h2{
+	    	position: relative;
+	    	    height: 35px;
+	    	        margin-bottom: 20px;
+	 		&:before{
+	 			height: 3px;
+	 			width:100%;
+	 			content: "";
+	 			display: inline-block;
+			    position: absolute;
+			    bottom:-5px;
+				background: #dbd137;
+				background: linear-gradient(90deg, #dbd137 0%, #ebe9ca 100%);
+	 		}
+} 
+.colgListBlk {
+    display: inline-block;
+    width: 100%;
+}
+.applications span img {
+    width: 17px;
+    margin: 0 10px 0 0;
+    position: relative;
+    top: 3px;
+}
+.display-cell.rightBlk {
+    border-bottom: solid 1px #e5e5e5; 
+    height: 60px;
+}
+.applications .cardBlkInn {
+    background-color: #fff;
+    padding: 10px 0 0;
+}
+
+.colgListBlk .cardBlkInn:last-child .display-cell.rightBlk {
+    border: none;
+}
+.price.pull-left i.c360-rupees {
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+.collegeListing .view-more a i {
+    font-size: 12px;
+    left: 4px;
+    position: relative;
+}
+
+
+.top-info {
+    height: 76px;
+    overflow: hidden;
+    margin-bottom: 10px;
+} 
+.buyNow.pull-left {
+    position: absolute;
+}
+.collegeListing .box-container .bottomInfo .price.smPrice span.oldPrice {
+   font-size: 12px;
+   line-height: 10px;
+       margin: 0;
+    padding: 0;
+}
+.collegeListing .box-container .bottomInfo .price.smPrice {
+   font-size: 12px;
+   text-align: right;
+   margin: 0;
+   padding: 0px 0 00;
+   width: 100%;
+}
+.collegeListing .box-container .bottomInfo .price.smPrice span.oldPrice span.greyColor {
+    font-size: 12px;
+    vertical-align: text-bottom;
+    font-weight: normal;
+	padding:0;
+}
+.price.smPrice i.c360-rupees {
+    font-size: 10px;
+}

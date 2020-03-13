@@ -1,0 +1,167 @@
+/* Style you custom popupbox according to your requirement */ 
+.popupbox {
+	width:100%;
+	min-height:262px;  
+	display: none;
+	float: left;
+	position: fixed; bottom:0;
+	top:0; left:0;right:0;
+	z-index: 99999;    
+	height:100%;
+    padding: 20px;
+   
+   .headerPopup {
+    min-height: 60px;
+	line-height:60px;
+    vertical-align: middle;
+	padding:0 10px;
+	color:#fff;
+	position:relative; 
+	font-weight: 600; 
+    font-size: 2.4rem;
+    text-align: center;
+	@include border-radius(10px 10px 0 0);
+	background: rgb(31,46,103); /* Old browsers */
+	background: -moz-linear-gradient(left, rgba(31,46,103,1) 0%, rgba(58,77,149,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(31,46,103,1) 0%,rgba(58,77,149,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(31,46,103,1) 0%,rgba(58,77,149,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2e67', endColorstr='#3a4d95',GradientType=1 ); /* IE6-9 */
+	
+		.headInn{
+			line-height:30px;    display: inline-block;vertical-align: middle; padding:10px 0;
+		}
+	}
+
+	&.grayModal{
+		.headerPopup{
+			background:#f2f2f2;
+			font-size:1.6rem;color:#333;line-height:24px;font-weight:400;
+		}
+		.subHead{padding: 0 18px 20px;
+				color: #999;
+				border-bottom: 1px solid #f2f2f2;
+				margin-bottom: 10px;}
+	} 
+	.contentSecPopup {
+		padding: 20px;  
+		font-size:14px;  
+		color:#333;
+		width: 100%; line-height: 21px;
+		margin-bottom: 49px;
+		overflow: auto;
+	}
+	.padAdjust{margin:0 -20px;}
+    &.fullScreenFormActive{padding: 0 !important;}
+}
+body.modalopen{ overflow: hidden;}
+.subHeading{display: block;font-size: 1.6rem;}
+.popSeparator{padding-top:20px;}
+.popupcontainer {
+    background-color: #fff; 
+	@include border-radius(10px);
+    position: relative;
+    padding-bottom: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+}
+.popupbox .contentSecPopup{
+    height: calc(100% - 40px);
+}
+
+.grayRecomend{
+    .headerPopup{
+            font-size: 1.4rem;
+            padding: 9px 15px;
+            line-height: 25px;
+            background: #f2f2f2;
+            color: #333;
+            text-align: left;
+            border-bottom: 1px solid #e5e5e5;
+            min-height: 44px;font-weight: 400;
+	}
+    .contentSecPopup{padding:15px;}
+    .closebtn{
+        top: 0;
+        right: 0; 
+        color:#333;
+        padding:10px;    
+        margin-top: 3px;
+        margin-right: 5px;
+        position: absolute;
+        font-size: 1.5rem; 
+    }   
+}
+
+#fade { 
+	display: none; /* Hidden as default */
+	background: #000;
+	position: fixed; left: 0; top: 0;bottom:0;right:0;
+	width: 100%; height: 100%;
+	opacity: .70;
+	z-index: 9999;
+}
+.footerPopup {
+    position: absolute;
+    bottom: 0;
+	background:#fff;
+    left: 0;
+    border-top:solid 1px #e5e5e5;
+    width: auto;
+    height: 49px;
+	@include border-radius(0 0 10px 10px);
+	font-size: 1.6rem;
+	font-weight: 300;
+    text-align: center;
+    width: 100%; 
+	line-height: 48px;
+	cursor: pointer;
+}
+
+
+
+.formModal{
+	.popupcontainer{margin:0;}
+	.headerPopup{background: #f2f2f2;color:#333;@include border-radius(0);
+		.headInn{line-height:33px;padding:15px 0;}
+	}
+	.contentSecPopup{margin-bottom:0;padding-bottom:50px;}
+	.popupcontainer{@include border-radius(0); }
+	.formBtn{
+		position: fixed;
+		bottom: 0;
+		background-color: #fff;
+		width: 100%;
+		left: 0;
+		padding: 15px;
+		@include box-shadow(0px -4px 6px 0 rgba(0, 0, 0, 0.3));
+		}
+	.formCross{line-height:initial;
+		i{font-size:1.5rem;}
+	}
+}
+
+.browser-midBlock {
+    text-align: center;
+    padding-top: 160px;
+}
+
+.browser-midBlock{
+   p{font-size:14px;}
+
+ }
+ 
+ .thankPopup{
+ .v-middle{text-align:center;}
+	img{width:225px;}
+	.thankCont{margin-top:30px;
+		strong{font-size:2.4rem;}
+	}
+	.contentSecPopup{padding:60px 30px; overflow: inherit;}
+	.closebtn{top: 40px;right: 40px; color:#333;
+    position: absolute;
+    font-size: 1.6rem;}
+}
+
+
+

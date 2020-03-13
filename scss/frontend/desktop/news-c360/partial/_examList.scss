@@ -1,0 +1,54 @@
+.colgListBlk {
+	.leftBlk {
+		width: 60px;
+		height: 50px;
+		
+		img{
+			width: 50px;
+			border: 1px solid #e5e5e5;
+			display:block;
+		}
+	}
+	.display-table {
+		position: relative;
+		padding:0 10px;
+		margin:20px 0;
+		&:last-child .colgTitle{
+			border: none;
+			padding-bottom:0;
+		}
+	}
+
+	.rightBlk{
+		.button {
+			position: absolute;
+			right: 10px;
+			top: 3px;
+			min-width:70px;
+		}
+		.colgTitle {
+			font-size: 1.4rem;
+			color: #333;
+			padding-right: 70px;
+			padding-bottom:20px;
+			border-bottom: 1px solid #e5e5e5;
+		}
+	}
+}
+
+.linkList {
+	.display-table {
+		.colgTitle {
+			position: relative;
+			padding-right: 15px !important;
+				&:after {
+					content: "\e90b";
+					font-family: 'careers-fonts';
+					position: absolute;
+					top: 50%;
+					margin-top: -10px;
+					right: 0;
+				}
+			}
+	}
+}

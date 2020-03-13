@@ -1,0 +1,22 @@
+@import "../../includes/mixins"; 
+@import "../../includes/variables";
+
+.seOrder{border-top:1px solid #ccc;padding-top:15px;margin-top:15px;color:$gray-darker;} 
+.seOrder span{color:$gray;display:block;margin-bottom:5px;}
+.sePrice{font-size:1.8rem;color:$gray;font-weight:700;}
+.seContent{margin-top:10px;color:$gray-darker;}
+.backBlk{margin-top:30px;}
+.c360-right{color:#00a669;font-size:5rem;}
+.c360-wrong{font-size:5rem;}
+ .greyBGDisplay.text-center i.c360-wrong {
+   margin: 10px 0 10px 0;
+   display: inline-block;
+}
+.sePrice i.c360-rupees {
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+.size-40 {
+    font-size: 40px;
+}
+ 

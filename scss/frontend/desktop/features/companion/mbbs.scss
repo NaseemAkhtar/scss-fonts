@@ -1,0 +1,268 @@
+
+	.bTech-companion{
+		.comBanner{ 
+			color: #fff;
+			position: relative;
+			height: 360px;
+			padding: 30px 0; 
+			&:after {
+				position: absolute;	background-size: contain!important;content: '';height: 100%;left: 0;right: 0;bottom: 0;z-index: 1;
+			}
+			.leftBanner{width: 450px;float: left;margin-top: 60px;
+				h1{margin:0;text-transform:uppercase;}
+				 p {font-size: 16px;line-height: 30px; margin:0;color: #c5c3c3;}	
+				.preBtn-block {margin-top:35px;
+					.pack-btn{padding:15px 27px;background: #e56c5b;box-shadow: 3px 3px 3px #333;color: #fff; display: inline;}
+				} 
+			}	
+			.rightBanner{
+				.rightImage {position: relative;z-index: 9;float: right;width:320px;background: #fff;padding: 25px;border: 1px solid #ddd;
+				button.btn.danger{width: 100%;height: 37px;color: #fff;background: #e56c5b;border: 1px solid #e56c5b;margin-top:26px;
+				}
+				}
+			}	
+		}
+		
+		
+		.subHeading {margin-bottom: 50px;
+			.product-blockHeading {font-size: 26px;position: relative;font-weight: 300;
+				&:after {width: 36px;height: 3px;background-color: #02a569;	position: absolute;	left: 50%;margin-left: -18px;content: "";bottom: 0;margin-bottom: -5px;}
+			}			
+		}
+		.sectionBlk{padding: 50px 0;background: #fff;}
+			.display-table {
+				display: table;
+				width: 100%;
+			}
+			.display-cell.leftBlk {
+				width: 50%;
+				padding-right: 50px;
+			}
+			.vmid .display-cell {
+				vertical-align: middle;
+			}
+			.display-cell {
+				display: table-cell;
+			}
+			.listHeading {
+				color: #02a569;
+				font-size: 22px;
+			}
+			.listBlk ul {
+				padding-left: 30px;
+			}
+			.listBlk ul li {
+				position: relative;
+				font-size: 17px;
+				display: block;
+				margin: 10px 0;
+			}
+			.listBlk ul li:before {
+				background: url(https://images.careers360.mobi/sites/all/themes/careers360_new/images/companion/tick.png) no-repeat 0 5px;
+				content: "";
+				position: absolute;
+				left: -25px;
+				top: 0;
+				z-index: 8;
+				width: 15px;
+				height: 15px;
+				background-size: 13px 10px;
+			}
+			.display-cell.rightBlk {
+				width: 50%;
+				padding-right: 50px;
+			}
+			.faqBlk {
+				width: 750px;
+				margin: 0 auto;
+			}
+			.faqRow {
+				margin-bottom: 20px;
+				padding-bottom: 20px;
+				border-bottom: 1px solid rgba(58,77,149,.1);
+			}
+			.faqRow .ques {
+				font-size: 18px;
+			}
+			.faqRow p {
+				color: #666;
+				margin: 15px 0 0;
+				line-height: 28.8px;
+			}
+			.faqBtn .text {
+				font-size: 16px;
+				margin-bottom: 10px;
+			}
+			.blueBtn {    
+			    background-color: #3a4d95;
+				opacity: .7;
+				color: #fff;
+				width: 200px;
+				height: 40px;
+				line-height: 40px;
+				font-size: 18px;
+			}
+	}
+	.bTech-companion .grayBg.sectionBlk {
+         background-color: #f2f2f2;
+     }
+	 .about-profile h3 {
+		text-align: center;
+		font-weight: 500;
+		font-size: 16px;
+      }
+	  .about-profile {
+		text-align: center;
+		padding: 20px 60px;
+		border-radius: 50px 0px;
+		box-shadow: 0 0 16.2px 3.8px rgba(58,77,149,0.15);
+		margin: 10px;
+		min-height: 230px;
+		}
+		.sectionBlk.our_compstudent {
+          padding: 5px;
+         }
+.our_compstudent .subHeading {
+    margin-bottom: 25px;
+}
+.text_join >img {
+    border: none !important;
+}
+.otherComBlk {
+    margin: 0 auto;
+    font-size: 18px;
+    width: 640px;
+    height: 166px;
+    border-radius: 10px;
+    box-shadow: 0 0 13px 3px rgba(58,77,149,.15);
+    background-color: #fff;
+    padding: 18px 20px;
+}
+.display-table {
+    display: table;
+    width: 100%;
+}
+.otherComBlk .display-cell.leftBlk {
+    width: 36%;
+}
+.otherComBlk .display-cell.rightBlk {
+    padding-right: 0;
+    text-align: left;
+}
+.otherComBlk .display-cell.rightBlk p {
+    line-height: 26px;
+    font-size: 17px;
+}
+.bTech-companion .faqBlk .owl-dot {
+    border: 1px solid;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 20px 5px;
+    cursor: pointer;
+	opacity: 0.3;
+}
+.bTech-companion .faqBlk .owl-dots {
+    width: 260px;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+.bTech-companion .faqBlk .faqBlk .admcarausol {
+    position: relative;
+}
+
+.bTech-companion .faqBlk .owl-dot:first-child{
+    background: url("/../../../images/sahu.jpg");
+    text-align: center;
+    background-position: center 0;
+    background-size: 60px;
+    background-repeat: no-repeat;
+
+};
+.bTech-companion .faqBlk .owl-dot:nth-child(2){
+    background: url("/../../../images/umesh1.jpg");
+    text-align: center;
+    background-position: center 0;
+    background-size: 60px;
+    background-repeat: no-repeat;
+
+};
+.bTech-companion .faqBlk .owl-dot:nth-child(3){
+    background: url("/../../../images/sanjev.jpg");
+    text-align: center;
+    background-position: center 0;
+    background-size: 60px;
+    background-repeat: no-repeat;
+
+};
+
+.bTech-companion .faqBlk .owl-dot.active{
+opacity:1;
+}
+section.whiteBg.sectionBlk {
+    padding-top: 20px;
+}
+.rightImage #myGreatForm .form-control {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+	padding-left: 0;
+}
+.rightImage #myGreatForm .form-group>label {
+    color: #999;
+}
+.leftBanner h1:after {
+    content: "";
+    width: 94px;
+    height: 2px;
+    background: #fdbd39;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+.leftBanner h1 {
+    position: relative;
+}
+.fixed_bottom {
+  background: #e56c5b;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  z-index: 9; }
+
+.fixed_bottom .start_now {
+  padding: 8px 20px;
+  background: #fff;
+  border-radius: 8px;
+  align-items: center;
+  font-size: 18px; 
+  }
+  .bTech-companion .comBanner .leftBanner p i {
+    font-size: 18px;
+    color: #fff;
+    display:block;
+}
+p.package_heading {
+    color: #333;
+    font-size: 16px;
+}
+.groupedits {
+    float: left;
+    width: 100px;
+    margin-right: 40px;
+    margin-top: 70px;
+}
+.fixed_bottom .start_now a {
+    color: #e56c5b;
+    text-transform: capitalize;
+}
+.fixed_bottom .start_now a {
+    color: #e56c5b;
+    text-transform: capitalize;
+}

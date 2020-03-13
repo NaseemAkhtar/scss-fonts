@@ -1,0 +1,563 @@
+@import "../../include/variables";
+@import "../../include/mixins";
+
+
+
+.app-block, .sec-testimonials, .top-footer, .middle-footer {
+    display: none;
+}
+
+.pageHeading {
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.text-dark{
+    color: $gray-darker
+}
+
+.paymentHolder {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    padding: 0px;
+    display: table;
+    background: #1f2e67;
+    background: -moz-linear-gradient(left, #1f2e67 0%, #3a4d95 100%);
+    background: -webkit-linear-gradient(left, #1f2e67 0%, #3a4d95 100%);
+    background: linear-gradient(to right, #1f2e67 0%, #3a4d95 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2e67', endColorstr='#3a4d95',GradientType=1 );
+    .divMiddle{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .contentBlock {
+        background: #fff;
+        padding: 40px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        @include border-radius(4px);
+        .bottom {
+            margin-bottom: -40px;
+            margin-top: 0;
+            margin-right: -40px;
+            margin-left: -40px;
+            background: #eee;
+            color: $gray-dark;
+        }
+    }
+    h2 {
+        margin-top: -10px;
+        color: #333333;
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 0;
+    }
+    p{
+        color: $gray-darker;
+    }
+}
+
+.twoBlock .item{
+    .tryLogin{
+        text-align: center;
+        margin-top: 10px;
+    }
+    p strong{
+        margin-top: 10px;
+        display: block;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        margin-top: 10px;
+        list-style: none;
+        li{
+            position: relative;
+            padding-left: 20px;
+            font-size: 16px;
+            line-height: 42px;
+            &:before{
+                content: '';
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                left: 0;
+                top: 18px;
+                border: 1px solid #02a569;
+                @include border-radius(50%);
+            }
+            &:after{
+                content: '';
+                position: absolute;
+                width: 4px;
+                display: block;
+                height: 2px;
+                left: 3px;
+                top: 20px;
+                transform: rotate(-45deg);
+                border-bottom: 1px solid #02a569;
+                border-left: 1px solid #02a569;
+            }
+        }
+    }   
+}
+
+.thankyou {
+    text-align: center;
+    width: 340px;
+    margin: 0 auto;
+    > div {
+        font-size: 16px;
+        line-height: 24px;
+        color: $gray-darker;
+        font-weight: 600;
+        margin-bottom: 24px;
+        a{
+            display: block;
+            text-decoration: underline;
+            &:after{
+                font-family: 'careers-fonts'!important;
+                content: "\e935";
+                padding-left: 5px;
+                font-size: 9px;
+            }
+        }
+    }
+}
+
+.alertDiv {
+    background: #f2faf7;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #02a569;
+    @include border-radius(4px);
+}
+
+.twoBlock{
+    margin: 0 -20px 20px;
+    overflow: hidden;
+    .item {
+        width: 50%;
+        margin: 0 auto;
+        padding: 0 20px;
+        &:first-child{
+            > div {
+                border-top: 0;
+            }
+        }
+        
+        > div {
+            padding: 20px;
+        }
+        
+    }
+    .particular{
+        margin-top: 10px;
+    }
+    h3 {
+        color: $gray-darker;
+        margin: 0 0 6px;
+    }
+    p{
+        font-size: 12px;
+        color: $gray-dark;
+        margin: 0;
+    }
+    .ulList {
+        margin-top: 10px;
+        li {
+            font-size: 16px;
+            line-height: 42px;
+            color: $gray-darker;
+            &:before{
+               top: 15px;
+            }
+            &:after{
+                top: 19px;
+            }
+
+        }
+    }
+    .promoApplied {
+        font-size: 14px;
+        color: $gray-dark;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: -40px;
+        span{
+            font-size: 20px;
+        }
+    }
+    .total {
+        font-size: 16px;
+        font-weight: 600;
+        overflow: hidden;
+        color: $gray-darker;
+        text-align: center;
+        border-bottom: 2px solid #f2f2f2;
+        padding: 15px 0;
+        span{
+            font-size: 24px;
+
+        }
+        .strikeAmount {
+            font-size: 12px;
+            color: $gray;
+            margin-top: 5px;
+        }
+    }
+    .pay {
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 5px;
+
+        .btn-medium{
+            height: 35px;
+            width: 250px;
+            line-height: 35px;
+            padding-left: 73px;
+            background: #e5e5e5 url(../../../images/frontend/desktop/paypal.png) no-repeat 127px 10px;
+            text-align: left;
+            color: $gray-darker;
+            border: 0;
+            font-size: 12px;
+            img{
+                position: relative;
+                top: 4px;
+            }
+         &.active{background-color:#ffc439;}
+		}
+    }
+    .pay-paytm {
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 5px;
+
+        .btn-medium{
+            height: 35px;
+            width: 250px;
+            line-height: 35px;
+            padding-left: 73px;
+            background: #e5e5e5 url(../../../images/frontend/desktop/paytm-logo.png) no-repeat 127px 8px;
+            text-align: left;
+            color: $gray-darker;
+            border: 0;
+            font-size: 12px;
+            img{
+                position: relative;
+                top: 4px;
+            }
+         &.active{background: #042e6f url(../../../images/frontend/desktop/paytm-logo-white.png) no-repeat 127px 8px;color:#fff;}
+		}
+    }
+	
+}
+
+.blockHeading.amout{
+    font-size: 16px;
+    color: $gray-darker;
+    font-weight: 600;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f2f2f2;
+    span{
+        color: $gray-darker;
+    }
+    .save {
+        background: $brand-secondary;
+        color: #fff;
+        font-size: 13px;
+        padding: 0px 10px;
+        position: relative;
+        &:before{
+            content: '';
+            border-top: 9px solid transparent;
+            border-bottom: 9px solid transparent;
+            border-left: 4px solid #f0f1f7;
+            position: absolute;
+            left: 0;
+            top: 0px;
+        }
+        
+        
+        &:after{
+            content: '';
+            border-top: 9px solid transparent;
+            border-bottom: 9px solid transparent;
+            border-right: 4px solid #f0f1f7;
+            position: absolute;
+            right: 0;
+            top: 0px;
+        }
+    }
+    strike{
+        color: $gray;
+        font-size: 13px;
+        display: inline-block;
+        margin: 0 5px;
+    }
+}
+
+
+.promocode {
+    width: 330px;
+    margin: 0 auto;
+    .field {
+        margin-bottom: 20px;
+    }
+    label{
+        font-size: 12px;
+        color: $gray;
+        font-weight: 600;
+    }
+    
+    .code{
+        height: 35px;
+        width: 205px;
+        display: inline-block;
+        padding: 5px 10px;
+        border: 1px solid #cccccc;
+        @include border-radius(4px);
+    }
+    
+    .submitCode {
+        border: 0;
+        background: transparent;
+        color: #47599c;
+        text-align: right;
+        padding: 0 15px;
+        margin-left: 4px;
+        height: 35px;
+        &.applied{
+            background: #02a569;
+            color: #fff;
+            @include border-radius(4px);
+        }
+    }
+    .error {
+        color: #ec1c24;
+        font-size: 12px;
+    }
+}
+
+.summery{
+    > div {
+        width: 500px;
+        margin:  0 auto;
+        text-align: center;
+    }
+}
+.amount {
+    font-size: 24px;
+    color: $gray;
+    font-weight: 600;
+    margin: 12px 0 10px;
+    line-height: 22px;
+}
+.title {
+    font-size: 32px;
+    color: $gray-darker;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 35px;
+}
+.breif {
+    font-size: 16px;
+    color: $gray-darker;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+.orderSummery {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 15px 0;
+    margin-top: 10px;
+    overflow: hidden;
+    span{
+        display: block;
+        color: $gray;
+        line-height: 19px;
+        &:last-child{
+            color: $gray-darker;
+            margin-top: 5px;
+        }
+    }
+}
+.retry {
+    margin: 25px 0 0px;
+    a {
+        width: 180px;
+        height: 50px;
+        line-height: 22px;
+        background: $default-btnBG;
+        border: 0;
+        font-size: 18px;
+        color: #ffffff;
+        padding: 14px;
+        @include border-radius(4px);
+    }
+}
+
+.gotohome {
+    margin-top: 40px;
+}
+
+.bottom {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px;
+    margin-top: -10px;
+}
+
+.referralCode {
+    font-size: 12px;
+    line-height: 24px;
+    color: #666;
+    span {
+        background: #e5f6f0;
+        height: 33px;
+        display: inline-block;
+        border: 1px dotted #02a569;
+        min-width: 200px;
+        border-radius: 4px;
+        line-height: 29px;
+        color: #02a569;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+}
+.copyCode {
+    font-size: 12px;
+    color: #999999;
+    margin-top: 5px;
+}
+
+.commonFooter {
+    display: none;
+}
+
+.pay-contant {
+    font-size: 12px;
+    color: #999;
+    font-weight: 400;
+    margin: 4px 0px;
+}
+.or-unsuccess {text-align:center;margin-bottom: 30px;}
+.or-unsuccess h4{margin:0;padding:0;text-align:center; font-size: 14px; color: $gray-darker}
+.or-unsuccess p{margin: 4px 0;padding:0;text-align:center;}
+.product_cname,.pack-price.f-right,.order_total,.order_amnt{
+  display: inline-block;
+}
+.pack-price.f-right,.order_amnt.f-right {
+    float: right;
+}
+.payment-summary-header{
+    text-align:center;
+}
+span.order_total {
+    float: left;
+}
+.total.totalAmount span {
+    font-size: 16px;
+}
+.coupan_code{
+    margin-top:60px;
+    position: relative;
+}
+input.submitCode {
+    position: absolute;
+    right: 2px;
+    top: 1px;
+    width: 60px;
+    height: 38px;
+    border: none;
+    background: #fff;
+}
+.pay-button.center .btn-medium {
+    background: #e56c5b;
+    width: 100%;
+    color: #fff;
+    border: none;
+    height: 45px;
+    font-size: 16px;
+}
+.pay-button.center {
+    margin-top: 20px;
+}
+.payment-summary>span {
+   margin-top: 30px;
+    display: inline-block;
+    font-size: 17px;
+}
+.error ul.errorlist li {
+   padding-left: 4px;
+   vertical-align: top;
+   font-size: 13px;
+   line-height: 25px;
+}
+.error ul.errorlist {
+   margin-top: 0px;
+  color: #e42727;
+  margin-bottom: 10px;
+}
+.error ul.errorlist li:before,.error ul.errorlist li:after{
+display:none;
+}
+#companion_pay_form .coupon-applied {
+    border: 1px solid #3ca664;
+   width: auto;
+   display: inline-block;
+   float: right;
+   clear: both;
+   margin-bottom: 30px;
+   line-height: 30px;
+   border-radius: 30px;
+   text-align: right;
+   padding: 5px 10px;
+   background: #3ca664;
+   color: #fff;
+   font-weight: 600;
+   padding-right: 30px;
+}
+.coupon-applied+input.submitCode {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   border: none;
+   color: #fff;
+   background: #3ca665;
+   width: auto;
+   height: auto;
+}    
+            
+.formTitle {
+    text-align: left;
+    font-size: 20px;
+    color: #333;
+    margin: 20px 0 0px;
+    max-width: 400px;
+    margin: 30px auto -8px;
+}
+
+.completeProcess {
+    max-width: 400px;
+    margin: 15px auto 0;
+    text-align: center;
+    .txt{
+        font-size: 12px;
+        color: #666;
+    }
+    a{
+        width: 350px;
+        background: #e56c5b;
+        color: #fff;
+        height: 50px;
+        border-radius: 4px;
+        line-height: 49px;
+        margin-top: 5px;
+    }
+}

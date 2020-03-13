@@ -1,0 +1,1229 @@
+@import "../../includes/mixins"; 
+@import "../../includes/variables";
+@import "../../includes/button";
+@import "../../partials/components/cardBlk";
+@import "../../partials/components/popup";
+@import "../../partials/components/tags";
+@import "../../partials/components/breadcrumb";
+@import "../../partials/components/checkboxRadio";
+
+.main-container {
+    background-color: #ebedf4;
+}
+.commonSection {
+    padding: 0 10px;
+    background: #ebedf4;
+    padding-bottom: 10px;min-height:600px;
+}
+.whiteBg{
+    background-color: #ffffff;
+}
+.colgContBlk, .appBlk, .textiMonial, .footer{z-index:5!important;}
+.cardBlkInn {
+    margin-bottom: 20px;
+    position:relative;
+    padding:10px;
+    border-radius:8px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
+     -moz-box-shadow:   0 5px 8px 0 rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.cardBlkInn:first-child {
+    margin-top: 55px;
+    position:relative;
+}
+
+
+.universityRanking {
+    margin-bottom: 40px;
+}
+
+.breadCrumb{
+    position: relative;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+p {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 0;
+    color: #666666;
+}
+
+.topBlk{
+    padding: 20px 0 27px;
+    height:auto;
+}
+.banner-content{
+    h1{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    p{
+        font-size: 12px;
+        color: #ffffff;
+        margin: 10px 0 0;
+    }
+}
+
+.margin-top-35 {
+    margin-top: 35px;
+}
+
+.breadCrumb {
+    margin-bottom: 10px;
+}
+
+.tags {
+    .active{
+        background-color: $gray-lightest;
+    }
+}
+
+.blockHeading {
+    font-size: 16px!important;
+}
+
+.showCollege {
+    font-size: 11px;
+    color: #999999;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.schoolList {
+   color:#000;
+   .schoolPoint{
+    ul {margin:0; padding:0;list-style:none;
+       li{margin:0 0px 5px 0px;padding:0;font-size:14px;line-height:1.3em;color:#333;
+        .rate{color:#02a569;}
+         i{
+            color: #999;
+            display: inline-block;
+            vertical-align: top;
+            margin: 5px 0px 0px 0px;
+            font-size: 12px; 
+            &:before{color: #999;}
+            }
+         .details{
+               display: inline-block;
+                max-width: 90%;
+                vertical-align: top;
+                margin-left: 7px;
+                margin-right:7px;
+           }
+        }
+     }
+   } 
+    .featuredTag{
+            width: 25px;
+            font-size: 9px;
+            text-align: center;
+            color: #333333;
+            background-color: #e5e5e5;
+            margin-bottom: 10px;
+            padding: 0px;
+            position: absolute;
+            line-height: 16px;
+            right: 20px;
+            height: 25px;
+            top: 0;
+            i{
+              color: #fff;
+              font-size: 16px;
+              padding: 4px 0px;
+              vertical-align: middle;
+              display: block;
+              }
+        }
+    
+    .headingBox {
+            overflow: hidden;
+            display: inline-block;
+            padding-left: 0px;
+            width: 100%;
+        h3 {
+            float: left;
+            font-size:16px;
+        }
+            }
+        .imageBlock {
+            position: relative;
+            margin:5px 0px;
+            min-height: 50px;
+        .school-Img {
+                width: 50px;
+                border-radius: 5px;
+                overflow: hidden;
+                padding: 5px;
+                display: inline-block;
+                background: #fff;
+                border: 1px solid #ccc;
+                line-height: 0px;
+                vertical-align: middle;
+                position: absolute;
+            }            
+        .type{
+            display: inline-block;
+            vertical-align: middle;
+            margin: 30px 0px 0px 4px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+     
+
+    
+    .blockHeading{
+        color: #3a4d95;
+        margin-bottom: 5px;
+    }
+    
+
+    
+    .onlineFormBlk {
+        margin-top: 10px;
+        color: #ea897c;
+        border-top: 1px solid #e2e4ef;
+        padding: 10px 0px 0px 0px;
+        vertical-align: middle;
+        font-size: 12px;
+        font-weight: 600;
+     i{ display: inline-block;
+        vertical-align: middle;
+        margin: 0 5px 0px 0px;
+        }
+    }
+}
+
+.compareBox, .qnaBox {
+    border: 1px solid $gray-lighter;
+    padding: 11px 15px 13px 15px;
+    margin-bottom: 25px;
+    @include border-radius(4px);
+    h4 {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0;
+        margin-bottom: 5px;
+        color: $brand-primary;
+    }
+    .text {
+        display: inline-block;
+        width: calc(100% - 75px);
+        color: $gray-darker;
+        margin-right: 20px;
+        a{
+            font-size: 12px;
+            font-weight: 600;
+            i{
+                font-size: 8px;
+                font-weight: bold;
+            }
+        }
+    }
+    .icon {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 5px;
+        width: 50px;
+    }
+    &.qnaBox {
+        h4, a{
+            color: $brand-secondary;
+        }
+    }
+}
+
+.pagination {
+    width: 155px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid $gray-lighter;
+    a {
+        float: left;
+        width: 40px;
+        height: 36px;
+        padding: 8px 5px;
+        color:  $brand-secondary;
+        background: $gray-lightest;
+        &.prev{
+            &:before{
+                content: "";
+                width: 7px;
+                height: 7px;
+                position: relative;
+                top: -1px;
+                margin-right: 4px;
+                border-top: 1px solid #e56c5b;
+                border-right: 1px solid #e56c5b;
+                display: inline-block;
+                transform: rotate(-135deg);
+            }
+        }
+         &.next{
+            &:after{
+                content: "";
+                width: 7px;
+                height: 7px;
+                margin-left: 4px;
+                position: relative;
+                top: -1px;
+                border-top: 1px solid #e56c5b;
+                border-right: 1px solid #e56c5b;
+                display: inline-block;
+                transform: rotate(45deg);
+            }
+        }
+        &.disabled{
+            color: $gray-light;
+            background-color: #ffffff;
+            cursor: auto;
+            &:before, &:after{
+                border-color: $gray-light;
+            }
+        }
+    }
+    span {
+        width: 73px;
+        height: 35px;
+        padding-top: 10px;
+        float: left;
+        font-size: 12px;
+        border-left: 1px solid $gray-lightest;
+        border-right: 1px solid $gray-lightest;
+        color: $gray-darker;
+    }
+}
+
+
+.sortFilter {
+    background-color: $brand-primary;
+    @include box-shadow (0px -4px 6px 0 rgba(0, 0, 0, 0.3));
+    position: fixed;
+    bottom: -55px;
+    left: 0;
+    width: 100%;
+    @include transition(bottom ease-in-out 0.3s);
+    &.showSortFilter{
+        bottom: 0;
+        @include transition(bottom ease-in-out 0.3s);
+    }
+    a{
+        display: block;
+        padding: 16px;
+        font-size: 14px;
+        color: #ffffff;
+    }
+}
+
+.sortFilterOuter{
+        h2{margin:0;}
+    .head{
+    color: #333333;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px;
+    position: relative;
+    z-index: 99;
+    border-bottom: 1px solid #e5e5e5;
+        .clearAll{
+            color: $gray;
+            font-size: 12px;
+            float: right;
+            font-weight: normal;
+        }
+    }
+    .sortFilterBox{
+        height: calc(100% - 50px);
+        position: relative;
+        padding-bottom: 50px;
+        .tabs{
+                width: 125px;
+                height: 100vh;
+                overflow-y: scroll;
+                border-right: 1px solid #e5e5e5;
+                background-color: #f2f3fa;
+                overflow: auto;
+                float: left;
+            a{
+                display: block;
+                font-size: 14px;
+                color: #333;
+                padding: 12px 15px;
+                position: relative;
+                border-bottom: 1px solid #e7e7e7;
+                .checkedNum{
+                    color: #02a569;
+                    font-size: 12px;
+                }
+                &.active{
+                    background-color: #ffffff;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        width: 3px;
+                        height: 100%;
+                        left: 0;
+                        top: 0;
+                        background-color: #02a569;
+                    }
+                }
+            }
+        }
+        .radioCheckbox{
+                width: calc(100% - 126px);
+                height: 100%;
+                padding: 0 15px;
+                float: left;
+                overflow: auto;
+            .tabCatagory{
+                display: none;
+                height: 100%;
+                overflow-y: scroll;
+                &:first-child{
+                    display: block;
+                }
+            }
+            .box{
+                padding: 13px 0;
+                border-bottom: 1px solid $gray-lighter;
+                position:relative;
+            }
+        }
+    }
+    .cancelApply{
+        position: absolute;
+        bottom: 0;
+        z-index: 9;
+        width: 100%;
+        left:0;
+        a {
+            float: left;
+            text-align: center;
+            padding: 14px;
+            color: $gray-lightest;
+            font-size: 16px;
+            font-weight: 600;
+            height:52px;
+             color:#fff;           
+        }
+        .cancel {
+            width: 125px;
+            background-color: #999; 
+            
+        }
+        .apply {
+            width: calc(100% - 126px);
+            background-color: $brand-primary;
+            height: 52px;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+        }
+    }
+}
+
+.sortFilter.mobileFilterIco {
+    width: 56px;
+    height: 56px;
+    box-shadow: 0 0 12px 0 rgba(0,0,0,.12), 0 12px 12px 0 rgba(0,0,0,.24);
+    border-radius: 50%;
+    left: auto;
+    right: 18px;
+    bottom: 60px;
+    padding: 3px;
+    display: inline-block;
+}
+
+#compare_college {
+    .footerPopup{
+        bottom: -20px;
+    }
+    .outer {
+        padding: 20px 15px;
+        .errorMsg {
+            font-size: 12px;
+            line-height: 21px;
+            margin: -6px 0 12px;
+            color: $default-btnBG;
+        }
+    }
+    .box {
+        overflow: hidden;
+        border-bottom: 1px solid $gray-lighter;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        &:last-child {
+            border-bottom: 0;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        > div {
+            width: calc(100% - 30px);
+            font-size: 14px;
+            font-weight: 600;
+            color: $gray-dark;
+            line-height: 21px;
+            float: left;
+        }
+        .delete {
+            float: right;
+        }
+    }
+    
+    .conpareNow {
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+.description {
+     padding: 30px 0 35px;
+    background: #ffffff;
+    text-align: center;
+    h5 {
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 600;
+        line-height: 29px;
+        margin-top: 0;
+        color: $gray-darker;
+    }
+    .content {
+        line-height: 25px;
+        margin-bottom: 30px;
+        &:last-child {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border-bottom: 0;
+        }
+    }
+    p{
+        margin: 0;
+        font-size: 12px;
+        line-height: 25px;
+        color: $gray-darker;
+    }
+}
+
+.schoolList-header{  
+    background: url(../../../../../images/frontend/mobile/school-headerBG.png);
+    background-position: center bottom;
+    padding: 20px 10px 30px 10px;
+    background-repeat: no-repeat;
+    margin: 0;
+   
+   }
+.button.btn-lineBlue {border: 1px solid #3A4D95;
+    color: #3A4D95;
+    background: transparent;
+    padding: 3px;
+    min-width: 100px;
+    height: 100%;
+    line-height: 2em;}
+
+ 
+.button.btn-lineBlue i{
+    font-size: 10px;
+    margin: 2px 0px;color: #3A4D95;}
+    
+.feature-SchoolBlock {
+     h4 {
+        font-size: 14px;
+        font-weight: 500;
+        padding: 0;
+        margin: 0 0px 10px 0px;
+        line-height: 1.5em;
+    }
+
+}
+.text {
+    max-width: 190px;
+    line-height: 2em;
+}
+
+.feature-SchoolBlock {
+    background-image: url(../../../../../images/frontend/mobile/featureSchool.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    padding: 13px 20px;
+}
+
+.sortFilterOuter {
+    background: #fff;
+    padding:0;
+       .head{background:#fff;}
+    }
+
+
+.sliderBlock {
+    overflow: hidden;
+    min-height: 30px;
+}
+.sliderBlock .sliderValue {
+    border: 0;
+    background-image: url(../../../../../images/schoolRupee-symbol.svg);
+    background-repeat: no-repeat;
+    background-size: 9px;
+    padding-left: 12px;
+    background-position: left;
+}
+
+.filters {
+    padding: 0px;
+    height: 100%;
+}
+.ui-slider-range {
+    background: #02a569;
+    padding: 1px;
+    width: 100%;
+    display: block;
+    position: relative;
+    height: 2px;
+}
+
+.ui-slider-handle {
+    background: #02a569;
+    height: 20px;
+    padding: 2px;
+    position: absolute;
+    right: 0;
+    top: -9px;
+    width: 20px;
+    border-radius: 50%;
+    margin-left: -.6em;
+}
+
+.ui-slider-handle:focus {
+    outline: none;
+}
+
+#slider-range-min {
+    width: 86%;
+    background: #ccc;
+    height: 2px;
+    position: relative;
+    float: left;
+    margin: 25px 10px 10px 10px;
+}
+.filters{
+       h5 {
+        font-size: 14px;
+        font-weight: 500;
+        color: #000;
+    }
+}
+
+.filterLists ul{padding:0; margin:0;}
+
+
+.filterLists ul li input[type=checkbox] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.filterLists li {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding: 7px;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin: 4px 0px 4px 0px;
+    border-radius: 20px;
+}
+.box form {
+    position: relative;
+}
+
+.tabCatagory form input {
+    display: inline-block;
+    width: 81%;
+    border:none;
+}
+.tabCatagory form .buttonform {
+    position: absolute;
+    right: 10px;
+    top: 16px;
+}
+
+.filterLists ul li.checkActive{background:#ebedf7; color:#96a3d6;border:1px solid #96a3d6;}
+
+.filters #id_location{
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    width: 100%;
+    border-radius: 0px;
+    box-shadow: none;
+}
+.tabCatagory form .buttonform i:before {
+    color: #e56c5b;
+}
+.tabCatagory {
+    margin-bottom: 20px;
+}
+
+.filterCheckbox {
+    text-align: center;
+}
+.filterLists li {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 5px;
+    padding: 8px 10px;
+}
+
+.filterLists label:after {
+    position: absolute;
+    display: none;
+    content: '';
+}
+
+
+.filterCheckbox {
+   input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+}
+
+.filterCheckbox{
+    label{
+        font-size: 14px;
+        color: #000;}
+    }
+
+
+.differentFilter li {
+    background: transparent;
+    text-align: center;
+    margin-right:10px;
+    min-width:90px;
+    border:1px solid transparent;
+}
+
+.differentFilter li .addImage {
+    display: block;
+}
+   
+
+
+.differentFilter ul li.checkActive {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: transparent;
+    color: #333;
+}
+.differentFilter ul li.checkActive:after{
+            content: '\e96e'; 
+            height:20px;width:20px;
+            font-family:'careers-icon';
+            color:#02a569;
+            position:absolute;
+            top:0;
+            font-size:16px;
+            right:0;
+}
+
+    
+    
+h6.filter-Subheading {
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+}
+
+
+span.annual {
+    font-size: 12px;
+    color: #999;
+}
+
+
+.feeTitle, .feeAmout {
+    display: inline-block;
+}
+
+input#amount {
+    width: 208px;
+    border: none;
+    background: transparent;
+    text-align: left;
+    border-radius: 0;
+    color: #02a569;
+    font-weight: bold;
+    padding: 0px 0px 5px 0px;
+    word-spacing: 50px;
+    margin: 30px 0px;
+}
+
+input.sliderValue {
+    max-width: 90px;
+    border: none;
+    border-bottom: 1px solid #ccc !important;
+    padding: 10px 0px;
+    text-align: left;
+    color: #02a569;
+    font-size: 16px;
+    font-weight: bold;
+}
+.tabCatagory.secondType-filter {
+    .filterIndicator {
+        background: transparent;
+        text-align: center;
+        min-width: 95px;
+        border-radius: 8px;
+        opacity: 0.6;
+        color: #3a4d95;
+        border-color:#b2bce1;
+    }
+
+
+}
+
+.tabCatagory.secondType-filter{
+    .filterIndicator  {
+        .bg_img{
+                text-align: center;
+                display: block;
+        } 
+    }
+}
+.tabCatagory.secondType-filter .filterCheckbox input:checked ~ .filterIndicator{background-color:#ebedf4;opacity: 1;}
+
+
+.tabCatagory.thirdType-filter .filterIndicator:before {
+    background-color: #ebedf4;
+    color: #fff;
+    display: block;
+    content: '';
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+.tabCatagory.thirdType-filter .filterIndicator {
+    position: relative;padding-left:35px;
+}
+
+.tabCatagory.thirdType-filter .filterIndicator:after {
+    color: #333;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 6px;
+    font-size: 11px;
+}
+.tabCatagory.thirdType-filter .filterCheckbox.item1 .filterIndicator:after{content:'EN';}
+.tabCatagory.thirdType-filter .filterCheckbox.item2 .filterIndicator:after{content:'HI';}
+.tabCatagory.thirdType-filter .filterCheckbox.item3 .filterIndicator:after{content:'SA';}
+
+.tabCatagory.thirdType-filter .filterCheckbox input:checked ~ .filterIndicator:before{background:#3a4d95;}
+.tabCatagory.thirdType-filter .filterCheckbox input:checked ~ .filterIndicator:after{color:#fff;}
+
+
+span.clickTO, span.clickTO2, span.clickTO3{
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    margin-left: 5px;
+    background: #fff;
+    border-radius: 20px;
+    opacity: 0.7;
+    white-space: nowrap;
+    margin: 5px 4px;
+    display: inline-block;
+}
+
+.filterLists .row:first-child {
+    padding-bottom: 20px;
+}
+.filterLists .row {
+    padding-top: 20px;
+}
+
+.loc-block {
+    position: relative;
+}
+.loc-block a {
+    color: #96a3d6;
+}
+.loc-block i:before{
+    color: #96a3d6;
+}
+
+.loc-icon {
+    color: #96a3d6;
+    background: #ebedf7;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #96a3d6;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    position:relative;
+}
+.c360-near-location:before {
+    color: #3a4d95;
+}
+.loc-block  input[type=text]{padding: 10px 8px 10px 0px!important;}
+
+.loc-block:before {content: "\e90c";position: absolute;right: 8px;display: block;font-family: careers-icon;font-size: 14px;color: #02a569;top: 8px;}
+
+span.type {
+    position: absolute;
+    top: -12px;
+    right: 5px;
+    color: #00796b;
+    background: #e0f2f1;
+    padding: 4px 5px;
+    border-radius: 4px;
+    font-size: 10px;
+}
+
+span.simpleText {
+    font-weight: 500;
+    color: #666;
+}
+
+.calenderIcon, .footerText {
+    display: inline-block;vertical-align:top;line-height:20px;
+}
+
+.footerText {max-width: 90%;}
+
+.tagCloud {
+    overflow: hidden;
+    margin-bottom: 20px;
+    height: 40px;}
+  .tagCloud .cloudTag {
+    background-color: #f5f6f9;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    padding-right: 30px;
+    position: relative;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 10px; }
+    .tagCloud .cloudTag:not(:last-child) {
+      margin-right: 10px; }
+  .tagCloud .fcross {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .tagCloud .fcross i {
+      text-align: center;
+      font-size: 7px;
+      font-weight: bold;
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      right: 5px;
+      color: #fff;
+      background-color: #999;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+      margin-top: -9px;
+      top: 50%;
+      line-height: 17px; }
+      
+.tagCloudInner {
+    width: 100%;
+    white-space: nowrap;
+    overflow: auto;
+    padding: 0px 20px 20px 20px;
+}
+
+.filterStateINNER {
+    white-space: nowrap;
+    overflow: auto;
+    min-height: 50px;
+    padding: 0px 20px 30px 0px;
+}
+
+.outerfilterState {
+    margin: 0px -10px;
+    overflow: hidden;
+    height:60px;
+}
+
+.filterBY {
+    color: #366ed8;
+    
+}
+
+.filterBG {
+    background-image: url(../../../../../images/frontend/mobile/filterBG.svg);
+    background-color: #cad9f5;
+    background-size: cover;
+} 
+
+.filterBG .filterLists li {
+    border-radius: 74px;
+    border: solid 1px #7986cb;
+    color: #7986cb;
+}
+
+.clickTO a, .clickTO2 a, .clickTO3 a {
+    color: #999;
+}
+
+.filterBG .filterLists ul li.checkActive {
+    background: #366ed8;
+    color: #fff;
+}
+.schoolNear{color:#f8a805;margin-left:5px;}
+.pac-container {z-index: 99999 !important;}
+
+.filterLanguage li {
+    padding-left: 32px;
+}
+
+span.lagCode {
+    text-transform: uppercase;
+    background: #ded6e0;
+    color: #333;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    float: left;
+    line-height: 16px;
+    text-align: center;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+}
+
+
+.filterCity li, .filterState li, .filterBoard li {
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0px;
+    padding: 5px;
+    position:relative;
+}
+.filterCity li label, 
+.filterState li label, 
+.filterBoard li label{margin-left:15px;}
+
+.filterCity ul li:before, .filterState ul li:before, .filterBoard ul li:before{
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    left: 0px;
+    content:"";
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    }
+    
+ .filterCity ul li.checkActive:before,  
+ .filterState ul li.checkActive:before,
+ .filterBoard ul li.checkActive:before{background-color: #02a569;border: 1px solid #02a569;}   
+
+.filterCity label, .filterState label, .filterBoard label{margin-left: 0px;color:#333;}
+
+.filterCity ul li.checkActive:after, 
+.filterState ul li.checkActive:after,
+.filterBoard ul li.checkActive:after {
+    left: 5px;
+    width: 5px;
+    height: 10px;
+    position:absolute;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    content:'';
+    top: 8px;
+    }
+
+
+.filterCity ul li.checkActive, 
+.filterState ul li.checkActive, 
+.filterBoard ul li.checkActive {
+    background: none;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+
+.sortFilterOuter .differentFilter .box {
+    border-bottom: none!important;
+    text-align: center;
+    margin-bottom: 0;
+    border: none;
+    padding:5px 0px!important;
+}
+.differentFilter .control{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    color:#333;
+    width: 100%;    border: 1px solid transparent;}
+
+ .differentFilter .control input{width:10px;}    
+    
+.differentFilter .control.checkActive {
+    border: 1px solid #e5e5e5;
+}   
+#schoolTypecheck{margin:0;}    
+    
+.differentFilter .control:hover input ~ .controlIndicator, 
+.differentFilter .control input:focus ~ .controlIndicator{border:none;}
+
+.differentFilter .addImage{display:block;}
+
+.differentFilter .controlIndicator{
+    border:none;position:unset; 
+    background-color: transparent !important;}
+
+.differentFilter .control input:checked ~ .controlIndicator:after {
+    display: block;
+    content: '\e96e';
+    height: 20px;
+    width: 20px;
+    font-family: 'careers-icon';
+    color: #02a569;
+    position: absolute;
+    top: 10px;
+    font-size: 16px;
+    right: 10px;
+    transform: rotate(0deg);
+    left: unset;
+}
+
+.control input:checked ~ .controlIndicator {
+    background-color: tranparent;
+    border: none;
+}
+
+.differentFilter .control:hover input:not([disabled]):checked ~  .controlIndicator, 
+.differentFilter .control input:checked:focus ~ .differentFilter .controlIndicator {
+    background-color: transparent;
+    border: none;
+}
+
+.confirmPopup {
+    position: fixed;
+    bottom: 0;
+    z-index: 9999999;
+    background: #fff;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    padding: 0;
+}
+
+.confirmPopup h3{font-size: 20px;color: #333;margin: 0 0px 10px 0px;padding: 20px 10px 0px 20px;}
+
+.confirmPopup .discardBTN, .confirmPopup .applyChangeBTN{display:table-cell;padding: 10px 0px;color: #333;font-size: 17px;}
+
+.confButtonBG {
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+}
+.confButton {
+    width: 100%;
+    left: 0;
+    display: table;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.confirmPopup p {
+    padding: 0px 10px 0px 20px;
+}
+
+a.applyChangeBTN {
+    color: #3a4d95!important;border-left: 1px solid #ccc;
+}
+.tabCatagory .loc-icon input {width: 100px!important;position: absolute;opacity: 0;height:20px; left:0;}
+.loc-icon.locationActive {background: #02a569;color:#fff;border-color: #02a569;}
+.loc-icon.locationActive a{color:#fff;cursor:pointer;} 
+.loc-icon.locationActive i:before{color:#fff;}
+
+h5.feesHeading {
+    font-size: 11px;
+    color: #999;
+    margin: 20px 0px;
+}
+
+.sortFilterOuter .sortFilterBox .tabs .active.parActive{background-color:#fff;} 
+.sortFilterOuter .sortFilterBox .tabs a.active.parActive:before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #02a569;
+}
+
+.sortFilterOuter .sortFilterBox .tabs a.parActive:after,  
+.sortFilterOuter .sortFilterBox .tabs a.active.parActive:after{
+    display: block;
+    content: '\e96e';
+    height: 10px;
+    width: 10px;
+    font-family: 'careers-icon';
+    color: #02a569;
+    position: absolute;
+    top: 16px;
+    font-size: 10px;
+    right: 10px;
+    transform: rotate(0deg);
+    left: unset;
+}
+
+
+@media only screen and (min-width: 375px) {
+ .commonSection{min-height:600px;}
+}
+

@@ -1,0 +1,86 @@
+.topBannerSection{position:relative;}   
+.college-banner{position:relative;background-color:#f2f2f2;  height:146px; margin-bottom:15px;
+	.owl-carousel{height:100%;overflow:hidden;}   
+	.banrImgBlk{display:table;margin-top:-10%;height:146px;
+		&:after{
+			display: inline-block;
+			vertical-align: middle;
+			height: 100%;
+			content: "";
+		} 
+		img{display:inline-block;vertical-align:middle;} 
+	}
+	.owl-nav{
+		div{  
+			background-color: rgba(0, 0, 0, 0.4) !important;
+			color: #fff;
+			font-size: 10px !important;
+			width: 30px;
+			height: 30px;
+			box-shadow: none !important;
+			border-radius: 50%;
+			line-height: 22px;
+			text-align: center;
+		}
+		.owl-prev{
+			left:20px !important;
+		}
+		.owl-next{
+			right:20px !important;
+		}
+	}
+	.colgLogo{position: absolute;bottom: 0;left: 15px;margin-bottom: -30px;z-index:3;@include transition(all ease .6s);@include transform(scale(1,1));overflow:hidden;}
+	.singleBanner{overflow: hidden;  height: 100%;}
+	.item, .singleBanner{position:relative;
+		&:after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,.3); 
+		top: 0;
+		left: 0;z-index:1;
+		}
+	}
+.morePic{position:absolute;right:15px;color:#fff;bottom:10px;z-index:99;font-size:1.4rem;}	
+}
+
+.bannerDetail{padding: 25px 15px 20px;background-color: #fff;
+    z-index: 2;
+    position: relative;
+	.bannerHeading{margin-bottom:20px;
+		a.collegeName{font-size:1.4rem;line-height:21px;margin-top:15px;font-weight:400;display:block;} 
+	} 
+	h1{
+		font-size:1.8rem;
+		font-weight:600; margin:0;
+		color:#333;
+		line-height:$line-height-computed + 8
+	}
+	.knownAs{color:#333;
+		.caps{text-transform:uppercase;}
+	}
+	.colgName{font-size:1.4rem;line-height:$line-height-computed + 4}
+	.btnBlk{
+		label.btn-lineGray{
+			input[type="checkbox"]{display:none;}
+		}
+	}
+}
+
+.iconRow{color:#999;
+	&.location{
+		a{text-decoration:none;}
+	}
+	.iconCont{display:table-cell;}
+	 i{color:#999;font-size:1.1rem;display:table-cell; padding-right: 4px;
+    vertical-align: top;
+    padding-top: 3px;}
+	 a{text-decoration:underline;color:#999;display:inline;}
+ }
+
+.colgBnrDynamic {
+	.college-banner .owl-carousel, .singleBanner{position:relative;height:0;}
+	.colgLogo{@include transform(scale(0,0));}
+	
+}

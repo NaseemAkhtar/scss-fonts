@@ -1,0 +1,630 @@
+@import "../../include/mixins";
+@import "../../include/variables";
+@import "../../partial/checkboxRadio";
+
+
+.bannerContent {
+  max-width: 660px;
+  margin: 60px auto;
+  color: #fff;
+  display: flex; }
+.bannerHeading h1{margin-bottom:10px;}
+.bannerHeading p{color:#fff;margin:0;} 
+
+.planMain{color:#333;}
+div.right-arrow {
+  display: inline-block;
+  color: #e5e5e7;
+  font-size: 14px;
+  line-height: 29px;
+  margin: 15px 0 0 7px;
+  position: relative;
+  width: 118px;
+  text-align: center; }
+
+div.right-arrow:before,
+div.right-arrow:after {
+  content: "";
+  border-style: solid;
+  border-width: 0;
+  height: 0;
+  position: absolute;
+  width: 0; }
+
+div.right-arrow {
+  background-color: #3a4980; }
+
+div.right-arrow:after {
+  border-width: 15px 7px 14px  0; }
+
+div.right-arrow:before {
+  border-width: 15px 0 14px 7px; }
+
+div.right-arrow:before {
+  border-color: #3a4980 transparent;
+  left: -7px; }
+
+div.right-arrow:after {
+  border-color: #3a4980 transparent;
+  right: -7px; }
+
+.aboutMagazine > h5 {
+  font-size: 24px;
+  font-weight:600;
+  margin: 20px 0 10px;
+  padding: 0; }
+
+.aboutMagazine > ul {
+  margin: 0;
+  padding: 0; list-style:none; }
+
+.aboutMagazine > ul li {
+  padding: 0 0 0 20px;
+  font-size: 14px; color:#e5e5e5; margin: 0 0 10px; position:relative; }
+.aboutMagazine > ul li:before {
+    width: 4px;
+    height: 4px;
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 9px;
+    background: #fff;
+	border-radius:4px;
+
+  }
+
+.PlanBlock {
+  padding: 20px 0; }
+
+.PlanBlock, .PlanBlockContent {
+  max-width: 717px;
+  margin: 0 auto; }
+.col-lg-4.rightConBanner img {
+    width: 150px;
+}
+
+/* Add rounded corners to left end of the anchor tag */
+.post-tag a {
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px; }
+
+/* Position right and show only left border of triangle  */
+.post-tag a:before {
+  right: -10px;
+  border-color: transparent transparent transparent #3a4d95;
+  border-width: 12px 0 11px 10px; }
+
+/* Fix the circle between anchor box and triangle right to it  */
+.post-tag a:after {
+  right: 2px; }
+
+.post-tag a:hover:before {
+  border-color: transparent transparent transparent #1d85ca; }
+
+.subscriptionBlock input[type="radio"]:checked + label .oldPrice ,.subscriptionBlock input[type="radio"]:checked + label .boxPlanBottom {
+  color: #fff; }
+
+.boxPlanBottom {
+  font-size: 14px;
+  width: 100%;
+  padding: 0px 0px 0px 30px; }
+
+.newPrice {
+  font-size: 24px;
+  font-weight:600;
+  display: inline-block; }
+  .newPrice span.careers-indian-rupee {
+    font-size: 18px; }
+
+span.oldPrice span.careers-indian-rupee {
+  font-size: 13px;
+  margin: 0;
+  padding: 0; }
+
+.PlanBlockContent {
+  border-top: solid 1px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  padding: 10px 0;
+  margin: 0; }
+
+.PlanBlockContent h4 {
+  font-size: 16px;
+  margin: 0;
+  line-height: 21px;
+  padding: 0;
+  font-weight:600; }
+
+.PlanBlockContent p {
+  font-size: 14px;
+  margin: 0;
+  line-height: 21px;
+  padding: 0; }
+
+.poplink.text-center {
+  margin: 25px 0px 0 0px; }
+  .poplink.text-center a {
+    color: #666666; }
+
+
+
+.boxmagazine {
+  max-width: 408px;
+  width: 100%;
+  min-height: 285px;
+  background-color: #ffffff;
+  margin: 22.5px 20px;
+  display: inline-block;
+  padding: 40px 26px 40px 40px; }
+
+.leftImgBox {
+  max-width: 140px;
+  min-height: 203px;
+  float: left;
+  margin: 5px 25px 0 0; }
+
+.leftImgBox img {
+  max-width: 100%;     width: 100%; border: solid 1px #c1c1c1;}
+
+.rightMagazineContent {
+  text-align: left; }
+.aboutMagazine {
+    line-height: 23px;
+}
+.magazineType {
+  font-size: 16px;
+  /*line-height: 28px;*/
+  font-weight:600;
+  color: #333333;
+  height: 43px;
+  overflow: hidden;
+  margin: 0 0 5px; }
+
+.aboutMagazineDis {
+  line-height: 1.5;
+  color: #666666;
+  height: 84PX;
+  overflow: hidden; }
+
+.bottomBtn {
+  padding: 20px 0 0;
+  clear:both;
+   }
+
+.PlanBlock .col-lg-4 {
+  padding: 0 0 0 40px; }
+
+.priceMagazine{color:#333; margin-bottom:20px;
+	del{font-size:1.2rem;color:#666;}
+}
+
+.Archive-view .archiveSlider {
+  padding: 50px 60px 0px; }
+
+.magazineArchive {
+  margin: 0 auto;
+  width: 140px; }
+ .magazineArchive .releaseDate a {
+    color: #666;
+}
+.magazineArchive .releaseDate a:hover{
+    color: #3a4d95; 
+}
+  .magazineArchive .magazineImg {
+    width: 140px;
+    height: 202px; }
+  .magazineArchive .releaseDate {
+    line-height: 21px;
+    color: #666666;
+    padding: 20px 0;
+    margin: 0; }
+
+.fillFullBody-static {
+  width: 100%;
+  padding: 20px 50px 0px 50px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f2e67+0,3a4d95+100 */
+  background: #1f2e67;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #1f2e67 0%, #3a4d95 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #1f2e67 0%, #3a4d95 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #1f2e67 0%, #3a4d95 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2e67', endColorstr='#3a4d95',GradientType=1 );
+  /* IE6-9 */ }
+
+.fillFullBody-static-inner {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px; }
+
+.fillFullBody-static-inner .form-control {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  margin: 0px 0px 10px 0px; }
+
+.fillFullBody-static-inner label {
+  width: 100%;
+  display: block;
+  color: #999;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 4px 0px; }
+.overview-section ul li .info-blk .ico span.careers-shape-exams {
+    padding: 0 0 0 5px;
+}
+.customFooter {
+  color: #fff;
+  opacity: 0.8;
+  font-size: 13px;
+  padding: 15px 0px; }
+
+.outerBlock {
+  padding: 40px 20px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  min-height: 410px; }
+
+.outerBlock .form-row {
+     height: 72px; 
+	 &:not(:first-child){margin-top:15px;}
+	 }
+  .outerBlock .form-row .form-group  { position:relative;}
+  .outerBlock .form-row .form-group label ~ .error-alert {
+    color: #ec1c24;
+    font-size: 12px;
+    position: absolute;
+    top: 64px;
+    left: 17px; 
+}
+.selectAlmanac label ~ span.error-alert {
+    position: absolute;
+    bottom: -22px;
+}
+.subscriptionBlock{padding-bottom:10px;}
+.subscriptionBlock input[type='radio'] {
+  -webkit-appearance: none; }
+
+.subscriptionBlock input[type="radio"] {
+  display: none; }
+
+.subscriptionBlock input[type="radio"] + label:before {
+  content: "";
+  /* create custom radiobutton appearance */
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin-right: 11px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 1px solid #cccccc;
+  background-color: #fff;
+  border-radius: 50%; }
+
+.subscriptionBlock input[type="radio"] + label {
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px 10px;
+  min-height: 100px;
+  border-radius: 4px; }
+
+.subscriptionBlock input[type="radio"]:checked + label {
+  background: #02a569;
+  color: #fff; }
+
+header.header-withOutMenu {
+  padding: 0px 0px 50px 0px;
+  display: block; }
+.subscription-RadioBlock{position: relative;
+    margin-top: 85px;
+    width: 100%;
+    float: left;}
+.radio-amoutBlk {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+  float: left;color:#333; }
+
+h1.paymentpage-title {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0px 0px 30px 0px; }
+
+h3.subcription-text {
+  font-size: 12px;
+  font-weight: 600;
+  color: #999;
+  margin: 4px 0px; }
+
+.pay-status {
+  font-size: 32px;
+  color: #333;
+  font-weight: 600;
+  pdding: 10px 0px; }
+
+.succes-rs {
+  font-size: 24px;
+  font-weight: 600;
+  color: #999; }
+
+p.pay-textDetails {
+  font-size: 16px;
+  color: #333;
+  font-weight: 300;
+  line-height: 28.8px;
+  padding:10px 0px 20px 0px;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0; }
+
+.or-details span {
+  display: block; }
+
+.or-details {
+  display: inline-block;
+  margin: 10px 20px;
+  min-width: 120px; }
+
+.or-details .title-text {
+  color: #999;
+  font-weight: 600;
+  margin: 7px 0px; }
+
+.goTo-text {
+  margin: 40px 0px 0px 0px; }
+
+.goTo-text a {
+  display: block;
+  color: #3a4d95; }
+.selectAlmanac {
+    margin-top: 24px;
+	position:relative;
+}
+.subscriptionBlock .boxPlanBottom {
+  padding: 0; color:#333; 
+  }
+
+.almanac-rs {
+  font-size: 16px;
+  padding: 20px 0px 0px 0px;
+  font-weight: 600; color:#333;}
+
+.succss-icon span {
+  font-size: 60px;
+  margin-bottom: 10px;
+  display: inline-block; }
+
+.succes-rs span {
+  font-size: 18px; }
+
+.payment-carousel.marginT20 {
+  margin: 20px -39px 0; }
+
+.payment-carousel .owlPadding0 .owl-stage-outer .owl-stage {
+  padding-left: 40px !important; }
+
+  .almanac-select button {
+    height: 40px;
+    position: relative;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-image: initial;
+    background: rgb(255, 255, 255);
+    padding: 0px 20px 0px 9px;
+	width:224px;
+}
+.almanac-select .ui-state-active span.ui-icon {
+    position: absolute;
+    right: 12px;
+    top: 5px;
+	border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #666666;
+	border-top: 0;
+	width:5px;
+}
+.almanac-select span.ui-icon {
+    position: absolute;
+    right: 12px;
+    top: 18px;
+	border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #666666;
+	width:5px;
+}
+.almanac-select button span {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    text-overflow: ellipsis;
+    content: "";
+    white-space: pre;
+    overflow: hidden;
+	color:#333;
+}
+.ui-multiselect-menu {
+    position: absolute !important;
+}
+.ui-multiselect-header, .ui-multiselect-menu {
+    display: none;
+}
+
+span.freeAlmanac {
+	display: block;
+    font-size: 12px;
+    color: #333333;
+    font-weight: normal;
+
+}
+.subscriptionBlock input[type="radio"]:checked + label span.freeAlmanac {
+    color: rgb(255, 255, 255);
+}
+label.ui-corner-all {
+    width: 100%;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    margin: 4px 0px;
+    padding: 0px 5px 0px 0;
+}
+.ui-multiselect-checkboxes input[type="checkbox"] + span {
+    position: relative;
+    padding: 0px 0px 0px 5px;
+}
+/* Base for label styling */
+.ui-multiselect-menu [type="checkbox"]:not(:checked),
+.ui-multiselect-menu [type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+.ui-multiselect-menu [type="checkbox"]:not(:checked) + span,
+.ui-multiselect-menu [type="checkbox"]:checked + span {
+  position: relative;
+  padding-left: 1.95em;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+.ui-multiselect-menu [type="checkbox"]:not(:checked) + span:before,
+.ui-multiselect-menu [type="checkbox"]:checked + span:before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 16px;
+    height: 16px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 1px;
+}
+/* checked mark aspect */
+.ui-multiselect-menu [type="checkbox"]:not(:checked) + span:after,
+.ui-multiselect-menu [type="checkbox"]:checked + span:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0px;
+     background-image: url(/images/frontend/desktop/tick.png);
+    font-size: 1.4em;
+    line-height: 0.8;
+    color: #09ad7e;
+    transition: all .2s;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #02a569;
+  border-radius: 1px;
+    width:16px;
+    height: 16px;
+	 border:1px solid #02a569;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* checked mark aspect changes */
+.ui-multiselect-menu [type="checkbox"]:not(:checked) + span:after {
+  opacity: 0;
+  transform: scale(0);
+}
+.ui-multiselect-menu [type="checkbox"]:checked + span:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled checkbox */
+.ui-multiselect-menu [type="checkbox"]:disabled:not(:checked) + span:before,
+.ui-multiselect-menu [type="checkbox"]:disabled:checked + span:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+.ui-multiselect-menu [type="checkbox"]:disabled:checked + span:after {
+  color: #999;
+}
+.ui-multiselect-menu [type="checkbox"]:disabled + span {
+  color: #aaa;
+}
+.error {
+    display: inline-block;
+    background: #f2f2f2;
+    position: absolute;
+    left: 0;
+    bottom: -34px;
+    border-left: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    border-right: solid 1px #ccc;
+    margin: 0 -1px;
+    padding: 10px;
+    font-size: 12px;
+    width: 225px;
+    display: block;
+    color: #ec1c24;
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+	display:none;
+}
+.almanac-book {
+    height: 195px;
+}
+.error.show{
+	display:block;
+}
+.overview-section ul li .info-blk .ico span.careers-shape-colleges {
+    font-size: 29px;
+}
+.overview-section ul li .info-blk .ico span.careers-shape-exams {
+    padding: 0 0 0 5px;
+    font-size: 29.94px;
+}
+.overview-section ul li .info-blk .ico span.careers-shape-e-books {
+    font-size: 25.78px;
+}
+.outerBlock  .form-group {
+    position: relative; margin-bottom:0;
+}
+
+.ui-multiselect-menu{height:100px !important;}
+.ui-multiselect-menu .ui-multiselect-checkboxes li:last-child{display:none;} 
+
+.bannerContent.text-center {
+    margin-top: 40px;
+	display:block;
+}
+.mag-block {
+    display: inline-block;
+    margin-right: 30px;
+    height: 230px;
+    width: 160px;
+	vertical-align: top;
+}
+
+.mag-block:last-child {
+    margin-right: 0;
+}
+
+.bottomBtn .btn{background-color: #e56c5b;
+    color: #fff;
+    border: 1px solid #e56c5b;}
+.padding70{padding:40px 0px;}
+
+.magazine-grid-view p{line-height:28.8px;font-size:18px;font-weight:300;}
+.archiveSlider.owl-carousel .owl-nav .owl-prev, .archiveSlider.owl-carousel .owl-nav .owl-next{box-shadow:none!important;}
+
+.magazine-grid-view h2, .Archive-view h2{color:#333;}
+

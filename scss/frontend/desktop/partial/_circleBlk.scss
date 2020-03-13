@@ -1,0 +1,16 @@
+.circleBlk{width:240px;margin:0 auto;
+	p{color:$gray;font-size:1.2rem;line-height:19px;
+		a{color:$gray;display:inline-block;}
+	}
+	.note{font-size:1.2rem;}
+}
+.cirCle{border:1px solid $gray-lighter;width:100px;height:100px;@include border-radius(50%);
+	line-height:100px;display:inline-block;margin:0 8px;color:#333;
+	strong{font-size:2.4rem;}
+	span{display:block;font-size:1.2rem;}
+	.cirInn{
+		line-height: 20px;
+		vertical-align: middle;
+		display: inline-block;
+	}
+}

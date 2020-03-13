@@ -1,0 +1,694 @@
+$OpenSansPath: '../../../fonts/fonts' !default;
+$OpenSansVersion: '1.101' !default;
+
+@import "../../includes/mixins/fonts";
+@import "fonts/Light";
+@import "fonts/Regular";
+@import "fonts/SemiBold";
+@import "fonts/Bold"; 
+@import "fonts/ExtraBold";
+
+
+$icomoon-font-path: "../../../fonts" !default; 
+  
+
+@font-face {
+  font-family: 'careers-icon';
+  src:  url('#{$icomoon-font-path}/m-careers-icon.eot?vov380');
+  src:  url('#{$icomoon-font-path}/m-careers-icon.eot?vov380#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/m-careers-icon.ttf?vov380') format('truetype'),
+    url('#{$icomoon-font-path}/m-careers-icon.woff?vov380') format('woff'),
+    url('#{$icomoon-font-path}/m-careers-icon.svg?vov380#careers-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'careers-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@function unicode($str) {
+  @return unquote("\"") + $str + unquote("\"");
+}
+
+ 
+ 
+ 
+
+.c360-thumb-up {
+  &:before {
+    content: "\e953";     
+    color: #02a569;
+  }
+}
+.c360-thumb-down {
+  &:before {
+    content: "\e954";     
+    color: #e56c5b;
+  }
+}
+.c360-pop-up {
+  &:before {
+    content: "\e94e";    
+    
+  }
+}
+.c360-arrow-back-sign {
+  &:before {
+    content: "\e94f"; 
+    
+  }
+}
+.c360-arrow-down-sign {
+  &:before {
+    content: "\e950";     
+    
+  }
+}
+.c360-arrow-next-sign {
+  &:before {
+    content: "\e951";   
+    
+  }
+}
+.c360-arrow-up-sign {
+  &:before {
+    content: "\e952";   
+    
+  }
+}
+
+.c360-ranking {
+  &:before {
+    content: "\e949";
+  }
+}
+.c360-competition {
+  &:before {
+    content: "\e94a";
+  }
+}
+.c360-hotel {
+  &:before {
+    content: "\e94b";
+  }
+}
+.c360-medical {
+  &:before {
+    content: "\e94c";
+	font-size:1.5rem;
+  }
+}
+.c360-abroad {
+  &:before {
+    content: "\e94d";
+  }
+}
+.c360-logout {
+  &:before {
+    content: "\e944";
+  }
+}
+.c360-companion {
+  &:before {
+    content: "\e945";
+  }
+}
+.c360-edit-profile {
+  &:before {
+    content: "\e946";
+  }
+}
+.c360-icon-qn-a {
+  &:before {
+    content: "\e947";
+  }
+}
+.c360-login {
+  &:before {
+    content: "\e948";
+  }
+}
+.c360-star {
+  &:before {
+    content: "\e941";
+  }
+}
+.c360-setting {
+  &:before {
+    content: "\e942";
+  }
+}
+.c360-seat {
+  &:before {
+    content: "\e926";
+  }
+}
+.c360-sports {
+  &:before {
+    content: "\e927";
+  }
+}
+.c360-swimming-pool {
+  &:before {
+    content:  "\e928";
+  }
+}
+.c360-transport {
+  &:before {
+    content: "\e929";  
+  }
+}
+.c360-wifi {
+  &:before {
+    content: "\e92a";
+  }
+}
+.c360-ac-classrooms {
+  &:before {
+    content: "\e92b";
+  }
+}
+.c360-alumni {
+  &:before {
+    content: "\e92c";
+  }
+}
+.c360-auditorium {
+  &:before {
+    content: "\e92d";  
+  }
+}
+.c360-banks-facilities {
+  &:before {
+    content: "\e92e";  
+  }
+}
+.c360-boarding {
+  &:before {
+    content: "\e92f";
+  }
+}
+.c360-books {
+  &:before {
+    content: "\e930";
+  }
+}
+.c360-boys-hostel {
+  &:before {
+    content: "\e931";
+  }
+}
+.c360-cafeteria {
+  &:before {
+    content: "\e932";
+  }
+}
+.c360-convenience-store {
+  &:before {
+    content: "\e933";
+  }
+}
+.c360-girls-hostel {
+  &:before {
+    content: "\e934";
+  }
+}
+.c360-guest-room {
+  &:before {
+    content: "\e935"; 
+  }
+}
+.c360-gym {
+  &:before {
+    content: "\e936"; 
+  }
+}
+.c360-hospital {
+  &:before {
+    content: "\e937";
+  }
+}
+.c360-info-tip {
+	color: #ccc !important;
+    font-size: 16px !important;
+  &:before {
+    content: "\e938";
+  }
+}
+.c360-it-infrastructure {
+  &:before {
+    content: "\e939";  
+  }
+}
+.c360-laboratories {
+  &:before {
+    content: "\e93a";
+  }
+}
+.c360-library {
+  &:before {
+    content: "\e93b";
+  }
+}
+
+.c360-moot-court {
+  &:before {
+    content: "\e93d";
+  }
+}
+.c360-navigation {
+  &:before {
+    content:  "\e93e"; 
+  }
+}
+.c360-parking {
+  &:before {
+    content: "\e93f";
+  }
+}
+.c360-school {
+  &:before {
+    content: "\e940";
+  }
+}
+.c360-magnifying-glass {
+  &:before {
+    content: "\e925";
+  }
+}
+.c360-animation {
+  &:before {
+    content: "\e911";
+  }
+}
+.c360-arts {
+  &:before {
+    content: "\e912";
+  }
+}
+.c360-business {
+  &:before {
+    content: "\e913";  
+  }
+}
+.c360-colleges {
+  &:before {
+    content: "\e914";
+  }
+}
+.c360-commerce {
+  &:before {
+    content: "\e915";   
+  }
+}
+.c360-computer {
+  &:before {
+    content: "\e916";    
+  }
+}
+.c360-edit {
+  &:before {
+    content: "\e917";
+  }
+}
+.c360-education {
+  &:before {
+    content: "\e918"; 
+  }
+}
+.c360-engineering {
+  &:before {
+    content: "\e919";
+  }
+}
+.c360-exams {
+  &:before {
+    content: "\e91a";
+  }
+}
+.c360-law {
+  &:before {
+    content: "\e91b";  
+  }
+}
+.c360-media {
+  &:before {
+    content: "\e91c";   
+  }
+}
+.c360-medicine {
+  &:before {
+    content: "\e91d";
+  }
+}
+.c360-pharmacy {
+  &:before {
+    content: "\e91e";
+  }
+}
+.c360-predictors {
+  &:before {
+    content: "\e91f";
+  }
+}
+.c360-qn-a {
+  &:before {
+    content: "\e920";
+  }
+}
+.c360-quick-links {
+  &:before {
+    content: "\e921";
+  }
+}
+.c360-resourses {
+  &:before {
+    content:  "\e922";  
+  }
+}
+.c360-sciences {
+  &:before {
+    content: "\e923";
+  }
+}
+.c360-tourism {
+  &:before {
+    content: "\e924";
+  }
+}
+.c360-bg-right {
+  &:before {
+    content: "\e90a"; 
+  }
+}
+.c360-arrow-bottom {
+  &:before {
+    content: "\e900"; 
+  }
+}
+.c360-arrow-left {
+  &:before {
+    content: "\e901";
+  }
+}
+.c360-arrow-right {
+  &:before {
+    content: "\e902";
+  }
+}
+.c360-arrow-top {
+  &:before {
+    content: "\e903";
+  }
+}
+.c360-cancel {
+  &:before {
+    content: "\e904";
+  }
+}
+.c360-colleges2 {
+  &:before {
+    content: "\e905";;  
+  }
+}
+.c360-ebooks {
+  &:before {
+    content: "\e906";
+  }
+}
+.c360-exam {
+  &:before {
+    content: "\e907";
+  }
+}
+.c360-facebook {
+  &:before {
+    content:  "\e908"; 
+  }
+}
+.c360-hamburger {
+  &:before {
+    content: "\e909";
+  }
+}
+.c360-rupees {
+  &:before {
+    content: "\e90b";
+  }
+}
+.c360-search {
+  &:before {
+    content: "\e90c";
+  }
+}
+.c360-students {
+  &:before {
+    content:  "\e90d";
+  }
+}
+.c360-twitter {
+  &:before {
+    content: "\e90e";
+  }
+}
+.c360-wrong {
+  &:before {
+    content: "\e90f";
+  }
+}
+.c360-youtube {
+  &:before {
+    content: "\e910";
+  }
+}
+.c360-icon-clock {
+  &:before {
+    content: "\e943"; 
+  }
+}
+.c360-like-bg {
+  &:before {
+    content: "\e955";
+    color: #02a569;
+  }
+}
+.c360-share {
+  &:before {
+    content: "\e956"; 
+  }
+}
+.c360-download {
+  &:before {
+    content:  "\e957";
+  }
+}
+.c360-Facebook .path1 {
+  &:before {
+    content: "\e958";
+    color: rgb(59, 89, 153);
+  }
+}
+.c360-Facebook .path2 {
+  &:before {
+    content: "\e959";
+    margin-left: -1em;  
+    color: rgb(96, 97, 97);
+  }
+}
+.c360-Facebook .path3 {
+  &:before {
+    content: "\e95a";
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.c360-whatsapp .path1 {
+  &:before {
+    content: "\e95b";
+    color: rgb(77, 175, 78);
+  }
+}
+.c360-whatsapp .path2 {
+  &:before {
+    content: "\e95c";
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.c360-download_check-01 {
+  &:before {
+    content: "\e95d";    
+    color: #55c023;
+  }
+}
+.c360-announcment {
+  &:before {
+    content: '\e95e';     
+    color: #02a569;
+  }
+}
+.c360-comment {
+  &:before {
+    content: '\e95f'; 
+  }
+}
+.c360-edit {
+  &:before {
+    content: '\e960';     
+    color: #ccc;
+  }
+}
+.c360-eye {
+  &:before {
+    content: '\e961';     
+    color: #999;
+  }
+}
+.c360-follow {
+  &:before {
+    content: '\e962'; 
+  }
+}
+.c360-following-button {
+  &:before {
+    content: '\e963';     
+    color: #00a66a;
+  }
+}
+.c360-Following {
+  &:before {
+    content: '\e964';     
+    color: #02a569;
+  }
+}
+.c360-like {
+  &:before {
+    content: '\e965';     
+    color: #3a4d95;
+  }
+}
+.c360-Liked {
+  &:before {
+    content: \e966;     
+    color: #3a4d95;
+  }
+}
+.c360-more {
+  &:before {
+    content: \e967;     
+    color: #3a4d95;
+  }
+}
+.c360-reply {
+  &:before {
+    content: \e968; 
+  }
+}
+.c360-share {
+  &:before {
+    content: \e969;     
+    color: #3a4d95;
+  }
+}
+.c360-edit-answer {
+  &:before {
+    content: '\e96a';     
+    color: #ccc;
+  }
+}
+.c360-tick2 {
+  &:before {
+    content: '\e96b'; 
+  }
+}
+.c360-badge-white .path1 {
+  &:before {
+    content: '\e96c';  
+    color: rgb(0, 0, 0);
+  }
+}
+.c360-badge-white .path2 {
+  &:before {
+    content: '\e96d';  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.c360-tick {
+  &:before {
+    content: '\e96e';     
+    color: #00a66a;
+  }
+}
+.c360-tick3 {
+  &:before {
+    content: '\e96f';     
+    color: #3a4d95;
+  }
+}
+.c360-answer-request {
+  &:before {
+    content: '\e970';     
+    color: #02a569;
+  }
+}
+.c360-answers {
+  &:before {
+    content: '\e971';     
+    color: #ccc;
+  }
+}
+.c360-comment1 {
+  &:before {
+    content: '\e972';    
+    color: #3a4d95;
+  }
+}
+.c360-dashboard {
+  &:before {
+    content: '\e973';  
+    color: #e56c5b;
+  }
+}
+.c360-edit-profile1 {
+  &:before {
+    content: '\e974';     
+    color: #3a4d95;
+  }
+}
+.c360-following {
+  &:before {
+    content: '\e975';    
+    color: #ccc;
+  }
+}
+.c360-my-followers {
+  &:before {
+    content: '\e976';      
+    color: #ccc;
+  }
+}
+.c360-notifications {
+  &:before {
+    content: '\e977';      
+    color: #ccc;
+  }
+}
+.c360-question {
+  &:before {
+    content: '\e978';    
+    color: #ccc;
+  }
+}

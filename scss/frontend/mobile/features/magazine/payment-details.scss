@@ -1,0 +1,264 @@
+@import "../../includes/mixins"; 
+@import "../../includes/variables";
+@import "../../partials/components/form";
+@import "../../vendor/owlcarousel";
+
+ 
+.paymentRadio input[type="radio"]  
+{
+display:none;
+
+	+ label{ 
+	 @include border-radius(4px);
+	  background-color: #fff;
+	  display:block;
+	  padding:10px; 
+	  text-align:center;
+	  font-size:1.6rem;
+	  color:#333;
+	  }
+
+	&:checked {
+		  + label {
+			background-color:#02a569;
+			color:#fff;
+		  }
+		}
+}
+
+.paymentPrice span{font-size:2.4rem;font-weight:500;}
+.totalPayment{font-size:1.6rem;color:#333;font-weight:600;
+	span{font-size:2.4rem;    position: relative;
+    top: 4px}
+  .c360-rupees.final-price{
+        vertical-align: middle;
+  }
+}
+ .greyBGDisplay.text-center i.c360-wrong {
+   margin: 30px 0 20px 0;
+   display: inline-block;
+} 
+.sePrice i.c360-rupees {
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+.paymentPrice > span > i {
+    font-size: 19px;
+}
+i.c360-rupees.final-price {
+    font-size: 20px;
+    position: relative;
+    left: 5px;vertical-align:top;
+}
+form.paymentForm input.button { 
+}
+ 
+  .almanac-select button {
+    height: 40px;
+    position: relative;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-image: initial;
+    background: rgb(255, 255, 255);
+    padding: 0px 20px 0px 9px;
+	max-width: 340px !important;
+    width: 100%!important;
+}
+.almanac-select .ui-state-active span.ui-icon {
+    position: absolute;
+    right: 12px;
+    top: 16px;
+	border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #666666;
+	border-top: 0;
+	width:5px;
+}
+.almanac-select span.ui-icon {
+    position: absolute;
+    right: 12px;
+    top: 18px;
+	border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #666666;
+	width:5px;
+}
+.almanac-select button span {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    text-overflow: ellipsis;
+    content: "";
+    white-space: pre;
+    overflow: hidden;
+}
+.ui-multiselect-menu {
+    position: absolute !important;
+	z-index: 9;
+}
+.almanac-select ~ span.error-alert {
+    position: absolute;
+    display: inline-block;
+    top: 79px;
+}
+.ui-multiselect-header, .ui-multiselect-menu {
+    display: none;
+}
+ 
+span.freeAlmanac {
+    display: inline-block;
+    font-size: 12px;
+    color: rgb(51, 51, 51);
+    font-weight: normal;
+}
+.subscriptionBlock input[type="radio"]:checked + label span.freeAlmanac {
+    color: rgb(255, 255, 255);
+}
+label.ui-corner-all {
+    width: 100%;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    margin: 4px 0px;
+    padding: 0px 5px 0px 0;
+}
+.ui-multiselect-checkboxes input[type="checkbox"] + span {
+    position: relative;
+    padding: 0px 0px 0px 5px;
+}
+/* Base for label styling */
+.ui-multiselect-menu [type="checkbox"]:not(:checked),
+.ui-multiselect-menu [type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+.ui-multiselect-menu [type="checkbox"]:not(:checked) + span,
+.ui-multiselect-menu [type="checkbox"]:checked + span {
+  position: relative;
+  padding-left: 1.95em;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+.ui-multiselect-menu [type="checkbox"]:not(:checked) + span:before,
+.ui-multiselect-menu [type="checkbox"]:checked + span:before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 16px;
+    height: 16px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 1px; 
+}
+/* checked mark aspect */
+.ui-multiselect-menu [type="checkbox"]:not(:checked) + span:after,
+.ui-multiselect-menu [type="checkbox"]:checked + span:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0px;
+    background-image: url(/images/frontend/desktop/tick.png);
+    font-size: 1.4em;
+    line-height: 0.8;
+    color: #09ad7e;
+    transition: all .2s;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #02a569; 
+  border-radius: 1px;
+    width:16px;
+    height: 16px;
+	 border:1px solid #02a569;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* checked mark aspect changes */
+.ui-multiselect-menu [type="checkbox"]:not(:checked) + span:after {
+  opacity: 0;
+  transform: scale(0);
+}
+.ui-multiselect-menu [type="checkbox"]:checked + span:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled checkbox */
+.ui-multiselect-menu [type="checkbox"]:disabled:not(:checked) + span:before,
+.ui-multiselect-menu [type="checkbox"]:disabled:checked + span:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+.ui-multiselect-menu [type="checkbox"]:disabled:checked + span:after {
+  color: #999;
+}
+.ui-multiselect-menu [type="checkbox"]:disabled + span {
+  color: #aaa;
+}
+.error {
+    display: inline-block;
+    background: #f2f2f2;
+    position: absolute;
+    left: 0;
+    bottom: -34px;
+    border-left: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    border-right: solid 1px #ccc;
+    margin: 0 -1px;
+    padding: 10px;
+    font-size: 12px; 
+	width: 100%;
+    display: block;
+    color: #ec1c24;
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+	display:none;
+}
+.error.show{
+	display:block;
+}
+.almanac-select {
+    margin-bottom: 70px;
+}
+.paymentRadio input[type="radio"]:checked + label del, .paymentRadio input[type="radio"]:checked + label .freeAlmanac {
+    color: #fff;
+}
+label.free_alamanac {
+    margin-top: 10px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.size-40 {
+    font-size: 40px;
+}
+.ui-multiselect-menu{height:100px !important;}
+.ui-multiselect-menu .ui-multiselect-checkboxes li:last-child{display:none;}
+.ui-multiselect-menu li{list-style:none;}
+.ui-multiselect-menu{background:#fff;}
+.ui-multiselect-checkboxes {background: #fff;margin: 0;padding: 10px;border: 1px solid #ccc;}
+
+
+.btnPrimary.btn-block {
+    background-color: #e56c5b;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 30px;
+    height: auto;
+
+}

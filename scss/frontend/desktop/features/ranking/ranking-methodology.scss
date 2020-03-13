@@ -1,0 +1,141 @@
+@import "../../include/variables";
+@import "../../include/mixins";
+@import "../../partial/popup";
+@import "../../partial/pipeUl";
+@import "../../partial/tags";
+@import "../../partial/cardBlk";
+@import "../../partial/BannerBlk"; 
+@import "../../partial/askQuestion";
+@import "../../partial/examList";
+@import "../../partial/checkboxRadio";
+@import "../../partial/scrollbar";
+@import "../../partial/subNav"; 
+@import "../../vendor/selectBox";   
+
+ 
+.rankingMethodology{
+	.light-bg{background-color:#f9f9fc;}
+	.whiteBg {
+		background-color: #fff;
+	}
+	.section-rankMeth{ padding-top:29px; padding-bottom:31px;
+		.container{width:876px;}
+		p{font-size:18px; line-height: 2.22;padding-top: 20px;}
+	}
+	.heading3{color:$gray-darker; font-size:26px; font-weight:$font-stack-light; line-height: 1.21;}
+	.heading2{font-size:22px;line-height: 1.43;}
+	.accord_rankingMath{
+		padding-bottom: 29px;  
+		p{color:$gray-dark;}
+		ul{padding: 0 0px 0px 20px;margin:0;
+			li{ 
+				line-height: 21px;color:$gray-dark;
+				margin-bottom: 5px;
+			} 
+		}
+		.ui-accordion .ui-accordion-header .ui-accordion-header-icon{right: .5em;}
+		
+		.ui-accordion .ui-accordion-icons {padding-left: 1.2em;}
+		
+		a{color:$gray-darker;font-weight:$font-stack-semibold;
+			@include border-radius(0);padding: 14px 18px 10px; font-size:16px;display:block;}
+			
+		.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+			background:transparent;border-bottom: 0px solid #e5e5e5;font-weight:$font-stack-semibold; 
+		}
+		
+		.ui-widget-content{border:0px solid #ccc;padding:0em 20px 0;}
+		
+		.tittle {
+			  border-top: 1px solid $gray-lighter; padding-bottom:10px;
+			 &:first-child{border-top:none;}
+			 &:last-child{border-bottom:1px solid $gray-lighter;}
+		}
+		.tittle.active + .tittle {border: none;}
+		 .tittle.active{
+			@include border-radius(10px);  border:none;
+			box-shadow:0 0 5px #f0f0f0;
+		 }
+		 .ui-state-default .ui-icon {
+			background: url(../../../../../images/frontend/desktop/new-ui-icons.png);
+    background-position: -32px -48px;}
+		.ui-state-active .ui-icon{
+		background: url(../../../../../images/frontend/desktop/new-ui-icons.png);background-position:-64px -0px;}
+		.ui-icon {
+			width: 16px;
+			height:10px;
+		}
+		span.ui-accordion-header-icon.ui-icon.ui-icon-triangle-1-e{ 
+			right: 20px !important; left: auto;
+			margin-top: -9px !important;
+		}   
+		.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br{border-bottom-right-radius: 0;}
+		.ui-widget-content{background: transparent;}
+	}   span.ui-accordion-header-icon.ui-icon.ui-icon-triangle-1-s {
+			right: 20px !important;
+			left: auto;
+			margin-top: -9px !important;
+		}
+		
+	.table-block{ padding-bottom:28px;
+		thead tr{background-color:#f2f2f2;}
+		tbody {
+			tr:nth-child(odd){background-color:#ffffff;}
+			tr:nth-child(even){background-color:#f8f8f8;}
+		}
+		span{color:#02a569;font-size:32px;font-weight:600;line-height:28px;}
+		 table tbody tr td{vertical-align: middle;border: none;border-top: none;}
+		 table thead tr th{vertical-align: middle;border: none;border-bottom: none;}
+	}
+	.ranking-content{ border-bottom:1px solid #e6e7f1; padding-bottom:15px; padding-top:15px;
+        strong{color:#333;}
+		p{font-size:$font-size-h4; line-height:24px; margin:9px 0;padding-top:0;}
+		&:last-child{border-bottom:none;}
+	}
+ }
+    
+
+.footerLinks table {
+    border: 0;
+}
+.footerLinks table td {
+    display: inline-block;
+    padding: 0;
+    border: 0;
+}
+.footerLinks table a {
+    display: inline-block;
+    font-size: 12px;
+    color: #666666;
+    padding-right: 10px;
+    margin-right: 7px;
+    border-right: 1px solid #666666;
+    line-height: 13px;
+    margin-bottom: 12px;
+}
+  .tosedPop{position: absolute;
+    width: 175px;
+    background-color: #444;
+    color: #fff;
+    padding: 5px;
+    z-index: 9;
+    font-size: 1.2rem;
+    text-align: center;
+    @include border-radius(5px);
+    left: 0;
+    @include transition(all ease .5s);
+    margin-top:-30px;
+    top:0;margin-left:-10px;
+    &:before{
+            border-top: 5px solid #444;
+            border-left: 5px solid transparent;
+            content: "";
+            border-right: 5px solid transparent;
+            position: absolute;
+            bottom: 0;
+            margin-bottom: -5px;
+            left: 0;
+            margin-left: 12px; 
+    }
+}
+

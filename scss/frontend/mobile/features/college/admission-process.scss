@@ -1,0 +1,38 @@
+@import "../../includes/mixins"; 
+@import "../../includes/variables";
+@import "../../partials/components/bannerSlider";
+@import "../../partials/components/checkboxRadio"; 
+@import "../../partials/components/cardBlk";
+@import "../../partials/components/popup";
+@import "../../partials/components/stickyBottom"; 
+@import "../../partials/components/form";
+@import "../../partials/components/cardList";
+@import "../../partials/components/search";
+@import "../../partials/components/listBlk"; 
+
+.searchFrm{
+	.searchRow{
+		&:not(:first-child){margin-top:20px;}  
+	}
+} 
+.colgheading{font-weight:400;font-size:1.6rem;line-height:24px;margin:0 0 15px;} 
+.adColgBlk{
+	.heading{margin-bottom:15px;font-weight:600;font-size:1.2rem;
+		span{font-size:1.4rem;color:#333;}  
+	}
+	table{
+		tr{
+			td{border-lefT:0;vertical-align:top;}
+			&:not(:first-child){
+				td{border-top:1px solid rgba(0,0,0,.1);}
+			}
+		}
+	}
+	.mode{
+		span{color:#999;}
+	}
+	.disableArea:after{background-color:rgba(255,255,255,.5);}  
+}
+.breadCrumb{
+	position:relative !important;
+}

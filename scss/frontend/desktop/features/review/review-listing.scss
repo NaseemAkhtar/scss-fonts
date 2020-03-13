@@ -1,0 +1,294 @@
+@import "../../include/variables";
+@import "../../include/mixins";  
+@import "../../partial/checkboxRadio";
+@import "../../partial/cardBlk";
+@import "../../partial/breadcrumb";
+@import "../../partial/pipeUl";
+@import "../../partial/bannerBlk";
+@import "../../partial/sideFilter";   
+@import "../../partial/pagination"; 
+@import "../../partial/tags";
+@import "../../partial/review"; 
+@import "../../partial/search"; 
+.searchInput{width:150px;}
+.cardBlk{@include border-radius(4px);min-height:70px;padding:15px;
+	
+	&.actionBox{min-height:inherit;} 
+	.listHeading{
+		.headingContainer{
+			.sidebarHeading{
+				border:none;padding:0;
+			}
+		}
+		.microTxt{color:#999;}
+	}
+}
+.tags.filtertag a {
+    border-radius: 20px;
+    font-size: 12px;
+    color: #666;
+}
+.filterHeaderBanner {
+    background: #fff;
+    padding: 20px 0;
+	.totalratting{
+		text-align:center;
+		margin-top:10px;
+		span {
+			background: #02a569;
+			color: #fff;
+			padding: 3px 9px;
+			font-size: 18px;
+			border-radius: 2px;
+			display:inline-block;
+		}
+		.rating {
+			    margin-top: 10px;
+				margin: 20px auto 10px;
+				width: 130px;
+				height: 22px;
+				background-position:0 -28px;
+				background-size: 130px;
+				.userRating {
+					height: 22px;
+					width: 100%;
+					background-size: 130px;
+				}
+		}
+		.reviews {
+			font-size: 12px;
+			font-weight: 600;
+			color: #999999;
+		}
+	}
+}
+.progressbarDiv { 
+    margin-top: 10px;
+    color: #333;
+	&:first-child{
+		margin-top: 0;
+	}
+	.col-lg-3 {
+		font-size: 12px;
+		font-weight: 600;
+	}
+	.progressbar {
+		background-color: #ebedf7;
+		border-radius: 13px;
+		padding: 0px;
+		margin: 0 50px 0 0;
+		position: relative;
+		 height: 3px;
+		top: 5px;
+		div {
+			background-color: #02a569;
+			height: 8px;
+			border-radius: 10px;
+			    height: 3px;
+			
+			span {
+				    position: absolute;
+					right: -63px;
+					top: -8px;
+					font-size: 12px;
+			}
+		}
+	}
+}
+.likeRecommends {
+    text-align: center;
+	  font-size: 12px;
+	  color:#999999;
+	.like {
+		margin: 20px 0 12px;
+		i{
+			font-size: 18px;
+		}
+	}
+	strong{
+		color:#333;
+	}
+}
+.courseList{
+	.baseUl{margin-top:10px;
+		li{color:#333;width:200px;
+			span{
+				color:#999;
+			}
+		}
+	}
+	.courseBtn{width:20%;}
+}
+.imgBlk {
+	img{z-index:99;position:relative;}
+	.noImg{background-color:#e5e5e5;@include border-radius(50%);position:relative;z-index:99;
+		i{font-size:25px;line-height:38px;}
+	}
+}
+.imgBlk:hover .hoverPop{@include transform (scale(1));}
+.hoverPop{
+	position:absolute;
+	@include transition (transform .2s);@include transform(scale(0)); 
+	font-size:1.2rem;transform-origin: top left;text-align:left; top:0;left:0;margin-top:-25px;margin-left:-15px;
+	 z-index:9;@include box-shadow(0 0 6px 0 rgba(78, 78, 78, 0.14));
+	width:282px;@include border-radius(4px);
+	padding:20px 15px;background-color:#fff;
+	
+	p{margin:5px 0 0 0;}
+}
+
+
+.toolTip{position:relative;display:inline-block;}
+
+.toolTipPop{font-size:1.2rem;padding:0 15px;background-color:#fff;@include border-radius(4px);@include box-shadow(0 0 6px 0 rgba(78, 78, 78, 0.14));position:absolute;min-width:270px;min-height:60px;line-height:60px;z-index:9;
+	@include transition (transform .2s);@include transform(scale(0)); top:0;left:0;
+	.toolInn{line-height:16px;vertical-align: middle; display: inline-block;}
+	&.toolCenterRight{transform-origin: center left;    top: 50%;
+    left: 0;
+    margin-left: 40px;
+    margin-top: -30px;
+		&:before{}
+	}
+	&.toolCenterLeft{transform-origin: center right;}
+	&.toolTopLeft{transform-origin: top right;}
+	&.toolTopRight{transform-origin: top left;}
+	&.toolBottomLeft{transform-origin: bottom right;}
+	&.toolBottomRight{transform-origin: bottom left;}
+	}
+
+.toolTip:hover .toolTipPop{
+		@include transform (scale(1));
+	}
+
+.revRateBlk{color:#999;
+    .rateTag{background-color: #02A569;  color: #fff; font-size: 1.4rem;@include border-radius(2px); height:20px; padding: 0 5px; line-height: 20px; display: inline-block; vertical-align: middle;  margin: 0 5px;}
+}
+
+
+.verifiedReview{
+	color:#f3871d;font-size: 10px;
+}
+
+.sortright{
+ float:right;
+ font-size:14px;
+	 select {
+		background: transparent;
+		border: none;
+		color: #000;
+	}
+}
+.homeBanner {
+    width: 100%;
+    position: relative;
+    padding: 10px 0 10px;
+	 .bannerInn {
+		z-index: 9;
+		position: relative;
+	}
+	.homeSearch {
+		width: 574px;
+		height: 58px;
+		margin: 0 auto 0;
+		a{
+			cursor: default;
+			line-height: 58px;
+			color: #666;
+			text-align:left;
+			background-color: #fff;
+			font-size: 1.6rem;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			-ms-border-radius: 4px;
+			-o-border-radius: 4px;
+			border-radius: 4px;
+			-webkit-box-shadow: 12.9px 7.7px 30px 0 rgba(0, 0, 0, 0.25);
+			-moz-box-shadow: 12.9px 7.7px 30px 0 rgba(0, 0, 0, 0.25);
+			-ms-box-shadow: 12.9px 7.7px 30px 0 rgba(0, 0, 0, 0.25);
+			-o-box-shadow: 12.9px 7.7px 30px 0 rgba(0, 0, 0, 0.25);
+			box-shadow: 12.9px 7.7px 30px 0 rgba(0, 0, 0, 0.25);
+			width: 100%;
+			padding: 0 20px;
+			position: relative;
+			&:after{
+				    content: "\e900";
+					font-family: 'careers-fonts' !important;
+					position: absolute;
+					top: 50%;
+					right: 20px;
+					color: #e56c5b;
+					font-size: 2.4rem;
+					margin-top: -29px;
+			}
+		}
+	}
+  }
+
+.headingBanner.all-list .bannerHeading {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    line-height: 25px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 15px;
+    DISPLAY: inline-block;
+}
+.bnrBtmLink.text-center {
+    font-size: 12px;
+	    margin: 10px 0 0;
+    color: #fff;
+			 a {
+				color: #fff;
+				text-decoration: underline;
+			} 
+}
+.verified{
+position:relative;
+	.verifiedReview {
+		color: #f3871d;
+		font-size: 10px;
+		vertical-align: middle;
+		display: inline-flex;
+		position: absolute;
+		    left: 100px;
+		top: 0;
+		text-transform: uppercase;
+		img{
+			margin:0 4px 0 0;
+			    width: 13px;
+		}
+	}
+}
+.headingContainer {
+    position: relative;
+	.earnBadge {
+		position: absolute;
+		right: -15px;
+		font-size: 10px;
+		top: -15px;
+		text-transform: uppercase;
+		color: #3a4d95;
+		font-weight: 600;
+		span{
+			background: #00a769;
+			padding: 0 5px;
+			color: #fff;
+			margin: 0 0 0 3px;
+		}
+		&.rejected{
+				span{
+					background:#e56c5b;
+				}
+			
+		}
+		&.pending{
+				span{
+					background:#ffe49a;
+					color:#999;
+				}
+			
+		}
+	} 
+	
+}

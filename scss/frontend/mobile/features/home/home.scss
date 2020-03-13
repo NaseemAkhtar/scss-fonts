@@ -1,0 +1,272 @@
+@import "../../includes/mixins"; 
+@import "../../includes/variables";
+@import "../../partials/components/tags"; 
+.mb40{margin-bottom: 40px;}
+.homeBanner {
+    width: 100%;position: relative; 
+    padding:65px 0 50px;
+    background: #1f2e67;
+    background: -moz-linear-gradient(left, #1f2e67 0%, #3a4d95 100%);
+    background: -webkit-linear-gradient(left, #1f2e67 0%, #3a4d95 100%);
+    background: linear-gradient(to right, #1f2e67 0%, #3a4d95 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2e67', endColorstr='#3a4d95',GradientType=1 );
+    .bannerHeading{color:#fff;}
+    .bnrHeading{    font-size: 2.3rem;
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: -0.5px;}
+    .headTxt{
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 1.4rem;
+        margin:0;
+        margin-top: 10px;
+    }
+    .homeSearch{
+        width: 100%;
+        height: 54px;
+        margin:15px auto 0;
+        a{
+            line-height: 54px;color:#666;background-color: #fff;font-size: 1.4rem;@include border-radius(4px);@include box-shadow(12.9px 7.7px 30px 0 rgba(0, 0, 0, 0.25));width:100%;padding: 0 20px;position: relative;
+            &:after{
+                    content: "\e925";
+                    font-family: 'careers-icon' !important;
+                    position: absolute;
+                    top: 50%;
+                    right: 20px;
+                    color: #e56c5b;
+                    font-size: 1.6rem;
+                    margin-top: -27px;
+            }
+        }
+    }
+    .bannerInn{ z-index: 9; position: relative;}
+    .dotsImg{position: absolute;bottom:50%;left:0;width:250px;margin-bottom:-78px;margin-left:-70px;}
+    .circleImg{position: absolute;right:0;top:0;height:100%;margin-right:-170px;}
+    .bnrBtmLink{font-size: 1.2rem; color:rgba(255, 255, 255, 0.7);margin-top:20px;
+       .tagGreen{
+            min-width: 30px;
+            height: 15px;background-color:#02a569;text-transform: uppercase;@include border-radius(4px);
+            line-height: 15px;
+            vertical-align: middle;
+            font-size: 1rem;
+            display: inline-block;
+            text-align: center;
+            font-weight: 600;color:#fff;
+        }
+        a{
+            text-transform: uppercase;margin:0 5px;
+                color: rgba(255, 255, 255, 0.7);
+                border-bottom:1px solid ;
+        }
+        .compLink{margin-top:10px;}
+    }
+}
+.homeSection{padding: 30px 0;}
+.blockHeadingOuter{margin-bottom:20px;
+    .borderHeading{
+  margin-bottom: 20px;
+    &:after{
+            content: "";
+            width: 40px;
+            height: 2px;
+            opacity: 0.1;
+            background-color: #3a4d95;
+            position: absolute;
+            left: 50%;
+            margin-left: -20px;
+            bottom: 0;
+            margin-bottom: -7px;
+        }
+    }
+    p{font-size: 1.4rem;line-height: 24px;}
+}
+//.wow{visibility: hidden;}
+.smallBlk{
+         border-radius: 10px;
+          @include box-shadow(0px 5px 10px 0 rgba(0, 0, 0, 0.1));
+          border: solid 1px #e5e5e5;
+          background-color: #ffffff;
+        padding:15px; margin-top:15px;
+        .heading3{color:#333;margin:0;font-size: 1.6rem;    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;}
+
+        .sIcon{width: 30px;height: 24px;margin-right: 10px;vertical-align: middle;margin-top: -3px;} 
+ 
+    .tags{
+        .tag{background-color: #fff;@include border-radius(50px);font-size: 1.2rem;
+            &:hover{background-color: #3a4d95;color:#fff;border-color: #3a4d95;} 
+        }
+    }
+    p{font-size: 1.4rem;line-height: 24px;}
+    }
+
+.rightArrowBtn{color:#02a569;text-transform: uppercase;position: relative;font-size: 1.2rem;padding-right: 20px;
+    &:after{
+                content: "\e902";
+    font-family: 'careers-icon' !important;
+    width: 16px;
+    height: 16px;
+    background-color: #02a569;
+    color: #fff;
+    border-radius: 50%;
+    font-size: .8rem;
+    display: inline-block;
+    text-align: center;
+    padding: 2px 5px;
+    margin-left: 5px;
+    position: absolute;
+    top: 50%; font-weight: 400;
+    margin-top: -8px;
+    }
+}
+
+.grayBG{background-color: #eceef4;}
+
+.productBlk{
+    .productLink{
+    color: #333;
+    width: 50%;
+    height: 110px;
+    text-align: center;
+    position: relative;
+    font-size: 1.4rem;
+    float:left;padding-top:20px;
+        @include transition(all ease .5s); 
+        &:not(:nth-child(2n+2)){    border-right: 1px solid rgba(58, 77, 149, 0.1);} 
+        &:not(:nth-last-child(-n+2)){    border-bottom: 1px solid rgba(58, 77, 149, 0.1);}
+        .plinkInn{position: relative; z-index: 9;}
+        span{margin-top:10px;display: block;}
+        
+        &:focus, &:hover{
+            background-color: #fff;
+            @include transition(all ease .5s);
+            @include box-shadow(9.4px 5.7px 35px 0 rgba(25, 40, 66, 0.1));
+        }
+    }
+}
+
+.socialBlk{
+    &:not(:first-child){margin-top:35px;}
+    .heading3{
+        margin-bottom:10px;font-size: 1.8rem;
+        img{vertical-align: middle;}
+        span{border-bottom:1px solid; font-weight: 600;  color: #333;}
+    }
+    .owl-item{display: inline-block;}
+    .item{border:1px solid #e5e5e5;}
+     .careersLogo{background-color: #3a4d95;
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        line-height: 45px;
+        padding: 0 2px; vertical-align: bottom; @include border-radius(2px);margin-right: 5px;}
+     &:nth-child(2) .heading3{margin-bottom: 4px;}
+}
+.owl-nav.disabled{display: none;}
+.owlPad0 .owl-stage-outer .owl-stage{padding-left: 0 !important;} 
+.simgBlk{position: relative;
+    &:before{position: absolute;width: 100%;height: 100%;background-color: rgba(0,0,0,.2);content:"";}
+
+    .ytTitle{position: absolute;top:0;left: 0;padding: 10px;color: #fff;background:rgba(0, 0, 0, 0.2); text-align:left;width:100%; font-size: 1.6rem;text-shadow: 0 0 5px #444; text-align: left;
+        .logoIcon{width: 40px;
+    height: 40px;
+    background-color: #3a4d95;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: .7rem;
+    line-height: 40px;
+    vertical-align: top;}
+    .titleSpan{ width: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    margin-top: 10px;
+    margin-lefT: 10px;}
+    }
+    
+}
+.instaBlk{
+    .item{height:250px;
+        background-color: #f2f2f2;text-align: center;
+        img{height: 250px;  
+    width: 100%;}
+    }
+}
+.youtubeBlk{margin-bottom: 40px;
+    .ytTitleLink{
+            color: #333;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -45px;
+    text-align: left;
+    font-size: 1.4rem;
+    height: 40px;
+    overflow: hidden;
+    }
+    .item{
+        border:none;
+        .videoLink{height:143px;width:100%; position:relative;
+    background-position: 0;
+    background-size: cover;
+    position: relative;background-color: #f2f2f2;
+    text-align: center;
+            img{height: 100%;}   
+        }
+    }
+}
+
+.ytIcon{text-align: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    left: 50%;
+    margin-left: -25px;}
+.socialBtn{
+    font-size: 1.2rem;
+    div{    height: 23px;font: 12px "YouTube Noto",Roboto,arial,sans-serif;
+    color: #555;
+    font-weight: 500;
+    white-space: nowrap;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    span{
+    height: 24px;padding:0 5px;line-height: 24px;display: block;
+    text-align: center;
+    @include border-radius(1px);
+        img{margin-right: 2px;    margin-top: -2px;} 
+        &.followBtn{
+            color: #fff;
+            background-color: #3598f0;
+        }
+        &.subsBtn{
+            color: #fff;
+            background-color: #ff0000;
+            img{    width: 22px;
+                    filter: contrast(170%);-webkit-filter: contrast(170%);}
+        }
+    }
+}
+
+
+.iframeVideoPop{position: fixed;top:0;left:0;width:100%;height:100%;background-color: rgba(0,0,0,.8);
+    z-index: 9999;display:none;
+    .iframeVPopInn{
+         position: absolute;
+          left: 50%; width:90%;
+          top: 50%;
+          transform: translate(-50%, -50%);padding:10px;background-color:#fff;
+        iframe{display: block;}
+        
+    }
+    .closeViframe{   
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #fff;padding:15px;
+        }
+}
